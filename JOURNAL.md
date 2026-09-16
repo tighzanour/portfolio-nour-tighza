@@ -27,7 +27,6 @@
 - Ma prochaine étape est de poursuivre la planification de mon portfolio et de définir plus précisément son identité visuelle.
 - Je vais ensuite commencer à organiser le contenu et la structure du site avant de créer les maquettes.
 
-
 ### 5. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
 
 - Oui. J'ai utilisé ChatGPT pour m'aider à comprendre les étapes de création du dépôt GitHub, sa connexion avec Visual Studio Code et le fonctionnement des commits.
@@ -40,20 +39,20 @@
 
 ### 1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
 
-- 
+-
 
 ### 2. Quelle a été ma principale difficulté et comment je l'ai surmontée?
 
-- 
+-
 
 ### 3. Qu'est-ce que j'ai appris que je ne savais pas avant?
 
-- 
+-
 
 ### 4. Quelle est ma prochaine étape concrète?
 
-- 
+-
 
 ### 5. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
 
-- 
+-
