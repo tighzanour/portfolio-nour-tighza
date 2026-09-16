@@ -1,4 +1,4 @@
-# Instructions pour Github Copilot
+# Instructions pour GitHub Copilot — Portfolio
 
 - Projet en HTML/CSS/JS vanilla, aucun framework.
 - HTML sémantique obligatoire (article, section, nav...), pas <div> par défaut.
