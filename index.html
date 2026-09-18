@@ -12,6 +12,8 @@
 
   <body>
     <a class="site-logo" href="#hero">Nour Tighza</a>
+    <!-- permet de toujours accéder au contenu principal rapidement -->
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
     <header class="site-header">
       <nav aria-label="Navigation principale">
@@ -22,13 +24,17 @@
     </header>
 
     <main id="contenu">
+      <!-- hero avec l'expérience intéractive -->
       <section id="hero" aria-labelledby="hero-title">
         <h1 id="hero-title">Atelier</h1>
         <p>Les meilleurs de mes projets</p>
-      </section>
-
+        
       <section id="projets" aria-labelledby="projects-title">
         <h2 id="projects-title">Mes projets</h2>
+        <!-- pour projects.json -->
+        <div id="projects-list" class="projects-list">
+          <p>Chargement des projets...</p>
+        </div>
       </section>
 
       <section id="apropos" aria-labelledby="about-title">
@@ -40,10 +46,13 @@
         <a href="mailto:tighzanour@gmail.com">tighzanour@gmail.com</a>
       </section>
     </main>
+    <!-- fenêtre réutilisée pour les détails de chaque projet -->
+    <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Fermer la fiche du projet">Fermer</button>
 
-    <dialog id="project-dialog" aria-labelledby="dialog-title">
-      <button type="button" data-close-dialog>Fermer</button>
-      <div id="dialog-content"></div>
+      <article id="dialog-content">
+        <h2 id="dialog-title">Détails du projet</h2>
+      </article>
     </dialog>
 
     <footer>
