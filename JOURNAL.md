@@ -35,11 +35,12 @@
 
 ---
 
-## Bloc 2 — [date]
+## Bloc 2 — [2026-09-18]
 
 ### 1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
 
--
+- Arborescence [2026-09-18]
+- Structure HTML de base [2026-09-18]
 
 ### 2. Quelle a été ma principale difficulté et comment je l'ai surmontée?
 
@@ -53,6 +54,6 @@
 
 -
 
-### 5. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
+### 5. Utilisation de l'IA
 
--
+- #### [2026-09-18]
