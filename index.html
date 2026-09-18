@@ -5,5 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
-  <body></body>
+
+  <body>
+    <a class="site-logo" href="#hero">Nour Tighza</a>
+
+    <header class="site-header">
+      <nav aria-label="Navigation principale">
+        <a href="#projets">Projets</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section id="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Atelier</h1>
+        <p>Les meilleurs de mes projets</p>
+      </section>
+
+      <section id="projets" aria-labelledby="projects-title">
+        <h2 id="projects-title">Mes projets</h2>
+      </section>
+
+      <section id="apropos" aria-labelledby="about-title">
+        <h2 id="about-title">Créer avec curiosité</h2>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Je suis disponible.</h2>
+        <a href="mailto:tighzanour@gmail.com">tighzanour@gmail.com</a>
+      </section>
+    </main>
+
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+      <button type="button" data-close-dialog>Fermer</button>
+      <div id="dialog-content"></div>
+    </dialog>
+
+    <footer>
+      <p>2026 Nour Tighza. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>
