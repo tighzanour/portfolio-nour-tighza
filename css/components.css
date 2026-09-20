@@ -228,6 +228,95 @@
   color: var(--color-text-muted);
 }
 
+/* Bouton des cartes */
+
+.project-card__button {
+  margin-top: var(--space-6);
+}
+
+.project-card:has(.project-card__button:focus-visible) {
+  border-color: var(--color-accent);
+}
+
+/* Fenêtre de projet */
+
+.project-dialog {
+  width: min(calc(100% - 2rem), 42rem);
+
+  max-height: min(85svh, 48rem);
+  padding: 0;
+  overflow: auto;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+
+  background: var(--color-surface);
+  color: var(--color-text);
+
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.65);
+}
+
+.project-dialog::backdrop {
+  background: rgba(5, 8, 7, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.project-dialog[open] {
+  animation: dialog-entrance 250ms ease-out;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+
+  padding: var(--space-4) var(--space-5);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dialog-category {
+  margin: 0;
+
+  color: var(--color-accent-strong);
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dialog-close {
+  flex-shrink: 0;
+}
+
+.dialog-content {
+  padding: var(--space-7);
+}
+
+.dialog-content h2 {
+  margin-bottom: var(--space-5);
+}
+
+.dialog-content p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+}
+
+@keyframes dialog-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 /* Tablette et ordinateur */
 
 @media (min-width: 48rem) {

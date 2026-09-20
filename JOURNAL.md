@@ -39,8 +39,9 @@
 
 ### 1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
 
-- Arborescence [2026-09-18]
-- Structure HTML de base [2026-09-18]
+- Arborescence + Structure HTML de base [2026-09-18]
+- CSS de base + Header, Hero, Titre, + Projets avec JSON [2026-09-19]
+-
 
 ### 2. Quelle a été ma principale difficulté et comment je l'ai surmontée?
 
@@ -60,10 +61,14 @@
 
   _je fais manuellement un portfolio one-page en HTML, CSS, JavaScript. Génère uniquement la base de mon fichier css/base.css, sans modifier mon HTML. Fait des variables CSS dans :root pour les couleurs, typo, espacements, dimensions et rayons. un reset avec box-sizing et border-box. les styles de base de html, body, main et section. une hiérarchie pour les h1, h2, h3. les styles généraux des liens, boutons images et vidéos/placeholders. Direction visuelle : atelier créatif sombre, chaleureux et cinématographique. Utilise un fond presque noir légèrement vert, du texte crème et un accent doré. le contraste doit être lisible. les titres doivent s'adapter à l'écran. le focus clavier doit être visible._
 
-- #### Générer le header, le hero, le titre et le conteneur. [2026-09-19]
+- #### Ajouter le header, le hero, le titre et le conteneur. [2026-09-19]
 
-  _crée une première version simple du header et du hero de mon portfolio. Le site est en HTML et CSS. Utilise les variables deja presentes dans base.css. le header doit contenir mon nom et les liens Projets, A propos, et Contact. il doit rester visible en haut de la page. Le hero doit occuper toute la hauteur de l'écran et contenir mon titre et un court texte d'introduction. Ajoute aussi un conteneur vide qui servira à afficher le décor intéractif plus tard. Écris les styles dans components.css Modifie uniquement le contenu necessaire dans la section #hero. de index.html. N'ajoute aucune image, animation, pour l'instant et garde le code simple puis explique brièvement ce que tu as ajouté._
+  _crée une première version simple du header et du hero de mon portfolio. Le site est en HTML et CSS. Utilise les variables deja presentes dans base.css. le header doit contenir mon nom et les liens Projets, A propos, et Contact. il doit rester visible en haut de la page. Le hero doit prendre toute la hauteur de l'écran et contenir mon titre et un court texte d'introduction. Ajoute aussi un conteneur vide qui servira à afficher le décor intéractif plus tard. Écris les styles dans components.css Modifie uniquement le contenu necessaire dans la section #hero. de index.html. N'ajoute aucune image, animation, pour l'instant et garde le code simple puis explique ce que tu as ajouté._
 
-- #### Générer le header, le hero, le titre et le conteneur. [2026-09-19]
+- #### Ajouter le chargement des projets avec JSON [2026-09-19]
 
   _ajoute une premiere version simple du chargement des projets de mon portfolio dans data/projects.json. crée 3 projets temporaires dans le fichier JSON. Chaque projet doit seulement avoir un identitifant, un titre, une catégorie et une description simple et courte. Dans js/projects.js crée une fonction async qui utilise fetch() pour charger le fichier JSON et afficher les projets dans #projets-list. chaque projet doit etre affiché dans un élément ''article'' avec un titre , catégorie, et description. dans js/main.js, importe et execute la fonction de chargement. affiche un message d'erreur si le chargement échoue. Pour le moment, n'ajoute pas de fenêtre de détails. n'ajoute pas d'image, d'animation ou de CSS. garde javascript simple et explique son fonctionnement._
+
+- #### Rendre les projets cliquables avec des cartes de projet. [2026-09-19]
+
+  _rends mes cartes de projets cliquables et affiche les infos du projet sélectionné dans dialog. modifie projects.js pour ouvrir le dialog avec le titre, la catégorie et la description du projet sélectionné. le dialog doit pouvoir etre fermé avec son bouton, la touche echap ou un clic à l'extérieur de la carte. ajoute dans components.css, un style simple et accessible pour les boutons, le dialog et le background du dialog. utilise seulement HTML, CSS et JavaScript. garde le code simple et explique moi tes modifications._

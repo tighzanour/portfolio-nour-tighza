@@ -5,6 +5,7 @@ function createProjectArticle(project) {
   const category = document.createElement("p");
   const title = document.createElement("h3");
   const description = document.createElement("p");
+  const button = document.createElement("button");
 
   article.classList.add("project-card");
   article.dataset.projectId = project.id;
@@ -18,7 +19,12 @@ function createProjectArticle(project) {
   description.classList.add("project-card__description");
   description.textContent = project.description;
 
-  article.append(category, title, description);
+  button.classList.add("project-card__button");
+  button.type = "button";
+  button.dataset.projectOpen = project.id;
+  button.textContent = "Découvrir le projet";
+
+  article.append(category, title, description, button);
 
   return article;
 }
@@ -39,4 +45,6 @@ export async function loadProjects() {
   const projectArticles = projects.map((project) => createProjectArticle(project));
 
   projectsContainer.replaceChildren(...projectArticles);
+
+  return projects;
 }

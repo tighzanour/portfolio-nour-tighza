@@ -57,10 +57,16 @@
 
     <!-- fenêtre réutilisée pour les détails de chaque projet -->
     <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title">
-      <button class="dialog-close" type="button" data-close-dialog aria-label="Fermer la fiche du projet">Fermer</button>
+      <div class="dialog-header">
+        <p id="dialog-category" class="dialog-category">Catégorie</p>
 
-      <article id="dialog-content">
+        <button class="dialog-close" type="button" data-close-dialog aria-label="Fermer la fiche du projet">Fermer</button>
+      </div>
+
+      <article class="dialog-content">
         <h2 id="dialog-title">Détails du projet</h2>
+
+        <p id="dialog-description"></p>
       </article>
     </dialog>
 
