@@ -54,6 +54,10 @@
 
 -
 
-### 5. Utilisation de l'IA
+### 5. Prompts IA
 
-- #### [2026-09-18]
+- #### Générer le CSS de base en lien avec le thème de mon portfolio. [2026-09-19]
+
+  _je fais manuellement un portfolio one-page en HTML, CSS, JavaScript. Génère uniquement la base de mon fichier css/base.css, sans modifier mon HTML. Fait des variables CSS dans :root pour les couleurs, typo, espacements, dimensions et rayons. un reset avec box-sizing et border-box. les styles de base de html, body, main et section. une hiérarchie pour les h1, h2, h3. les styles généraux des liens, boutons images et vidéos/placeholders. Direction visuelle : atelier créatif sombre, chaleureux et cinématographique. Utilise un fond presque noir légèrement vert, du texte crème et un accent doré. le contraste doit être lisible. les titres doivent s'adapter à l'écran. le focus clavier doit être visible._
+
+- #### ? [2026-09-19]
