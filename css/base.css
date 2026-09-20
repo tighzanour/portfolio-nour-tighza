@@ -267,10 +267,6 @@ video {
 }
 
 @media (max-width: 40rem) {
-  main {
-    width: min(100% - (2 * var(--space-4)), var(--content-width));
-  }
-
   section {
     padding-block: var(--space-8);
   }
