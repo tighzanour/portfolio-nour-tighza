@@ -60,4 +60,6 @@
 
   _je fais manuellement un portfolio one-page en HTML, CSS, JavaScript. Génère uniquement la base de mon fichier css/base.css, sans modifier mon HTML. Fait des variables CSS dans :root pour les couleurs, typo, espacements, dimensions et rayons. un reset avec box-sizing et border-box. les styles de base de html, body, main et section. une hiérarchie pour les h1, h2, h3. les styles généraux des liens, boutons images et vidéos/placeholders. Direction visuelle : atelier créatif sombre, chaleureux et cinématographique. Utilise un fond presque noir légèrement vert, du texte crème et un accent doré. le contraste doit être lisible. les titres doivent s'adapter à l'écran. le focus clavier doit être visible._
 
-- #### ? [2026-09-19]
+- #### Générer le header, le hero, le titre et le conteneur. [2026-09-19]
+
+  _crée une première version simple du header et du hero de mon portfolio. Le site est en HTML et CSS. Utilise les variables deja presentes dans base.css. le header doit contenir mon nom et les liens Projets, A propos, et Contact. il doit rester visible en haut de la page. Le hero doit occuper toute la hauteur de l'écran et contenir mon titre et un court texte d'introduction. Ajoute aussi un conteneur vide qui servira à afficher le décor intéractif plus tard. Écris les styles dans components.css Modifie uniquement le contenu necessaire dans la section #hero. de index.html. N'ajoute aucune image, animation, pour l'instant et garde le code simple puis explique brièvement ce que tu as ajouté._
