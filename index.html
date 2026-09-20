@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="./css/base.css" />
@@ -12,10 +11,11 @@
   </head>
 
   <body>
-    <a class="skip-link" href="#contenu"> Aller au contenu principal </a>
+    <!-- permet de toujours accéder au contenu principal rapidement -->
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
     <header class="site-header">
-      <a class="site-logo" href="#hero" aria-label="Retour à l’accueil"> Nour Tighza </a>
+      <a class="site-logo" href="#hero">Nour Tighza</a>
 
       <nav aria-label="Navigation principale">
         <a href="#projets">Projets</a>
@@ -25,12 +25,11 @@
     </header>
 
     <main id="contenu">
+      <!-- hero avec le futur décor interactif -->
       <section id="hero" class="hero" aria-labelledby="hero-title">
         <div class="hero-content">
           <p class="hero-eyebrow">Portfolio de Nour Tighza</p>
-
           <h1 id="hero-title">Atelier</h1>
-
           <p class="hero-introduction">Je crée des expériences numériques sensibles, claires et singulières.</p>
         </div>
 
@@ -40,6 +39,7 @@
       <section id="projets" aria-labelledby="projects-title">
         <h2 id="projects-title">Mes projets</h2>
 
+        <!-- pour projects.json -->
         <div id="projects-list" class="projects-list">
           <p>Chargement des projets...</p>
         </div>
@@ -50,12 +50,12 @@
       </section>
 
       <section id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Je suis disponible</h2>
-
-        <a href="mailto:tighzanour@gmail.com"> tighzanour@gmail.com </a>
+        <h2 id="contact-title">Je suis disponible.</h2>
+        <a href="mailto:tighzanour@gmail.com">tighzanour@gmail.com</a>
       </section>
     </main>
 
+    <!-- fenêtre réutilisée pour les détails de chaque projet -->
     <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title">
       <button class="dialog-close" type="button" data-close-dialog aria-label="Fermer la fiche du projet">Fermer</button>
 

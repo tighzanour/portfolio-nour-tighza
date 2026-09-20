@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "atelier-01",
+    "title": "Identité visuelle",
+    "category": "Direction artistique",
+    "description": "Une identité visuelle pensée pour un atelier créatif."
+  },
+  {
+    "id": "atelier-02",
+    "title": "Interface éditoriale",
+    "category": "Design web",
+    "description": "Une interface simple pour mettre en valeur des contenus."
+  },
+  {
+    "id": "atelier-03",
+    "title": "Expérience interactive",
+    "category": "Développement créatif",
+    "description": "Une expérience web sensible construite autour du mouvement."
+  }
+]
