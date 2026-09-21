@@ -1,4 +1,5 @@
 import { loadProjects } from "./projects.js";
+import { createHeroButtons } from "./hero.js";
 
 const projectsContainer = document.querySelector("#projects-list");
 
@@ -15,7 +16,7 @@ const closeDialogButton = document.querySelector("[data-close-dialog]");
 let projects = [];
 let lastProjectButton = null;
 
-function openProjectDialog(project, button) {
+export function openProjectDialog(project, button) {
   if (!projectDialog || !dialogTitle || !dialogCategory || !dialogDescription) {
     return;
   }
@@ -39,6 +40,7 @@ function closeProjectDialog() {
 
 try {
   projects = await loadProjects();
+  createHeroButtons(projects, openProjectDialog);
 } catch (error) {
   if (projectsContainer) {
     projectsContainer.textContent = "Impossible de charger les projets pour le moment.";
