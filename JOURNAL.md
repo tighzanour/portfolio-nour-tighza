@@ -76,3 +76,7 @@
 - #### Scène immersive [2026-09-19]
 
   _Transforme mon hero en une scène immersive en plein écran. Met les six projets comme des objets interactifs dans la scène, ajoute leurs noms dans le JSON et affiche un bouton “Projet 01”, “Projet 02”, etc. sous chaque objet. Garde des formes temporaires pour les visuels et assure toi que le hero fonctionne aussi sur mobile._
+
+- #### Améliorer l’angle du background immersif [2026-09-21]
+
+  _j'aime beaucoup le style, cependant j,aimerais quelque chose de plus immersif en terme d'angle de vue, là c'est trop plat, voici des exemples, il faut un pov comme si on était derriere la chaise de bureau_
