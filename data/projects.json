@@ -3,36 +3,42 @@
     "id": "marketing-social",
     "title": "Marketing social",
     "category": "Marketing et réseaux sociaux",
+    "heroLabel": "Peluche panda roux",
     "description": "Création de contenu destiné aux réseaux sociaux. Présentation détaillée à compléter."
   },
   {
     "id": "juicy-wordpress",
     "title": "Juicy — WordPress",
     "category": "Design et développement web",
+    "heroLabel": "Ordi portable",
     "description": "Conception et intégration d’un site avec WordPress. Présentation détaillée à compléter."
   },
   {
     "id": "shopify-ventes",
     "title": "Shopify et ventes",
     "category": "Commerce électronique",
+    "heroLabel": "Sac weekender",
     "description": "Projet réalisé autour d’une boutique Shopify et de la mise en valeur de produits. Présentation détaillée à compléter."
   },
   {
     "id": "animation-3d",
     "title": "Animation 3D",
     "category": "Animation et mouvement",
+    "heroLabel": "Ordi desktop",
     "description": "Projet d’animation et de création visuelle en trois dimensions. Présentation détaillée à compléter."
   },
   {
     "id": "platformer-2d",
     "title": "Platformer 2D",
     "category": "Jeu et interactivité",
+    "heroLabel": "Dossier",
     "description": "Création d’une expérience interactive en deux dimensions avec Godot. Présentation détaillée à compléter."
   },
   {
     "id": "ia-appliquee",
     "title": "IA appliquée",
     "category": "Expérimentation",
+    "heroLabel": "iPhone",
     "description": "Exploration d’outils d’intelligence artificielle dans un processus créatif. Présentation détaillée à compléter."
   }
 ]

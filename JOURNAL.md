@@ -72,3 +72,7 @@
 - #### Rendre les projets cliquables avec des cartes de projet. [2026-09-19]
 
   _rends mes cartes de projets cliquables et affiche les infos du projet sélectionné dans dialog. modifie projects.js pour ouvrir le dialog avec le titre, la catégorie et la description du projet sélectionné. le dialog doit pouvoir etre fermé avec son bouton, la touche echap ou un clic à l'extérieur de la carte. ajoute dans components.css, un style simple et accessible pour les boutons, le dialog et le background du dialog. utilise seulement HTML, CSS et JavaScript. garde le code simple et explique moi tes modifications._
+
+- #### Scène immersive [2026-09-19]
+
+  _Transforme mon hero en une scène immersive en plein écran. Met les six projets comme des objets interactifs dans la scène, ajoute leurs noms dans le JSON et affiche un bouton “Projet 01”, “Projet 02”, etc. sous chaque objet. Garde des formes temporaires pour les visuels et assure toi que le hero fonctionne aussi sur mobile._
