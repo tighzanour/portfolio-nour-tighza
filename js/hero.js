@@ -21,7 +21,21 @@ function createHeroButton(project, index, openProjectDialog) {
   statusDot.setAttribute("aria-hidden", "true");
   projectLabel.prepend(statusDot);
 
-  button.append(objectName, projectLabel);
+  const buttonContent = [];
+
+  if (project.heroImage) {
+    const objectImage = document.createElement("img");
+
+    objectImage.classList.add("hero-stage__object-image");
+    objectImage.src = project.heroImage;
+    objectImage.alt = "";
+    objectImage.draggable = false;
+    button.classList.add("hero-stage__button--with-image");
+    buttonContent.push(objectImage);
+  }
+
+  buttonContent.push(objectName, projectLabel);
+  button.append(...buttonContent);
   button.addEventListener("click", () => {
     openProjectDialog(project, button);
   });

@@ -171,6 +171,21 @@
     box-shadow 180ms ease;
 }
 
+.hero-stage__button--with-image::before {
+  display: none;
+}
+
+.hero-stage__object-image {
+  width: var(--object-width);
+  max-width: none;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
+  filter: drop-shadow(0 1.25rem 1.3rem rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+  user-select: none;
+}
+
 .hero-stage__button:hover,
 .hero-stage__button:focus-visible {
   border-color: transparent;
@@ -226,7 +241,7 @@
 }
 
 .hero-stage__button:nth-child(2) {
-  --object-width: 13rem;
+  --object-width: 16rem;
   --object-ratio: 1.55;
   top: 42%;
   left: 33%;
