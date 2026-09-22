@@ -2,7 +2,8 @@
 
 tighza nour
 
-technique d'intégration multimédia - collège montmorency
+technique d'intégration multimédia
+collège montmorency
 
 tighzanour@gmail.com
 
