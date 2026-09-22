@@ -243,8 +243,8 @@
 .hero-stage__button:nth-child(2) {
   --object-width: 16rem;
   --object-ratio: 1.55;
-  top: 42%;
-  left: 33%;
+  top: 50%;
+  left: 36%;
 }
 
 .hero-stage__button:nth-child(3) {
