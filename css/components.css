@@ -230,10 +230,10 @@
 }
 
 .hero-stage__button:nth-child(1) {
-  --object-width: 10rem;
-  --object-ratio: 0.9;
-  top: 56%;
-  left: 13%;
+  --object-width: 17rem;
+  --object-ratio: 1.65;
+  top: 57%;
+  left: 15%;
 }
 
 .hero-stage__button:nth-child(2) {
@@ -244,10 +244,10 @@
 }
 
 .hero-stage__button:nth-child(3) {
-  --object-width: 17rem;
-  --object-ratio: 1.65;
-  top: 54%;
-  left: 66%;
+  --object-width: 15rem;
+  --object-ratio: 1.5;
+  top: 60%;
+  left: 64%;
 }
 
 .hero-stage__button:nth-child(4) {
@@ -258,9 +258,9 @@
 }
 
 .hero-stage__button:nth-child(5) {
-  --object-width: 12rem;
-  --object-ratio: 1.7;
-  top: 75%;
+  --object-width: 10rem;
+  --object-ratio: 0.9;
+  top: 72%;
   left: 52%;
 }
 

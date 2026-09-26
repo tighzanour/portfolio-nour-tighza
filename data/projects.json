@@ -1,11 +1,11 @@
 [
   {
-    "id": "marketing-social",
-    "title": "Marketing social",
-    "category": "Marketing et réseaux sociaux",
-    "heroLabel": "Peluche panda roux",
-    "heroImage": "./assets/images/hero/objects/red-panda-plush.png",
-    "description": "Création de contenu destiné aux réseaux sociaux. Présentation détaillée à compléter."
+    "id": "qlt-marque",
+    "title": "QLT — Création de marque",
+    "category": "Image de marque",
+    "heroLabel": "Sac weekender",
+    "heroImage": "./assets/images/hero/objects/weekender-bag.png",
+    "description": "Création de l’identité et de l’univers visuel de la marque QLT. Présentation détaillée à compléter."
   },
   {
     "id": "juicy-wordpress",
@@ -19,8 +19,8 @@
     "id": "shopify-ventes",
     "title": "Shopify et ventes",
     "category": "Commerce électronique",
-    "heroLabel": "Sac weekender",
-    "heroImage": "./assets/images/hero/objects/weekender-bag.png",
+    "heroLabel": "Dossier",
+    "heroImage": "./assets/images/hero/objects/shopify-folder.png",
     "description": "Projet réalisé autour d’une boutique Shopify et de la mise en valeur de produits. Présentation détaillée à compléter."
   },
   {
@@ -35,7 +35,8 @@
     "id": "platformer-2d",
     "title": "Platformer 2D",
     "category": "Jeu et interactivité",
-    "heroLabel": "Dossier",
+    "heroLabel": "Peluche panda roux",
+    "heroImage": "./assets/images/hero/objects/red-panda-plush.png",
     "description": "Création d’une expérience interactive en deux dimensions avec Godot. Présentation détaillée à compléter."
   },
   {
