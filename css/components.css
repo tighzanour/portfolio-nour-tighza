@@ -251,10 +251,10 @@
 }
 
 .hero-stage__button:nth-child(4) {
-  --object-width: 15rem;
-  --object-ratio: 1.4;
-  top: 30%;
-  left: 82%;
+  --object-width: 18rem;
+  --object-ratio: 1.5;
+  top: 41%;
+  left: 80%;
 }
 
 .hero-stage__button:nth-child(5) {
