@@ -1,5 +1,6 @@
 import { loadProjects } from "./projects.js";
 import { createHeroButtons } from "./hero.js";
+import { initHeroParallax } from "./animations.js";
 
 const projectsContainer = document.querySelector("#projects-list");
 
@@ -41,6 +42,7 @@ function closeProjectDialog() {
 try {
   projects = await loadProjects();
   createHeroButtons(projects, openProjectDialog);
+  initHeroParallax();
 } catch (error) {
   if (projectsContainer) {
     projectsContainer.textContent = "Impossible de charger les projets pour le moment.";

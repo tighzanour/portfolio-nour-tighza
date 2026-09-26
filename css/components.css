@@ -99,6 +99,8 @@
 /* Scène interactive du hero */
 
 .hero-stage {
+  --scene-x: 0rem;
+  --scene-y: 0rem;
   position: relative;
   width: min(100%, 92rem);
   min-height: clamp(42rem, calc(100svh - var(--header-height) - (2 * var(--space-5))), 58rem);
@@ -107,7 +109,7 @@
   background-color: #0b0d0c;
   background:
     linear-gradient(rgba(5, 7, 6, 0.08), rgba(5, 7, 6, 0.18)),
-    url("../assets/images/hero/background/hero-workshop-pov.png") center / cover no-repeat;
+    url("../assets/images/hero/background/hero-workshop-pov.png") calc(50% + var(--scene-x)) calc(50% + var(--scene-y)) / 102% auto no-repeat;
   box-shadow:
     inset 0 -8rem 10rem rgba(0, 0, 0, 0.42),
     inset 0 0 6rem rgba(0, 0, 0, 0.24);
@@ -132,6 +134,8 @@
 }
 
 .hero-stage__button {
+  --parallax-x: 0rem;
+  --parallax-y: 0rem;
   --object-width: 10rem;
   --object-ratio: 1;
   position: absolute;
@@ -148,7 +152,7 @@
   background: transparent;
   color: var(--color-text);
   text-align: center;
-  transform: translate(-50%, -50%);
+  transform: translate(calc(-50% + var(--parallax-x)), calc(-50% + var(--parallax-y)));
   transition:
     filter 180ms ease,
     transform 180ms ease;
@@ -187,7 +191,7 @@
   border-color: transparent;
   background: transparent;
   filter: brightness(1.16);
-  transform: translate(-50%, calc(-50% - 0.35rem));
+  transform: translate(calc(-50% + var(--parallax-x)), calc(-50% + var(--parallax-y) - 0.35rem));
 }
 
 .hero-stage__button:hover::before,

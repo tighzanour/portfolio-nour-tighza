@@ -80,3 +80,7 @@
 - #### Améliorer l’angle du background immersif [2026-09-21]
 
   _j'aime beaucoup le style, cependant j,aimerais quelque chose de plus immersif en terme d'angle de vue, là c'est trop plat, voici des exemples, il faut un pov comme si on était derriere la chaise de bureau_
+
+- #### Ajouter un effet de parallaxe au hero [2026-09-26]
+
+  _ajoute un léger parallax au hero. le background et les six objets doivent bouger à des profondeurs différentes selon la position du curseur de la souris. garde les boutons cliquables, évite les mouvements trop rapides et désactive l’effet sur mobile et quand l'utilisateur souhaite désactiver les animations._
