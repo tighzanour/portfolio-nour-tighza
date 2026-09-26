@@ -64,9 +64,7 @@
   padding-block: var(--space-5);
   padding-inline: max(var(--space-5), calc((100vw - var(--content-width)) / 2));
   overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 45%, rgba(213, 168, 95, 0.1), transparent 42%),
-    linear-gradient(180deg, #101512 0%, var(--color-background) 72%);
+  background: radial-gradient(circle at 50% 45%, rgba(213, 168, 95, 0.1), transparent 42%), linear-gradient(180deg, #101512 0%, var(--color-background) 72%);
 }
 
 .hero-content {
@@ -161,9 +159,7 @@
   aspect-ratio: var(--object-ratio);
   border: 1px solid rgba(242, 234, 216, 0.72);
   border-radius: 45% 55% 42% 58% / 52% 40% 60% 48%;
-  background:
-    linear-gradient(135deg, transparent 47%, rgba(242, 234, 216, 0.32) 48% 51%, transparent 52%),
-    rgba(255, 255, 255, 0.015);
+  background: linear-gradient(135deg, transparent 47%, rgba(242, 234, 216, 0.32) 48% 51%, transparent 52%), rgba(255, 255, 255, 0.015);
   box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.35);
   content: "";
   transition:
@@ -248,10 +244,10 @@
 }
 
 .hero-stage__button:nth-child(3) {
-  --object-width: 13rem;
+  --object-width: 17rem;
   --object-ratio: 1.65;
-  top: 38%;
-  left: 57%;
+  top: 54%;
+  left: 66%;
 }
 
 .hero-stage__button:nth-child(4) {
@@ -300,7 +296,8 @@
   margin: 0 auto;
 }
 
-/* Liste des projets */
+/* ----------------- Liste des projets --------------- */
+/* -------------------------------------------------- */
 
 .projects-list {
   display: grid;
