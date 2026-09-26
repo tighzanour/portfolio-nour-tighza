@@ -40,10 +40,11 @@
     "description": "Création d’une expérience interactive en deux dimensions avec Godot. Présentation détaillée à compléter."
   },
   {
-    "id": "ia-appliquee",
-    "title": "IA appliquée",
-    "category": "Expérimentation",
+    "id": "marketing-reseaux-sociaux",
+    "title": "Marketing et réseaux sociaux",
+    "category": "Stratégie de contenu",
     "heroLabel": "iPhone",
-    "description": "Exploration d’outils d’intelligence artificielle dans un processus créatif. Présentation détaillée à compléter."
+    "heroImage": "./assets/images/hero/objects/iphone-15-social.png",
+    "description": "Création de contenu, gestion de comptes et analyse des performances sur les réseaux sociaux. Présentation détaillée à compléter."
   }
 ]
