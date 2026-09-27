@@ -199,43 +199,14 @@
     0 1.5rem 3rem rgba(0, 0, 0, 0.42);
 }
 
-.hero-stage__object-name {
-  max-width: 13rem;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.hero-stage__project-label {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  min-width: 8.75rem;
-  padding: 0.65rem 0.9rem;
-  border: 1px solid rgba(213, 168, 95, 0.55);
-  border-radius: var(--radius-medium);
-  background: rgba(5, 8, 7, 0.9);
-  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.38);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.hero-stage__status {
-  width: 0.55rem;
-  height: 0.55rem;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  background: #35d36e;
-  box-shadow: 0 0 0.8rem #35d36e;
-}
-
 .hero-stage__button:nth-child(1) {
   --object-width: clamp(16rem, 24vw, 34rem);
   --object-ratio: 1.65;
   z-index: 4;
-  top: 58%;
-  left: 10%;
+  top: 40%;
+  left: 1%;
+  transform: rotate(-10deg);
+  transform-origin: center;
 }
 
 .hero-stage__button:nth-child(2) {
@@ -253,12 +224,12 @@
 .hero-stage__button:nth-child(3) {
   --object-width: clamp(15rem, 20vw, 28rem);
   --object-ratio: 1.5;
-  top: 63%;
-  left: 50%;
+  top: 60%;
+  left: 48%;
 }
 
 .hero-stage__button:nth-child(3) .hero-stage__object-image {
-  transform: rotate(-7deg);
+  transform: rotate(15deg);
   transform-origin: center;
 }
 
@@ -266,24 +237,26 @@
   --object-width: clamp(17rem, 22vw, 31rem);
   --object-ratio: 1.5;
   z-index: 4;
-  top: 55%;
+  top: 50%;
   left: 71%;
 }
 
 .hero-stage__button:nth-child(5) {
   --object-width: clamp(10rem, 14vw, 19rem);
   --object-ratio: 0.9;
-  z-index: 5;
-  top: 52%;
-  left: 29%;
+  z-index: 3;
+  top: 47%;
+  left: 25%;
 }
 
 .hero-stage__button:nth-child(6) {
   --object-width: clamp(8rem, 9vw, 13rem);
   --object-ratio: 1.65;
   z-index: 6;
-  top: 72%;
-  left: 64%;
+  top: 64%;
+  left: 65%;
+  transform: rotate(6deg);
+  transform-origin: center;
 }
 
 .hero-stage__foreground-chair {
@@ -555,11 +528,6 @@
 
   .hero-stage__foreground-chair {
     display: none;
-  }
-
-  .hero-stage__project-label {
-    min-width: 0;
-    padding-inline: var(--space-3);
   }
 
   #projets,
