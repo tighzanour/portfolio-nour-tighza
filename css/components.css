@@ -231,17 +231,19 @@
 }
 
 .hero-stage__button:nth-child(1) {
-  --object-width: clamp(13rem, 18vw, 24rem);
+  --object-width: clamp(16rem, 24vw, 34rem);
   --object-ratio: 1.65;
-  top: 61%;
-  left: 11%;
+  z-index: 4;
+  top: 58%;
+  left: 10%;
 }
 
 .hero-stage__button:nth-child(2) {
-  --object-width: clamp(13rem, 17vw, 23rem);
+  --object-width: clamp(14rem, 19vw, 27rem);
   --object-ratio: 1.55;
-  top: 57%;
-  left: 89%;
+  z-index: 5;
+  top: 65%;
+  left: 86%;
 }
 
 .hero-stage__button:nth-child(2) .hero-stage__object-image {
@@ -249,31 +251,39 @@
 }
 
 .hero-stage__button:nth-child(3) {
-  --object-width: clamp(11rem, 14vw, 20rem);
+  --object-width: clamp(15rem, 20vw, 28rem);
   --object-ratio: 1.5;
-  top: 56%;
-  left: 49%;
+  top: 63%;
+  left: 50%;
+}
+
+.hero-stage__button:nth-child(3) .hero-stage__object-image {
+  transform: rotate(-7deg);
+  transform-origin: center;
 }
 
 .hero-stage__button:nth-child(4) {
-  --object-width: clamp(15rem, 19vw, 26rem);
+  --object-width: clamp(17rem, 22vw, 31rem);
   --object-ratio: 1.5;
-  top: 44%;
-  left: 69%;
+  z-index: 4;
+  top: 55%;
+  left: 71%;
 }
 
 .hero-stage__button:nth-child(5) {
-  --object-width: clamp(8rem, 10vw, 13rem);
+  --object-width: clamp(10rem, 14vw, 19rem);
   --object-ratio: 0.9;
-  top: 49%;
-  left: 31%;
+  z-index: 5;
+  top: 52%;
+  left: 29%;
 }
 
 .hero-stage__button:nth-child(6) {
-  --object-width: clamp(7rem, 8vw, 11rem);
+  --object-width: clamp(8rem, 9vw, 13rem);
   --object-ratio: 1.65;
-  top: 75%;
-  left: 79%;
+  z-index: 6;
+  top: 72%;
+  left: 64%;
 }
 
 .hero-stage__foreground-chair {
@@ -282,7 +292,7 @@
   position: absolute;
   z-index: 5;
   bottom: clamp(-8rem, -7vw, -4rem);
-  left: 50%;
+  left: 42%;
   width: clamp(32rem, 54vw, 66rem);
   max-width: none;
   height: auto;
@@ -536,6 +546,10 @@
   }
 
   .hero-stage__button:nth-child(2) .hero-stage__object-image {
+    transform: none;
+  }
+
+  .hero-stage__button:nth-child(3) .hero-stage__object-image {
     transform: none;
   }
 

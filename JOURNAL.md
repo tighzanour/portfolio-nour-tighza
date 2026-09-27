@@ -96,3 +96,7 @@
 - #### Séparer complètement la chaise du décor [2026-09-26]
 
   _retire la chaise intégrée dans l’image de fond en reconstruisant le bureau et le sol cachés. garde la chaise séparée dans le hero et empêche la de dépasser de la scène._
+
+- #### Corriger la perspective du dossier Shopify [2026-09-27]
+
+  _recrée le dossier Shopify pour qu’il soit posé à plat sur le bureau. son côté gauche doit être plus proche et son côté droit doit remonter vers le fond en suivant la perspective de la table. conserve le contenu ecommerce et la lumière du hero._

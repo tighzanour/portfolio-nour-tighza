@@ -34,7 +34,7 @@ export async function loadProjects() {
     throw new Error("Le conteneur des projets est introuvable.");
   }
 
-  const response = await fetch("./data/projects.json");
+  const response = await fetch("./data/projects.json", { cache: "no-store" });
 
   if (!response.ok) {
     throw new Error(`Le chargement des projets a échoué (${response.status}).`);
