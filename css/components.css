@@ -135,6 +135,8 @@
   --parallax-y: 0rem;
   --object-width: 10rem;
   --object-ratio: 1;
+  --object-scale: 1;
+  --object-transform: none;
   position: absolute;
   z-index: 4;
   top: 50%;
@@ -173,22 +175,43 @@
 }
 
 .hero-stage__object-image {
-  width: var(--object-width);
+  display: block;
+  width: 100%;
   max-width: none;
   height: auto;
   border-radius: 0;
   background: transparent;
-  filter: drop-shadow(0 1.25rem 1.3rem rgba(0, 0, 0, 0.5));
+  filter: none;
   pointer-events: none;
+  transform: var(--object-transform);
+  transform-origin: center;
   user-select: none;
 }
 
-.hero-stage__button:hover,
+.hero-stage__object-visual {
+  display: block;
+  width: var(--object-width);
+  line-height: 0;
+  pointer-events: none;
+  transform: scale(var(--object-scale));
+  transform-origin: center;
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hero-stage__button:hover:not(:disabled),
 .hero-stage__button:focus-visible {
+  --object-scale: 1.1;
+  box-shadow: none;
   border-color: transparent;
   background: transparent;
-  filter: brightness(1.16);
-  transform: translate(calc(-50% + var(--parallax-x)), calc(-50% + var(--parallax-y) - 0.35rem));
+  color: inherit;
+  filter: none;
+  outline: none;
+}
+
+.hero-stage__button:hover:not(:disabled) .hero-stage__object-image,
+.hero-stage__button:focus-visible .hero-stage__object-image {
+  filter: drop-shadow(0 0 0.3rem rgba(240, 201, 121, 0.8));
 }
 
 .hero-stage__button:hover::before,
@@ -218,7 +241,7 @@
 }
 
 .hero-stage__button:nth-child(2) .hero-stage__object-image {
-  transform: scaleX(-1);
+  --object-transform: scaleX(-1);
 }
 
 .hero-stage__button:nth-child(3) {
@@ -229,8 +252,7 @@
 }
 
 .hero-stage__button:nth-child(3) .hero-stage__object-image {
-  transform: rotate(15deg);
-  transform-origin: center;
+  --object-transform: rotate(15deg);
 }
 
 .hero-stage__button:nth-child(4) {
@@ -513,17 +535,17 @@
     transform: none;
   }
 
-  .hero-stage__button:hover,
+  .hero-stage__button:hover:not(:disabled),
   .hero-stage__button:focus-visible {
-    transform: translateY(-0.25rem);
+    --object-scale: 1.08;
   }
 
   .hero-stage__button:nth-child(2) .hero-stage__object-image {
-    transform: none;
+    --object-transform: none;
   }
 
   .hero-stage__button:nth-child(3) .hero-stage__object-image {
-    transform: none;
+    --object-transform: none;
   }
 
   .hero-stage__foreground-chair {

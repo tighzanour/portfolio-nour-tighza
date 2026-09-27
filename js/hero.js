@@ -9,14 +9,17 @@ function createHeroButton(project, openProjectDialog) {
   button.setAttribute("aria-label", `${project.heroLabel} : ouvrir le projet ${project.title}`);
 
   if (project.heroImage) {
+    const objectVisual = document.createElement("span");
     const objectImage = document.createElement("img");
 
+    objectVisual.classList.add("hero-stage__object-visual");
     objectImage.classList.add("hero-stage__object-image");
     objectImage.src = project.heroImage;
     objectImage.alt = "";
     objectImage.draggable = false;
     button.classList.add("hero-stage__button--with-image");
-    button.append(objectImage);
+    objectVisual.append(objectImage);
+    button.append(objectVisual);
   }
 
   button.addEventListener("click", () => {

@@ -1,5 +1,5 @@
 import { loadProjects } from "./projects.js";
-import { createHeroButtons } from "./hero.js?v=3";
+import { createHeroButtons } from "./hero.js?v=4";
 import { initHeroParallax } from "./animations.js";
 
 const projectsContainer = document.querySelector("#projects-list");

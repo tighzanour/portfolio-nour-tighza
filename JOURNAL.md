@@ -100,3 +100,7 @@
 - #### Corriger la perspective du dossier Shopify [2026-09-27]
 
   _recrée le dossier Shopify pour qu’il soit posé à plat sur le bureau. son côté gauche doit être plus proche et son côté droit doit remonter vers le fond en suivant la perspective de la table. conserve le contenu ecommerce et la lumière du hero._
+
+- #### Ajouter un survol interactif aux objets [2026-09-27]
+
+  _maintenant fait en sorte que les objets soient dynamiquement zoomés lorsqu'on hover dessus, et que l'effet de hover ne soit pas un rectangle jaune mais plutot un simple contour des objets si possible_
