@@ -49,6 +49,13 @@ export function createHeroButtons(projects, openProjectDialog) {
   }
 
   const heroButtons = projects.slice(0, 6).map((project, index) => createHeroButton(project, index, openProjectDialog));
+  const foregroundChair = document.createElement("img");
 
-  heroStage.replaceChildren(...heroButtons);
+  foregroundChair.classList.add("hero-stage__foreground-chair");
+  foregroundChair.src = "./assets/images/hero/foreground/foreground-chair.png";
+  foregroundChair.alt = "";
+  foregroundChair.draggable = false;
+  foregroundChair.setAttribute("aria-hidden", "true");
+
+  heroStage.replaceChildren(...heroButtons, foregroundChair);
 }

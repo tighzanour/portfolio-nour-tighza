@@ -84,3 +84,15 @@
 - #### Ajouter un effet de parallaxe au hero [2026-09-26]
 
   _ajoute un léger parallax au hero. le background et les six objets doivent bouger à des profondeurs différentes selon la position du curseur de la souris. garde les boutons cliquables, évite les mouvements trop rapides et désactive l’effet sur mobile et quand l'utilisateur souhaite désactiver les animations._
+
+- #### Adapter le hero à toute la largeur de l’écran [2026-09-26]
+
+  _modifie le hero pour qu’il occupe toute la largeur de l’écran, même sur un grand moniteur et avec le zoom du navigateur. adapte la taille des objets à l’espace disponible sans créer de chevauchements et conserve une disposition stable sur mobile._
+
+- #### Corriger la perspective et la lumière des objets du hero [2026-09-26]
+
+  _replace les objets du hero pour qu’ils reposent logiquement sur le bureau. corrige leur perspective et leurs ombres avec une lumière chaude venant de la gauche. retourne les ordinateurs, garde la souris à droite et ajoute une chaise séparée au premier plan par-dessus les objets._
+
+- #### Séparer complètement la chaise du décor [2026-09-26]
+
+  _retire la chaise intégrée dans l’image de fond en reconstruisant le bureau et le sol cachés. garde la chaise séparée dans le hero et empêche la de dépasser de la scène._

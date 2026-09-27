@@ -4,6 +4,7 @@ const desktopQuery = window.matchMedia("(min-width: 48rem) and (pointer: fine)")
 export function initHeroParallax() {
   const stage = document.querySelector(".hero-stage");
   const objects = [...document.querySelectorAll(".hero-stage__button")];
+  const foregroundChair = document.querySelector(".hero-stage__foreground-chair");
 
   if (!stage || objects.length === 0 || motionQuery.matches || !desktopQuery.matches) {
     return;
@@ -24,6 +25,11 @@ export function initHeroParallax() {
       object.style.setProperty("--parallax-x", `${pointerX * depth}rem`);
       object.style.setProperty("--parallax-y", `${(pointerY * depth) + (scrollY * depth)}rem`);
     });
+
+    if (foregroundChair) {
+      foregroundChair.style.setProperty("--chair-x", `${pointerX * 0.9}rem`);
+      foregroundChair.style.setProperty("--chair-y", `${(pointerY * 0.45) + (scrollY * 0.35)}rem`);
+    }
 
     animationFrame = null;
   }
