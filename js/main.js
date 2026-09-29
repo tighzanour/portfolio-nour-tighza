@@ -1,6 +1,7 @@
 import { loadProjects } from "./projects.js";
 import { createHeroButtons } from "./hero.js?v=4";
 import { initHeroParallax } from "./animations.js";
+import { initAboutBook } from "./about.js";
 
 const projectsContainer = document.querySelector("#projects-list");
 
@@ -16,6 +17,8 @@ const closeDialogButton = document.querySelector("[data-close-dialog]");
 
 let projects = [];
 let lastProjectButton = null;
+
+initAboutBook();
 
 export function openProjectDialog(project, button) {
   if (!projectDialog || !dialogTitle || !dialogCategory || !dialogDescription) {

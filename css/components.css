@@ -456,11 +456,18 @@
   padding-block: clamp(4rem, 9vw, 8rem);
 }
 
+.about-book-shell {
+  position: relative;
+  width: 100%;
+  perspective: 100rem;
+}
+
 .about-book {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
   width: 100%;
+  aspect-ratio: 3 / 2;
   min-height: 34rem;
   overflow: hidden;
   border: 0.5rem solid #705740;
@@ -468,6 +475,38 @@
   background: #eadfc4;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.38);
   color: #35251d;
+  opacity: 0.35;
+  transform: scale(0.94);
+  transition:
+    opacity 600ms ease 350ms,
+    transform 900ms cubic-bezier(0.2, 0.75, 0.2, 1) 250ms;
+}
+
+.about-book__cover {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.45rem;
+  backface-visibility: hidden;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transform-origin: left center;
+  transition:
+    opacity 250ms ease 700ms,
+    transform 1100ms cubic-bezier(0.65, 0, 0.2, 1);
+}
+
+.about-book-section.is-open .about-book {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.about-book-section.is-open .about-book__cover {
+  opacity: 0;
+  transform: rotateY(-155deg);
 }
 
 .about-book__page {
@@ -674,8 +713,19 @@
 
   .about-book {
     grid-template-columns: 1fr;
+    aspect-ratio: auto;
     min-height: 0;
     border-width: 0.35rem;
+  }
+
+  .about-book__cover {
+    height: min(68vw, 18rem);
+    object-fit: cover;
+    transform-origin: top center;
+  }
+
+  .about-book-section.is-open .about-book__cover {
+    transform: translateY(-1rem) scale(0.96);
   }
 
   .about-book__spine {
@@ -695,5 +745,17 @@
   #apropos,
   #contact {
     width: min(100% - (2 * var(--space-4)), var(--content-width));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-book {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .about-book__cover {
+    display: none;
   }
 }
