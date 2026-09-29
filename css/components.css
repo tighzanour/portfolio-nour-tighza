@@ -228,7 +228,7 @@
   z-index: 4;
   top: 40%;
   left: 1%;
-  transform: rotate(-10deg);
+  transform: rotate(-5deg);
   transform-origin: center;
 }
 
@@ -252,7 +252,7 @@
 }
 
 .hero-stage__button:nth-child(3) .hero-stage__object-image {
-  --object-transform: rotate(15deg);
+  --object-transform: rotate(10deg);
 }
 
 .hero-stage__button:nth-child(4) {
