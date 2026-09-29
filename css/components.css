@@ -408,6 +408,125 @@
   border-color: var(--color-accent);
 }
 
+/* Transition vers la présentation personnelle */
+
+.portfolio-transition {
+  display: grid;
+  min-height: 60svh;
+  place-items: center;
+  padding-inline: var(--space-5);
+  border-block: 1px solid rgba(213, 168, 95, 0.2);
+  background:
+    radial-gradient(circle at 75% 45%, rgba(116, 62, 31, 0.34), transparent 42%),
+    linear-gradient(135deg, #0b0d0c, #1a100b 60%, #0b0d0c);
+}
+
+.portfolio-transition__content {
+  width: min(100%, var(--content-width));
+}
+
+.portfolio-transition__eyebrow,
+.portfolio-transition__hint {
+  color: var(--color-accent-strong);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.portfolio-transition h2 {
+  max-width: 12ch;
+  margin-bottom: var(--space-6);
+}
+
+.portfolio-transition h2 em {
+  display: block;
+  color: var(--color-accent-strong);
+  font-weight: inherit;
+}
+
+.portfolio-transition__hint {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+/* Livre de présentation */
+
+.about-book-section {
+  padding-block: clamp(4rem, 9vw, 8rem);
+}
+
+.about-book {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  width: 100%;
+  min-height: 34rem;
+  overflow: hidden;
+  border: 0.5rem solid #705740;
+  border-radius: 0.35rem;
+  background: #eadfc4;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.38);
+  color: #35251d;
+}
+
+.about-book__page {
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background: #f3e8cd;
+}
+
+.about-book__page--left {
+  box-shadow: inset -1.5rem 0 2rem -2rem rgba(54, 35, 23, 0.5);
+}
+
+.about-book__page--right {
+  box-shadow: inset 1.5rem 0 2rem -2rem rgba(54, 35, 23, 0.5);
+}
+
+.about-book__spine {
+  z-index: 1;
+  background: rgba(72, 47, 31, 0.35);
+  box-shadow: 0 0 1.25rem rgba(72, 47, 31, 0.38);
+}
+
+.about-book__eyebrow {
+  margin-bottom: var(--space-6);
+  color: #9b613f;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-book h2 {
+  max-width: 9ch;
+  color: #35251d;
+  font-size: clamp(2.5rem, 5vw, 4.75rem);
+}
+
+.about-book__page > p:not(.about-book__eyebrow, .about-book__signature) {
+  max-width: 31rem;
+  color: #5e4a3b;
+}
+
+.about-book__signature {
+  margin-top: var(--space-8);
+  color: #9b613f;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+.about-book__skills {
+  border-top: 1px solid rgba(83, 58, 42, 0.25);
+}
+
+.about-book__skills li {
+  padding-block: var(--space-4);
+  border-bottom: 1px solid rgba(83, 58, 42, 0.25);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+}
+
 /* Fenêtre de projet */
 
 .project-dialog {
@@ -550,6 +669,25 @@
 
   .hero-stage__foreground-chair {
     display: none;
+  }
+
+  .about-book {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    border-width: 0.35rem;
+  }
+
+  .about-book__spine {
+    height: 1px;
+  }
+
+  .about-book__page {
+    padding: var(--space-6);
+  }
+
+  .about-book__page--left,
+  .about-book__page--right {
+    box-shadow: none;
   }
 
   #projets,

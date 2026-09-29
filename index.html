@@ -6,7 +6,7 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/components.css?v=3" />
+    <link rel="stylesheet" href="./css/components.css?v=5" />
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
 
@@ -45,8 +45,38 @@
         </div>
       </section>
 
-      <section id="apropos" aria-labelledby="about-title">
-        <h2 id="about-title">Créer avec curiosité</h2>
+      <section class="portfolio-transition" aria-labelledby="transition-title">
+        <div class="portfolio-transition__content">
+          <p class="portfolio-transition__eyebrow">Après les projets</p>
+          <h2 id="transition-title">
+            Toujours curieux.
+            <em>Mais perfectionniste.</em>
+          </h2>
+          <p class="portfolio-transition__hint">Quelques pages sur moi</p>
+        </div>
+      </section>
+
+      <section id="apropos" class="about-book-section" aria-labelledby="about-title">
+        <div class="about-book">
+          <article class="about-book__page about-book__page--left">
+            <p class="about-book__eyebrow">À propos</p>
+            <h2 id="about-title">Créer avec curiosité.</h2>
+            <p>Je crée des expériences numériques sensibles, claires et singulières.</p>
+            <p class="about-book__signature">Nour Tighza</p>
+          </article>
+
+          <div class="about-book__spine" aria-hidden="true"></div>
+
+          <article class="about-book__page about-book__page--right">
+            <p class="about-book__eyebrow">Ce que j’apporte</p>
+            <ul class="about-book__skills">
+              <li>Marketing numérique</li>
+              <li>Intégration web</li>
+              <li>Création de contenu</li>
+              <li>Expériences interactives</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section id="contact" aria-labelledby="contact-title">
