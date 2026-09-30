@@ -465,8 +465,8 @@
 .about-book {
   position: relative;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   width: 100%;
-  aspect-ratio: 3 / 2;
   min-height: 34rem;
   overflow: visible;
   border: 0.5rem solid #705740;
@@ -481,11 +481,24 @@
     transform 900ms cubic-bezier(0.2, 0.75, 0.2, 1) 250ms;
 }
 
+/* Les deux doubles pages partagent la hauteur du contenu le plus grand,
+   même quand l'une est invisible. Le ratio reste une taille minimale. */
+.about-book::before {
+  content: "";
+  grid-area: 1 / 1;
+  align-self: start;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 3 / 2;
+  pointer-events: none;
+}
+
 .about-book__spread {
+  position: relative;
   grid-area: 1 / 1;
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
-  min-height: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-width: 0;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -511,7 +524,7 @@
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .about-book__leaf {
@@ -610,6 +623,7 @@
 }
 
 .about-book__page {
+  min-width: 0;
   padding: clamp(2rem, 5vw, 4.5rem);
   background: #f3e8cd;
 }
@@ -623,6 +637,9 @@
 }
 
 .about-book__spine {
+  position: absolute;
+  inset: 0 auto 0 50%;
+  width: 1px;
   z-index: 1;
   background: rgba(72, 47, 31, 0.35);
   box-shadow: 0 0 1.25rem rgba(72, 47, 31, 0.38);
@@ -910,13 +927,17 @@
   }
 
   .about-book {
-    aspect-ratio: auto;
     min-height: 0;
     border-width: 0.35rem;
   }
 
+  .about-book::before {
+    display: none;
+  }
+
   .about-book__spread {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 
 
@@ -931,6 +952,8 @@
   }
 
   .about-book__spine {
+    inset: 50% 0 auto;
+    width: auto;
     height: 1px;
   }
 

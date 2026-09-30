@@ -120,3 +120,7 @@
 - #### Affiner la rotation du livre et retirer les fonds des icônes [2026-09-30]
 
   _c'est pas assez bien, j'aimerais que ce soit encore mieux comme animation, plus réaliste et satisfaisant, et les icones sans fond en png_
+
+- #### Stabiliser les dimensions du livre pendant la navigation [2026-09-30]
+
+  _l'animation est bien, cependant lorsqu'on passe a la page suivante, l'affichage bug, regarde les screenshots, assures toi que la taille des pages et du livre ne change pas. fixe ça_
