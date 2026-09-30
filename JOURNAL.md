@@ -112,3 +112,11 @@
 - #### Ajouter des pages interactives au livre [2026-09-29]
 
   _maintenant continue, ajoute une page au livre avec une animation et un bouton pour la tourner et pouvoir revenir en arrière, sur les prochaines pages, il y aura les logiciels et applications que j'utilise selon la catégorie ou types de travail/projet_
+
+- #### Améliorer l’animation des pages et ajouter les icônes [2026-09-30]
+
+  _j'aimerais vraiment une animation de page qui tourne plutot que juste l'animaton actuelle. j'aimerais aussi les icones des logiciels/applications plutot que juste du texte._
+
+- #### Affiner la rotation du livre et retirer les fonds des icônes [2026-09-30]
+
+  _c'est pas assez bien, j'aimerais que ce soit encore mieux comme animation, plus réaliste et satisfaisant, et les icones sans fond en png_

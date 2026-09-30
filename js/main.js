@@ -1,7 +1,7 @@
 import { loadProjects } from "./projects.js";
 import { createHeroButtons } from "./hero.js?v=4";
 import { initHeroParallax } from "./animations.js";
-import { initAboutBook } from "./about.js?v=2";
+import { initAboutBook } from "./about.js?v=4";
 
 const projectsContainer = document.querySelector("#projects-list");
 

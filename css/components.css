@@ -468,7 +468,7 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   min-height: 34rem;
-  overflow: hidden;
+  overflow: visible;
   border: 0.5rem solid #705740;
   border-radius: 0.35rem;
   background: #eadfc4;
@@ -489,17 +489,6 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(4%) rotateY(8deg);
-  transform-origin: left center;
-  transition:
-    opacity 240ms ease,
-    transform 650ms cubic-bezier(0.2, 0.75, 0.2, 1),
-    visibility 0s linear 650ms;
-}
-
-.about-book__spread--about {
-  transform: translateX(-4%) rotateY(-8deg);
-  transform-origin: right center;
 }
 
 .about-book__spread.is-active {
@@ -507,8 +496,90 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(0) rotateY(0);
-  transition-delay: 180ms;
+}
+
+.about-book__turn-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  perspective: 1800px;
+  perspective-origin: 50% 45%;
+  pointer-events: none;
+}
+
+.about-book__turn-underneath {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-book__leaf {
+  position: absolute;
+  inset: 0 0 0 50%;
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.about-book__leaf.is-backward {
+  inset: 0 50% 0 0;
+  transform-origin: right center;
+}
+
+.about-book__leaf-face {
+  position: absolute;
+  inset: 0;
+  background: #f3e8cd;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0.5px);
+  box-shadow: 2px 0 0 #c8b799, 0 8px 20px rgb(35 21 9 / 12%);
+}
+
+.about-book__leaf-face--back {
+  transform: rotateY(180deg) translateZ(0.5px);
+}
+
+.about-book__leaf-face > .about-book__page {
+  height: 100%;
+}
+
+.about-book__leaf-shade {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(90deg, #49321e, transparent 85%);
+  pointer-events: none;
+}
+
+.about-book__turn-shadow {
+  position: absolute;
+  inset: 0 0 0 50%;
+  transform-origin: left;
+  opacity: 0;
+  background: linear-gradient(90deg, #3a2614, transparent);
+}
+
+.about-book__turn-shadow.is-backward {
+  inset: 0 50% 0 0;
+  transform-origin: right;
+  background: linear-gradient(270deg, #3a2614, transparent);
+}
+
+/* Sur téléphone, la feuille occupe la largeur de la lecture verticale. */
+.about-book__turn-stage.is-mobile .about-book__turn-underneath {
+  display: block;
+}
+
+.about-book__turn-stage.is-mobile .about-book__spread {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.about-book__turn-stage.is-mobile .about-book__leaf {
+  inset: 0;
 }
 
 .about-book__cover {
@@ -611,10 +682,39 @@
   font-size: clamp(1.25rem, 2vw, 1.75rem);
 }
 
-.about-book__tool-group p,
 .about-book__note {
   margin-bottom: 0;
   color: #6b5140;
+}
+
+.about-book__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.about-book__tools li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 4.5rem;
+  padding: var(--space-2) 0;
+  border: 0;
+  background: none;
+  color: #49362b;
+  font-size: 0.9rem;
+}
+
+.about-book__tools img {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  object-fit: contain;
 }
 
 .about-book__note {
@@ -819,6 +919,7 @@
     grid-template-columns: 1fr;
   }
 
+
   .about-book__cover {
     height: min(68vw, 18rem);
     object-fit: cover;
@@ -876,6 +977,10 @@
 
   .about-book__spread {
     transition: none;
+  }
+
+  .about-book__turn-stage {
+    display: none;
   }
 
   .about-book__controls {
