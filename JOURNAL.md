@@ -124,3 +124,7 @@
 - #### Stabiliser les dimensions du livre pendant la navigation [2026-09-30]
 
   _l'animation est bien, cependant lorsqu'on passe a la page suivante, l'affichage bug, regarde les screenshots, assures toi que la taille des pages et du livre ne change pas. fixe ça_
+
+- #### Séparer le chargement JSON de l'affichage [2026-09-30]
+
+  **(extraits, avec les consignes)** :_voici des instructions, ajuste au besoin, j'utilise JSON_ ; _je vais avoir des liens, videos et images_.

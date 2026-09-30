@@ -29,22 +29,13 @@ function createProjectArticle(project) {
   return article;
 }
 
-export async function loadProjects() {
+export function renderProjects(projects) {
   if (!projectsContainer) {
     throw new Error("Le conteneur des projets est introuvable.");
   }
-
-  const response = await fetch("./data/projects.json", { cache: "no-store" });
-
-  if (!response.ok) {
-    throw new Error(`Le chargement des projets a échoué (${response.status}).`);
-  }
-
-  const projects = await response.json();
 
   const projectArticles = projects.map((project) => createProjectArticle(project));
 
   projectsContainer.replaceChildren(...projectArticles);
 
-  return projects;
 }

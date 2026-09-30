@@ -77,6 +77,21 @@ Le fichier contiendra:
 
 Le fichier sera chargé de façon asynchrone avec `fetch()` en JavaScript.
 
+`js/data.js` exporte `loadProjects()`, qui retourne un tableau sans modifier le HTML.
+`js/projects.js` affiche les cartes et `js/main.js` utilise les mêmes données pour les objets du hero et la modale.
+Un changement de source ne nécessitera de modifier que `data.js`.
+
+Chaque projet utilise les propriétés communes `id`, `title`, `description`, `category`,
+`year`, `image`, `link`, `video` et `gallery`. Les propriétés supplémentaires
+`heroLabel` et `heroImage` servent uniquement aux objets de l'atelier.
+`image` est l'image principale du projet, différente de l'objet décoratif `heroImage`.
+`gallery` est un tableau de chemins d'images ; `video` sera une URL d'intégration
+YouTube ou Vimeo, pas une URL de page de visionnement.
+
+À compléter : les années et les images principales (obligatoires pour la remise),
+ainsi que les liens, vidéos et galeries disponibles. Pour le moment, leurs valeurs
+sont vides ; les six projets existants sont conservés sans duplication fictive.
+
 Raisons du choix:
 
 - séparer les données du HTML;

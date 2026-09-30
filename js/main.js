@@ -1,4 +1,5 @@
-import { loadProjects } from "./projects.js";
+import { loadProjects } from "./data.js";
+import { renderProjects } from "./projects.js?v=2";
 import { createHeroButtons } from "./hero.js?v=4";
 import { initHeroParallax } from "./animations.js";
 import { initAboutBook } from "./about.js?v=4";
@@ -44,6 +45,7 @@ function closeProjectDialog() {
 
 try {
   projects = await loadProjects();
+  renderProjects(projects);
   createHeroButtons(projects, openProjectDialog);
   initHeroParallax();
 } catch (error) {
