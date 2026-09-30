@@ -108,3 +108,7 @@
 - #### Créer et animer le livre de la section À propos [2026-09-29]
 
   _continue avec la section à propos, j'aimerais que le livre soit fermé puis s'ouvre avec une animation lorsqu'on scroll, voici à quoi ressemblerait le livre fermé avant qu'il souvre: dessus un scarabée doré brodé, une texture de cuir/livre ancient et usé, utilise le même style que le hero et les objets evidemment._
+
+- #### Ajouter des pages interactives au livre [2026-09-29]
+
+  _maintenant continue, ajoute une page au livre avec une animation et un bouton pour la tourner et pouvoir revenir en arrière, sur les prochaines pages, il y aura les logiciels et applications que j'utilise selon la catégorie ou types de travail/projet_

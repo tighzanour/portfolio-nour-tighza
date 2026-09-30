@@ -465,7 +465,6 @@
 .about-book {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
   width: 100%;
   aspect-ratio: 3 / 2;
   min-height: 34rem;
@@ -480,6 +479,36 @@
   transition:
     opacity 600ms ease 350ms,
     transform 900ms cubic-bezier(0.2, 0.75, 0.2, 1) 250ms;
+}
+
+.about-book__spread {
+  grid-area: 1 / 1;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  min-height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(4%) rotateY(8deg);
+  transform-origin: left center;
+  transition:
+    opacity 240ms ease,
+    transform 650ms cubic-bezier(0.2, 0.75, 0.2, 1),
+    visibility 0s linear 650ms;
+}
+
+.about-book__spread--about {
+  transform: translateX(-4%) rotateY(-8deg);
+  transform-origin: right center;
+}
+
+.about-book__spread.is-active {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) rotateY(0);
+  transition-delay: 180ms;
 }
 
 .about-book__cover {
@@ -565,6 +594,75 @@
   border-bottom: 1px solid rgba(83, 58, 42, 0.25);
   font-family: var(--font-display);
   font-size: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.about-book__tool-group {
+  padding-block: var(--space-5);
+  border-top: 1px solid rgba(83, 58, 42, 0.25);
+}
+
+.about-book__tool-group:last-of-type {
+  border-bottom: 1px solid rgba(83, 58, 42, 0.25);
+}
+
+.about-book__tool-group h3 {
+  margin-bottom: var(--space-2);
+  color: #35251d;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+.about-book__tool-group p,
+.about-book__note {
+  margin-bottom: 0;
+  color: #6b5140;
+}
+
+.about-book__note {
+  margin-top: var(--space-7);
+  font-style: italic;
+}
+
+.about-book__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+  opacity: 0;
+  transform: translateY(0.75rem);
+  transition:
+    opacity 350ms ease 850ms,
+    transform 350ms ease 850ms;
+}
+
+.about-book-section.is-open .about-book__controls {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-book__controls button {
+  min-width: 8.5rem;
+  border-color: rgba(229, 184, 75, 0.55);
+  background: #18231f;
+  color: var(--color-text);
+}
+
+.about-book__controls button:hover:not(:disabled),
+.about-book__controls button:focus-visible {
+  border-color: var(--color-accent-strong);
+  color: var(--color-accent-strong);
+}
+
+.about-book__controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}
+
+.about-book__status {
+  min-width: 9rem;
+  margin: 0;
+  color: var(--color-text-muted);
+  text-align: center;
 }
 
 /* Fenêtre de projet */
@@ -712,10 +810,13 @@
   }
 
   .about-book {
-    grid-template-columns: 1fr;
     aspect-ratio: auto;
     min-height: 0;
     border-width: 0.35rem;
+  }
+
+  .about-book__spread {
+    grid-template-columns: 1fr;
   }
 
   .about-book__cover {
@@ -741,6 +842,20 @@
     box-shadow: none;
   }
 
+  .about-book__controls {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .about-book__controls button {
+    min-width: 7.5rem;
+  }
+
+  .about-book__status {
+    order: -1;
+    width: 100%;
+  }
+
   #projets,
   #apropos,
   #contact {
@@ -757,5 +872,15 @@
 
   .about-book__cover {
     display: none;
+  }
+
+  .about-book__spread {
+    transition: none;
+  }
+
+  .about-book__controls {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

@@ -6,7 +6,7 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/components.css?v=7" />
+    <link rel="stylesheet" href="./css/components.css?v=8" />
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
 
@@ -58,34 +58,78 @@
 
       <section id="apropos" class="about-book-section" aria-labelledby="about-title">
         <div class="about-book-shell">
-          <div class="about-book">
-            <article class="about-book__page about-book__page--left">
-              <p class="about-book__eyebrow">À propos</p>
-              <h2 id="about-title">Créer avec curiosité.</h2>
-              <p>Je crée des expériences numériques sensibles, claires et singulières.</p>
-              <p class="about-book__signature">Nour Tighza</p>
-            </article>
+          <div class="about-book" data-about-book>
+            <div class="about-book__spread about-book__spread--about is-active" data-book-spread aria-hidden="false">
+              <article class="about-book__page about-book__page--left">
+                <p class="about-book__eyebrow">À propos</p>
+                <h2 id="about-title">Créer avec curiosité.</h2>
+                <p>Je crée des expériences numériques sensibles, claires et singulières.</p>
+                <p class="about-book__signature">Nour Tighza</p>
+              </article>
 
-            <div class="about-book__spine" aria-hidden="true"></div>
+              <div class="about-book__spine" aria-hidden="true"></div>
 
-            <article class="about-book__page about-book__page--right">
-              <p class="about-book__eyebrow">Ce que j’apporte</p>
-              <ul class="about-book__skills">
-                <li>Marketing numérique</li>
-                <li>Intégration web</li>
-                <li>Création de contenu</li>
-                <li>Expériences interactives</li>
-              </ul>
-            </article>
+              <article class="about-book__page about-book__page--right">
+                <p class="about-book__eyebrow">Ce que j’apporte</p>
+                <ul class="about-book__skills">
+                  <li>Marketing numérique</li>
+                  <li>Intégration web</li>
+                  <li>Création de contenu</li>
+                  <li>Expériences interactives</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="about-book__spread about-book__spread--tools" data-book-spread aria-hidden="true">
+              <article class="about-book__page about-book__page--left">
+                <p class="about-book__eyebrow">Ma boîte à outils</p>
+                <h2>Des outils selon le projet.</h2>
+                <p>Je choisis mes logiciels selon l’objectif, le format et le public du projet.</p>
+
+                <div class="about-book__tool-group">
+                  <h3>Création visuelle</h3>
+                  <p>Figma · Canva · CapCut</p>
+                </div>
+
+                <div class="about-book__tool-group">
+                  <h3>Web et commerce</h3>
+                  <p>Visual Studio Code · WordPress · Shopify</p>
+                </div>
+              </article>
+
+              <div class="about-book__spine" aria-hidden="true"></div>
+
+              <article class="about-book__page about-book__page--right">
+                <p class="about-book__eyebrow">Logiciels et applications</p>
+
+                <div class="about-book__tool-group">
+                  <h3>Contenu et réseaux sociaux</h3>
+                  <p>Instagram · TikTok · CapCut</p>
+                </div>
+
+                <div class="about-book__tool-group">
+                  <h3>Interactivité</h3>
+                  <p>Godot</p>
+                </div>
+
+                <p class="about-book__note">Cette sélection évolue avec mes projets et les besoins de chaque production.</p>
+              </article>
+            </div>
           </div>
 
           <img
             class="about-book__cover"
-      src="./assets/images/about/closed-scarab-book-v3.png"
+            src="./assets/images/about/closed-scarab-book-v3.png"
             alt=""
             aria-hidden="true"
           />
         </div>
+
+        <nav class="about-book__controls" aria-label="Navigation dans le livre">
+          <button type="button" data-book-previous disabled>← Précédent</button>
+          <p class="about-book__status" aria-live="polite">Double page 1 sur 2</p>
+          <button type="button" data-book-next>Suivant →</button>
+        </nav>
       </section>
 
       <section id="contact" aria-labelledby="contact-title">
@@ -113,6 +157,6 @@
       <p>2026 Nour Tighza. Tous droits réservés.</p>
     </footer>
 
-    <script type="module" src="./js/main.js?v=6"></script>
+    <script type="module" src="./js/main.js?v=7"></script>
   </body>
 </html>
