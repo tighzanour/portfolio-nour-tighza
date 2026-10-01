@@ -136,3 +136,7 @@
 - #### Ajouter du contenue dans les cartes pour les projets et ajouter la section contact [2026-10-01]
 
   _Ajoute le contenue que je t'ai donné aux cartes et ajoute la section contact avec les éléments de base._
+
+- #### Optimisation des fichiers [2026-10-01]
+
+  _Optimise les fichiers._

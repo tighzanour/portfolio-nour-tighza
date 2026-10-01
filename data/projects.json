@@ -45,7 +45,7 @@
   {
     "id": "shopify-ventes",
     "year": "",
-    "image": "./assets/images/projects/shopify/mugiwara-home.png",
+    "image": "./assets/images/projects/shopify/mugiwara-home.webp",
     "link": "",
     "video": "",
     "role": "Conception et intégration e-commerce",
@@ -59,8 +59,8 @@
       "Shopify"
     ],
     "gallery": [
-      "./assets/images/projects/shopify/mugiwara-products.png",
-      "./assets/images/projects/shopify/jeff-shark-collections.png"
+      "./assets/images/projects/shopify/mugiwara-products.webp",
+      "./assets/images/projects/shopify/jeff-shark-collections.webp"
     ],
     "title": "Shopify et ventes",
     "category": "Commerce électronique",
@@ -118,7 +118,7 @@
   {
     "id": "marketing-reseaux-sociaux",
     "year": "",
-    "image": "./assets/images/projects/social-media/mugiwara-instagram.png",
+    "image": "./assets/images/projects/social-media/mugiwara-instagram.webp",
     "link": "",
     "video": "",
     "role": "Création de contenu et gestion de comptes",
@@ -132,7 +132,7 @@
       "Instagram"
     ],
     "gallery": [
-      "./assets/images/projects/social-media/goofy-kitty-cats-instagram.png"
+      "./assets/images/projects/social-media/goofy-kitty-cats-instagram.webp"
     ],
     "title": "Marketing et réseaux sociaux",
     "category": "Stratégie de contenu",
