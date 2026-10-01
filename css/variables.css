@@ -1,0 +1,41 @@
+/* Variables communes du portfolio.
+   Elles demeurent aussi dans base.css pour conserver la compatibilité actuelle. */
+:root {
+  --color-background: #111a17;
+  --color-surface: #18231f;
+  --color-surface-raised: #21302a;
+  --color-text: #f2ead8;
+  --color-text-muted: #c7c0b0;
+  --color-accent: #d5a85f;
+  --color-accent-strong: #f0c979;
+  --color-accent-contrast: #1b1710;
+  --color-border: #3b473e;
+  --color-focus: #f5d58a;
+  --color-placeholder: #26352e;
+  --font-body: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-size-body: 1rem;
+  --line-height-body: 1.6;
+  --line-height-heading: 1.1;
+  --font-weight-regular: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+  --letter-spacing-heading: -0.025em;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --content-width: 72rem;
+  --reading-width: 42rem;
+  --control-height: 2.75rem;
+  --media-ratio: 16 / 10;
+  --radius-small: 0.25rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 1rem;
+  --radius-pill: 999rem;
+}

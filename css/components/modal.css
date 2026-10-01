@@ -1,0 +1,203 @@
+/* Fenêtre de détail des projets du one-pager. */
+.project-dialog {
+  width: min(calc(100% - 2rem), 58rem);
+  max-height: min(85svh, 48rem);
+  padding: 0;
+  overflow: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.65);
+}
+
+.project-dialog::backdrop {
+  background: rgba(5, 8, 7, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.project-dialog[open] {
+  animation: dialog-entrance 250ms ease-out;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dialog-category {
+  margin: 0;
+  color: var(--color-accent-strong);
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dialog-close {
+  flex-shrink: 0;
+}
+
+.dialog-content {
+  padding: var(--space-7);
+}
+
+.dialog-content h2 {
+  margin-bottom: var(--space-5);
+}
+
+.dialog-content p {
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+}
+
+.dialog-image {
+  width: 100%;
+  max-height: 30rem;
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--color-border);
+  background: color-mix(in srgb, var(--color-background) 75%, black);
+  object-fit: contain;
+}
+
+.dialog-year {
+  margin-bottom: var(--space-2);
+  color: var(--color-accent-strong);
+  font-size: 0.9rem;
+}
+
+.dialog-details {
+  display: grid;
+  gap: var(--space-4);
+  margin: var(--space-6) 0 0;
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+.dialog-details > div {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.35fr) 1fr;
+  gap: var(--space-4);
+}
+
+.dialog-details dt {
+  color: var(--color-accent-strong);
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dialog-details dd {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.dialog-tasks {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.dialog-tasks li::marker {
+  color: var(--color-accent-strong);
+}
+
+.dialog-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.dialog-tools span {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.dialog-media-section {
+  margin-top: var(--space-7);
+}
+
+.dialog-media-section h3 {
+  margin-bottom: var(--space-4);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.dialog-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.dialog-gallery img {
+  width: 100%;
+  height: 13rem;
+  border: 1px solid var(--color-border);
+  background: color-mix(in srgb, var(--color-background) 75%, black);
+  object-fit: contain;
+}
+
+.dialog-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+}
+
+.dialog-link {
+  display: inline-flex;
+  min-height: var(--control-height);
+  align-items: center;
+  margin-top: var(--space-7);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-small);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+}
+
+.dialog-content [hidden] {
+  display: none;
+}
+
+@media (max-width: 40rem) {
+  .dialog-content {
+    padding: var(--space-5);
+  }
+
+  .dialog-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .dialog-gallery img {
+    height: auto;
+  }
+
+  .dialog-details > div {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+}
+
+@keyframes dialog-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
+    <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css?v=2" />
     <link rel="stylesheet" href="./css/components.css?v=11" />
+    <link rel="stylesheet" href="./css/components/navigation.css" />
+    <link rel="stylesheet" href="./css/components/project-card.css?v=2" />
+    <link rel="stylesheet" href="./css/components/modal.css?v=5" />
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
 
@@ -147,8 +152,19 @@
       </section>
 
       <section id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Je suis disponible.</h2>
-        <a href="mailto:tighzanour@gmail.com">tighzanour@gmail.com</a>
+        <article class="contact-card">
+          <p class="contact-card__eyebrow">La prochaine page</p>
+          <h2 id="contact-title">
+            Et si on créait
+            <em>la suite ensemble&nbsp;?</em>
+          </h2>
+          <p class="contact-card__availability">Je suis disponible pour discuter d’un projet ou d’une collaboration.</p>
+          <a class="contact-card__email" href="mailto:tighzanour@gmail.com">
+            <span aria-hidden="true">✉</span>
+            tighzanour@gmail.com
+          </a>
+          <p class="contact-card__signature">À bientôt, Nour.</p>
+        </article>
       </section>
     </main>
 
@@ -161,9 +177,53 @@
       </div>
 
       <article class="dialog-content">
+        <img id="dialog-image" class="dialog-image" src="" alt="" hidden />
+
+        <p id="dialog-year" class="dialog-year" hidden></p>
+
         <h2 id="dialog-title">Détails du projet</h2>
 
         <p id="dialog-description"></p>
+
+        <dl id="dialog-details" class="dialog-details" hidden>
+          <div id="dialog-role-row" hidden>
+            <dt>Mon rôle</dt>
+            <dd id="dialog-role"></dd>
+          </div>
+
+          <div id="dialog-tasks-row" hidden>
+            <dt>Réalisations</dt>
+            <dd>
+              <ul id="dialog-tasks" class="dialog-tasks"></ul>
+            </dd>
+          </div>
+
+          <div id="dialog-tools-row" hidden>
+            <dt>Outils utilisés</dt>
+            <dd id="dialog-tools" class="dialog-tools"></dd>
+          </div>
+        </dl>
+
+        <section id="dialog-gallery-section" class="dialog-media-section" aria-labelledby="dialog-gallery-title" hidden>
+          <h3 id="dialog-gallery-title">Galerie</h3>
+          <div id="dialog-gallery" class="dialog-gallery"></div>
+        </section>
+
+        <section id="dialog-video-section" class="dialog-media-section" aria-labelledby="dialog-video-title" hidden>
+          <h3 id="dialog-video-title">Vidéo</h3>
+          <iframe
+            id="dialog-video"
+            class="dialog-video"
+            src=""
+            title="Vidéo du projet"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <a id="dialog-link" class="dialog-link" href="" target="_blank" rel="noopener noreferrer" hidden>
+          Voir le projet
+        </a>
       </article>
     </dialog>
 
@@ -171,6 +231,6 @@
       <p>2026 Nour Tighza. Tous droits réservés.</p>
     </footer>
 
-    <script type="module" src="./js/main.js?v=10"></script>
+    <script type="module" src="./js/main.js?v=15"></script>
   </body>
 </html>

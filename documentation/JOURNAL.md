@@ -131,8 +131,12 @@
 
 - #### Ajouter l'arborescence exigée sans retirer les fichiers existants [2026-10-01]
 
-  **(extrait, 'arborescence du cours) :** _respecte cette arborescence, assures toi notamment de ça pour les popups : `js/components/modal.js`, seulement pour un one-pager avec modale : la logique d'ouverture et de fermeture._
+  **Prompt (extrait, accompagné de l'arborescence du cours) :** _respecte cette arborescence, assures toi notamment de ça pour les popups : `js/components/modal.js`, seulement pour un one-pager avec modale : la logique d'ouverture et de fermeture._
 
-- #### Ajouter du contenue dans les cartes pour les projets et ajouter la section contact [2026-10-01]
+  **Résultat :** ajout des dossiers et fichiers demandés en conservant les fichiers déjà présents. La modale sépare maintenant le remplissage du contenu dans `main.js` de sa logique d'ouverture et de fermeture dans `js/components/modal.js`.
 
-  _Ajoute le contenue que je t'ai donné aux cartes et ajoute la section contact avec les éléments de base._
+- #### Afficher les médias facultatifs dans les fiches de projets [2026-10-01]
+
+  **Prompt :** _c'est parti continuons, si besoin dis moi quoi t'envoyer_
+
+  **Résultat :** la modale affiche maintenant l'image principale, l'année, une galerie, une vidéo et un lien seulement lorsque ces données existent dans le JSON. Trois captures déjà fournies servent à construire une première fiche Shopify. L'année, le lien public et la vidéo restent à confirmer.
