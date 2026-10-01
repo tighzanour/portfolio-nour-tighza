@@ -38,7 +38,7 @@ export function createHeroButtons(projects, openProjectDialog) {
   const foregroundChair = document.createElement("img");
 
   foregroundChair.classList.add("hero-stage__foreground-chair");
-  foregroundChair.src = "./assets/images/hero/foreground/foreground-chair.png";
+  foregroundChair.src = "./assets/images/hero/foreground/foreground-chair.webp";
   foregroundChair.alt = "";
   foregroundChair.draggable = false;
   foregroundChair.setAttribute("aria-hidden", "true");

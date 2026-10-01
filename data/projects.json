@@ -12,7 +12,7 @@
     "title": "QLT — Création de marque",
     "category": "Image de marque",
     "heroLabel": "Sac weekender",
-    "heroImage": "./assets/images/hero/objects/weekender-bag.png",
+    "heroImage": "./assets/images/hero/objects/weekender-bag.webp",
     "description": "Création de l’identité et de l’univers visuel de la marque QLT. Présentation détaillée à compléter."
   },
   {
@@ -39,7 +39,7 @@
     "title": "Juicy — WordPress",
     "category": "Design et développement web",
     "heroLabel": "Ordi portable",
-    "heroImage": "./assets/images/hero/objects/laptop-msi.png",
+    "heroImage": "./assets/images/hero/objects/laptop-msi.webp",
     "description": "Conception et intégration du site WordPress de Juicy, une marque fictive de jus. Le projet réunit une identité visuelle colorée, une boutique avec catalogue de produits, un blogue et une interface adaptée aux appareils mobiles."
   },
   {
@@ -65,7 +65,7 @@
     "title": "Shopify et ventes",
     "category": "Commerce électronique",
     "heroLabel": "Dossier",
-    "heroImage": "./assets/images/hero/objects/shopify-folder-perspective.png",
+    "heroImage": "./assets/images/hero/objects/shopify-folder-perspective.webp",
     "description": "Conception de boutiques Shopify thématiques, de la présentation des collections au suivi des performances. Le projet rassemble la personnalisation de l’interface, l’organisation du catalogue et l’adaptation de l’expérience sur mobile."
   },
   {
@@ -90,7 +90,7 @@
     "title": "Animation 3D",
     "category": "Animation et mouvement",
     "heroLabel": "Ordi desktop",
-    "heroImage": "./assets/images/hero/objects/desktop-workstation.png",
+    "heroImage": "./assets/images/hero/objects/desktop-workstation.webp",
     "description": "Conception d’une séquence 3D autour d’un véhicule futuriste. Le projet passe de la recherche visuelle et du storyboard à la modélisation, au travail des matériaux, à l’éclairage et au montage final."
   },
   {
@@ -112,7 +112,7 @@
     "title": "Platformer 2D",
     "category": "Jeu et interactivité",
     "heroLabel": "Peluche panda roux",
-    "heroImage": "./assets/images/hero/objects/red-panda-plush.png",
+    "heroImage": "./assets/images/hero/objects/red-panda-plush.webp",
     "description": "Création d’un jeu de plateforme en deux dimensions mettant en scène un panda roux en pixel art. Le projet combine la conception du personnage, la préparation de ses sprites et leur intégration dans Godot."
   },
   {
@@ -137,7 +137,7 @@
     "title": "Marketing et réseaux sociaux",
     "category": "Stratégie de contenu",
     "heroLabel": "iPhone",
-    "heroImage": "./assets/images/hero/objects/iphone-15-social.png",
+    "heroImage": "./assets/images/hero/objects/iphone-15-social.webp",
     "description": "Gestion de comptes Instagram thématiques combinant création de contenu, organisation des profils et suivi des performances. Les tableaux de bord professionnels servent à observer la portée, les vues et l’évolution de chaque compte."
   }
 ]

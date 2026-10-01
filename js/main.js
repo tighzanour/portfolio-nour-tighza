@@ -1,7 +1,7 @@
 import { loadProjects } from "./data.js?v=4";
 import { renderProjectCards } from "./components/project-card.js?v=3";
 import { initModal } from "./components/modal.js?v=2";
-import { createHeroButtons } from "./hero.js?v=4";
+import { createHeroButtons } from "./hero.js?v=5";
 import { initHeroParallax } from "./animations.js";
 import { initAboutBook } from "./about.js?v=4";
 
