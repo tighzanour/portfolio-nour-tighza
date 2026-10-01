@@ -140,3 +140,11 @@
 - #### Optimisation des fichiers [2026-10-01]
 
   _Optimise les fichiers._
+
+- #### Repenser les fiches projets comme un livre [2026-10-01]
+
+  _j'aimerais revenir sur les pop ups, rends les du même style que les livres, et plus grands donc prenant plus d'espace, plus d'interactivité pour donner de l'importance aux projets._
+
+- #### Enrichir le fond général avec une texture illustrée [2026-10-01]
+
+  _embelli la couleur de base du site, actuellement c'est simplement vert, utilise plutot cette image comme fond pour le header et la couleur de base du html etc, aussi fait en sorte que le header soit un peu glassy/transparent_

@@ -1,16 +1,16 @@
 :root {
   /* Couleurs */
-  --color-background: #111a17;
-  --color-surface: #18231f;
-  --color-surface-raised: #21302a;
+  --color-background: #0b160e;
+  --color-surface: #132218;
+  --color-surface-raised: #1a2b20;
   --color-text: #f2ead8;
   --color-text-muted: #c7c0b0;
   --color-accent: #d5a85f;
   --color-accent-strong: #f0c979;
   --color-accent-contrast: #1b1710;
-  --color-border: #3b473e;
+  --color-border: #314437;
   --color-focus: #f5d58a;
-  --color-placeholder: #26352e;
+  --color-placeholder: #1c2d22;
 
   /* Typographie */
   --font-body: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -65,15 +65,29 @@ html {
 }
 
 body {
+  position: relative;
+  isolation: isolate;
   min-height: 100vh;
   margin: 0;
-  background: var(--color-background);
+  background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-body);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-body);
   text-rendering: optimizeLegibility;
+}
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: -0.75rem;
+  background:
+    linear-gradient(rgba(3, 10, 5, 0.58), rgba(3, 10, 5, 0.74)),
+    url("../assets/images/site-texture.jpg") center top / cover;
+  content: "";
+  filter: blur(5px) brightness(0.72) saturate(0.88);
+  pointer-events: none;
 }
 
 img,
@@ -268,6 +282,11 @@ video {
 }
 
 @media (max-width: 40rem) {
+  body::before {
+    position: absolute;
+    filter: blur(4px) brightness(0.7) saturate(0.85);
+  }
+
   section {
     padding-block: var(--space-8);
   }

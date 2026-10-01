@@ -6,6 +6,8 @@ import { initHeroParallax } from "./animations.js";
 import { initAboutBook } from "./about.js?v=4";
 
 const projectsContainer = document.querySelector("#projects-list");
+const projectDialog = document.querySelector("#project-dialog");
+const dialogSpread = document.querySelector("#dialog-spread");
 
 const dialogTitle = document.querySelector("#dialog-title");
 
@@ -20,12 +22,32 @@ const dialogTasks = document.querySelector("#dialog-tasks");
 const dialogToolsRow = document.querySelector("#dialog-tools-row");
 const dialogTools = document.querySelector("#dialog-tools");
 const dialogImage = document.querySelector("#dialog-image");
+const dialogImageExpand = document.querySelector("#dialog-image-expand");
 const dialogYear = document.querySelector("#dialog-year");
 const dialogGallerySection = document.querySelector("#dialog-gallery-section");
 const dialogGallery = document.querySelector("#dialog-gallery");
 const dialogVideoSection = document.querySelector("#dialog-video-section");
 const dialogVideo = document.querySelector("#dialog-video");
 const dialogLink = document.querySelector("#dialog-link");
+const dialogPrevious = document.querySelector("[data-project-previous]");
+const dialogNext = document.querySelector("[data-project-next]");
+const dialogProjectStatus = document.querySelector("#dialog-project-status");
+
+let loadedProjects = [];
+let currentProjectIndex = -1;
+
+function setImageExpanded(isExpanded) {
+  if (!dialogImageExpand) return;
+  dialogImageExpand.classList.toggle("is-expanded", isExpanded);
+  dialogImageExpand.setAttribute("aria-pressed", String(isExpanded));
+  dialogImageExpand.setAttribute(
+    "aria-label",
+    isExpanded ? "Réduire l’image du projet" : "Agrandir l’image du projet"
+  );
+
+  const hint = dialogImageExpand.querySelector(".dialog-image-hint");
+  if (hint) hint.textContent = isExpanded ? "Réduire ×" : "Agrandir ↗";
+}
 
 initAboutBook();
 const projectModal = initModal();
@@ -36,8 +58,15 @@ export function openProjectDialog(project, button) {
   }
 
   dialogTitle.textContent = project.title;
+  setImageExpanded(false);
   dialogCategory.textContent = project.category;
   dialogDescription.textContent = project.description;
+  currentProjectIndex = loadedProjects.findIndex((item) => item.id === project.id);
+
+  if (dialogProjectStatus) {
+    const displayedIndex = currentProjectIndex >= 0 ? currentProjectIndex + 1 : 1;
+    dialogProjectStatus.textContent = `Projet ${displayedIndex} sur ${loadedProjects.length}`;
+  }
 
   if (
     dialogDetails &&
@@ -74,10 +103,16 @@ export function openProjectDialog(project, button) {
     dialogDetails.hidden = !hasRole && !hasTasks && !hasTools;
   }
 
+  const mediaSources = [project.image, ...project.gallery].filter(Boolean);
+  const hasVisualMedia = mediaSources.length > 0 || Boolean(project.video);
+  dialogSpread?.classList.toggle("dialog-spread--text-only", !hasVisualMedia);
+
   if (dialogImage) {
-    dialogImage.hidden = !project.image;
-    dialogImage.src = project.image || "";
-    dialogImage.alt = project.image ? `Aperçu du projet ${project.title}` : "";
+    const initialImage = mediaSources[0] || "";
+    dialogImage.hidden = !initialImage;
+    dialogImage.src = initialImage;
+    dialogImage.alt = initialImage ? `Vue 1 du projet ${project.title}` : "";
+    dialogImage.classList.remove("is-changing");
   }
 
   if (dialogYear) {
@@ -86,15 +121,40 @@ export function openProjectDialog(project, button) {
   }
 
   if (dialogGallery && dialogGallerySection) {
-    const galleryImages = project.gallery.map((source, index) => {
+    const galleryButtons = mediaSources.map((source, index) => {
+      const thumbnailButton = document.createElement("button");
       const image = document.createElement("img");
+
+      thumbnailButton.className = "dialog-gallery__button";
+      thumbnailButton.type = "button";
+      thumbnailButton.setAttribute("aria-label", `Afficher la vue ${index + 1} du projet ${project.title}`);
+      thumbnailButton.setAttribute("aria-current", index === 0 ? "true" : "false");
+
       image.src = source;
-      image.alt = `Vue ${index + 1} du projet ${project.title}`;
+      image.alt = "";
       image.loading = "lazy";
-      return image;
+      image.decoding = "async";
+      thumbnailButton.append(image);
+
+      thumbnailButton.addEventListener("click", () => {
+        if (!dialogImage || dialogImage.getAttribute("src") === source) return;
+
+        dialogGallery.querySelectorAll("[aria-current]").forEach((item) => {
+          item.setAttribute("aria-current", item === thumbnailButton ? "true" : "false");
+        });
+
+        dialogImage.classList.add("is-changing");
+        const finishChange = () => dialogImage.classList.remove("is-changing");
+        dialogImage.addEventListener("load", finishChange, { once: true });
+        window.setTimeout(finishChange, 300);
+        dialogImage.src = source;
+        dialogImage.alt = `Vue ${index + 1} du projet ${project.title}`;
+      });
+
+      return thumbnailButton;
     });
-    dialogGallery.replaceChildren(...galleryImages);
-    dialogGallerySection.hidden = galleryImages.length === 0;
+    dialogGallery.replaceChildren(...galleryButtons);
+    dialogGallerySection.hidden = galleryButtons.length < 2;
   }
 
   if (dialogVideo && dialogVideoSection) {
@@ -108,11 +168,31 @@ export function openProjectDialog(project, button) {
     dialogLink.href = project.link || "";
   }
 
-  projectModal.open(button);
+  if (!projectDialog?.open) projectModal.open(button);
 }
+
+function showAdjacentProject(direction) {
+  if (loadedProjects.length < 2 || currentProjectIndex < 0) return;
+  const nextIndex = (currentProjectIndex + direction + loadedProjects.length) % loadedProjects.length;
+  openProjectDialog(loadedProjects[nextIndex], null);
+}
+
+dialogPrevious?.addEventListener("click", () => showAdjacentProject(-1));
+dialogNext?.addEventListener("click", () => showAdjacentProject(1));
+dialogImageExpand?.addEventListener("click", () => {
+  if (!dialogImage || dialogImage.hidden) return;
+  setImageExpanded(!dialogImageExpand.classList.contains("is-expanded"));
+});
+
+projectDialog?.addEventListener("cancel", (event) => {
+  if (!dialogImageExpand?.classList.contains("is-expanded")) return;
+  event.preventDefault();
+  setImageExpanded(false);
+});
 
 try {
   const projects = await loadProjects();
+  loadedProjects = projects;
   renderProjectCards(projects, openProjectDialog);
   createHeroButtons(projects, openProjectDialog);
   initHeroParallax();
@@ -124,6 +204,7 @@ try {
   console.error(error);
 }
 
-document.querySelector("#project-dialog")?.addEventListener("close", () => {
+projectDialog?.addEventListener("close", () => {
+  setImageExpanded(false);
   if (dialogVideo) dialogVideo.src = "";
 });

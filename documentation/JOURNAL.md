@@ -140,3 +140,15 @@
   **Prompt :** _c'est parti continuons, si besoin dis moi quoi t'envoyer_
 
   **Résultat :** la modale affiche maintenant l'image principale, l'année, une galerie, une vidéo et un lien seulement lorsque ces données existent dans le JSON. Trois captures déjà fournies servent à construire une première fiche Shopify. L'année, le lien public et la vidéo restent à confirmer.
+
+- #### Repenser les fiches projets comme un livre [2026-10-01]
+
+  **Prompt :** _j'aimerais revenir sur les pop ups, rends les du même style que les livres, et plus grands donc prenant plus d'espace, plus d'interactivité pour donner de l'importance aux projets._
+
+  **Résultat :** les fiches projets deviennent de grandes doubles pages inspirées du livre de la section À propos. Elles proposent une galerie interactive, une navigation entre les projets et une présentation adaptée aux projets qui n'ont pas encore de médias.
+
+- #### Enrichir le fond général avec une texture illustrée [2026-10-01]
+
+  **Prompt :** _embelli la couleur de base du site, actuellement c'est simplement vert, utilise plutot cette image comme fond pour le header et la couleur de base du html etc, aussi fait en sorte que le header soit un peu glassy/transparent_
+
+  **Résultat :** l’image fournie a été optimisée puis utilisée comme texture de fond générale. La palette verte est plus profonde et le header combine la texture avec une transparence, un flou léger et une bordure dorée discrète.
