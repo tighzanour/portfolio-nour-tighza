@@ -47,7 +47,7 @@ index.html              Page principale
 
 ## Liens
 
-- Portfolio en ligne : à venir
+- [Portfolio en ligne](https://tighzanour.github.io/portfolio-nour-tighza/)
 - [Maquette Figma](https://www.figma.com/design/dlfEIc3MznkaT1jzZFqKo1/DESIGN-PORTFOLIO?node-id=0-1&t=Hbw0ivkIGS6fTztN-1)
 
 ## Auteur
