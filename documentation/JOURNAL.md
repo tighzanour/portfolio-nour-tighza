@@ -1,5 +1,25 @@
 # Journal de bord — Portfolio
 
+## Donner au laboratoire IA un décor de Tokyo — 2026-10-01
+
+**Prompt :** _Remplace le fond de la section IA par un hero inspiré des billboards de Tokyo, en utilisant les références fournies et le style artistique du portfolio._
+
+**Outils utilisés :** ChatGPT / Codex et génération d’images intégrée.
+
+**Prompt du décor :** _Intersection inspirée de Shibuya la nuit, grands panneaux lumineux cyan, magenta et violets, asphalte humide et reflets, architecture détaillée et perspective cohérente. Style illustré 3D cinématographique, écrans abstraits sans texte ni personnages et zone sombre pour le titre._
+
+**Résultat obtenu :** nouveau décor Tokyo optimisé en JPEG, six zones interactives repositionnées selon les angles des billboards. Le parallaxe léger et le retour au portfolio sont conservés. La référence artistique du cône mentionnée n’était pas visible dans les pièces reçues; le style existant a servi de base.
+
+## Transformer le bonus IA en laboratoire expérimental — 2026-10-01
+
+**Prompt :** _Transforme la section IA en laboratoire expérimental caché, avec plein de télévisions et d’écrans qui accueilleront des mini-jeux, applications et outils. Utilise un hero avec un parallaxe léger, un thème complètement différent et le même style artistique que l’atelier._
+
+**Outils utilisés :** ChatGPT / Codex et outil intégré de génération d’images.
+
+**Prompt du décor :** _Créer un laboratoire caché avec un mur de télévisions CRT, des câbles et des surfaces usées. Garder le style illustré cinématographique de l’atelier, une perspective réaliste et une lumière cohérente. Utiliser des lueurs cyan et violettes, sans personnages, logos ou textes, avec de la place à gauche pour le titre._
+
+**Résultat obtenu :** décor généré puis optimisé en JPEG (environ 336 Ko), thème violet/cyan activé uniquement dans la section IA, six zones interactives intégrées aux écrans, parallaxe discret au curseur et exploration horizontale sur mobile. Les expériences sont encore à créer. L’ouverture du labo, la sélection d’un écran et le retour au portfolio ont été testés dans le navigateur.
+
 ## Section bonus IA — 2026-10-01
 
 **Prompt :** _Crée une section IA accessible uniquement depuis le menu IA du header, pour présenter mes futurs mini-jeux, applications et outils créés avec ChatGPT et montrer mon travail de prompting._

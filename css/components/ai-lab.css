@@ -1,4 +1,4 @@
-/* Le bonus est une vue indépendante, masquée à l’arrivée sur le site. */
+/* Le laboratoire possède sa palette, activée seulement dans la vue bonus. */
 #contenu > [hidden] { display: none; }
 
 .site-header nav .navigation-ai {
@@ -17,31 +17,105 @@
   color: var(--color-accent-strong);
 }
 
-.ai-lab {
-  width: min(calc(100% - 3rem), var(--content-width));
-  min-height: calc(100svh - var(--header-height));
-  margin-inline: auto;
-  padding-block: clamp(2rem, 6vw, 5rem);
+.ai-lab [hidden] { display: none; }
+body.is-ai-lab {
+  --color-background: #090913;
+  --color-surface: #151322;
+  --color-text: #f1edf9;
+  --color-text-muted: #c4bbd5;
+  --color-accent: #bc8beb;
+  --color-accent-strong: #97e8f1;
+  --color-focus: #97e8f1;
+  --color-border: #393044;
+  background: #090913;
 }
-
-.ai-lab__back { margin-bottom: var(--space-7); }
-.ai-lab__eyebrow {
-  color: var(--color-accent);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+body.is-ai-lab::before { background: #090913; filter: none; }
+body.is-ai-lab .site-header { background: rgba(10, 8, 20, 0.85); border-bottom-color: rgba(178, 123, 233, 0.35); }
+body.is-ai-lab .site-header::before { background: linear-gradient(90deg, #17233a, #2f183b); opacity: 0.28; }
+body.is-ai-lab .site-footer { background: #090913; border-color: #393044; }
+.ai-lab { width: 100%; min-height: 0; padding: 0; margin: 0; }
+.ai-lab__viewport { overflow: hidden; background: #090913; }
+.ai-lab__scene { position: relative; isolation: isolate; width: 100%; aspect-ratio: 1672 / 941; --lab-x: 0px; --lab-y: 0px; }
+.ai-lab__background {
+  position: absolute; z-index: -2; inset: -1%;
+  background: url('../../assets/images/ai-lab/tokyo-billboards.jpg') center / 100% 100%;
+  transform: translate(var(--lab-x), var(--lab-y));
 }
-.ai-lab h1 { font-size: clamp(3rem, 7vw, 6rem); }
-.ai-lab__introduction { max-width: 42rem; color: var(--color-text-muted); font-size: 1.15rem; }
-.ai-lab__notebook {
-  max-width: 54rem;
-  margin-top: var(--space-7);
-  padding: clamp(1.5rem, 5vw, 4rem);
-  border: 0.35rem solid #705740;
-  background: #f3e8cd;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
-  color: #5e4a3b;
+.ai-lab__scene::before {
+  position: absolute; z-index: -1; inset: 0; content: ''; pointer-events: none;
+  background: linear-gradient(180deg, rgba(5, 5, 15, 0.65), transparent 35%), linear-gradient(0deg, #090913, transparent 18%);
 }
-.ai-lab__notebook h2 { color: #35251d; font-size: clamp(2rem, 4vw, 3.5rem); }
-.ai-lab__notebook .ai-lab__eyebrow { color: #9b613f; }
-.ai-lab__empty { margin: var(--space-6) 0 0; padding-top: var(--space-5); border-top: 1px solid #cbb99a; font-style: italic; }
+.ai-lab__light {
+  position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 72% 42%, rgba(172, 81, 238, 0.09), transparent 50%);
+  transform: translate(calc(var(--lab-x) * -1.5), calc(var(--lab-y) * -1.5));
+}
+.ai-lab__intro { position: absolute; z-index: 2; top: 4%; left: 3%; width: 39%; }
+.ai-lab__back, .ai-lab__experiment button {
+  border: 1px solid rgba(168, 139, 209, 0.45); background: rgba(15, 13, 28, 0.8);
+  color: #ddd0ee; font-size: 0.85rem;
+}
+.ai-lab__back { margin-bottom: clamp(0.5rem, 1vw, 1rem); }
+.ai-lab__back:hover:not(:disabled), .ai-lab__experiment button:hover:not(:disabled) { background: #2a1e39; border-color: #97e8f1; color: #fff; }
+.ai-lab__eyebrow { color: #97e8f1; font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; }
+.ai-lab h1 { font-size: clamp(2rem, 3.5vw, 4.5rem); color: #f1edf9; margin-bottom: 0.75rem; }
+.ai-lab h1 .ai-lab__word { display: inline-block; font-style: italic; color: #c8a2e8; }
+.ai-lab__word.is-changing { animation: lab-word-change 420ms ease both; }
+@keyframes lab-word-change {
+  0% { opacity: 1; transform: translateY(0); }
+  45% { opacity: 0; transform: translateY(-0.15em); }
+  55% { opacity: 0; transform: translateY(0.15em); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.ai-lab__intro > p:last-child { max-width: 24rem; color: #cdc3d7; font-size: clamp(0.85rem, 1.1vw, 1.1rem); }
+/* Les zones suivent les écrans de l’image dans un repère à proportions fixes. */
+.ai-lab__screens { position: absolute; inset: -1%; transform: translate(var(--lab-x), var(--lab-y)); }
+.ai-lab__background, .ai-lab__screens, .ai-lab__light {
+  transition: transform 250ms ease-out;
+}
+.ai-lab__scene.is-returning .ai-lab__background,
+.ai-lab__scene.is-returning .ai-lab__screens,
+.ai-lab__scene.is-returning .ai-lab__light {
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ai-lab__screen {
+  position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 0.2rem; min-height: 0; padding: 0.2rem;
+  border: 0; border-radius: 0; clip-path: var(--shape);
+  background: rgba(12, 13, 38, 0.3); color: #f5edff;
+  font-family: 'Courier New', monospace; font-weight: 400; text-shadow: 0 0 0.6rem #7364ef;
+  transition: background 180ms ease, box-shadow 180ms ease;
+}
+.ai-lab__screen::after {
+  position: absolute; inset: 0; border-radius: inherit; content: ''; pointer-events: none;
+  background: repeating-linear-gradient(transparent 0 3px, rgba(0, 0, 0, 0.12) 3px 4px);
+}
+.ai-lab__screen span { font-size: clamp(1rem, 2vw, 2.5rem); }
+.ai-lab__screen small { font-size: clamp(0.55rem, 0.8vw, 1rem); }
+.ai-lab__screen:hover:not(:disabled), .ai-lab__screen[aria-expanded="true"] {
+  border-color: #97e8f1; background: rgba(10, 16, 38, 0.72); box-shadow: 0 0 1.5rem rgba(120, 208, 248, 0.45);
+}
+.ai-lab__screen:focus-visible { outline: none; background: rgba(10, 16, 38, 0.72); box-shadow: inset 0 0 0 6px #97e8f1; }
+.ai-lab__scene-note { position: absolute; bottom: 3%; left: 4%; margin: 0; font-size: 0.8rem; color: #c5b8d3; }
+.ai-lab__mobile-hint { display: none; }
+.ai-lab__description { max-width: 56rem; margin: 0 auto; padding: 1.5rem; color: #c4bbd5; text-align: center; }
+.ai-lab__experiment { width: min(calc(100% - 3rem), 56rem); margin: 0 auto; padding: clamp(2rem, 5vw, 4rem) 0; color: #c4bbd5; }
+.ai-lab__experiment h2 { font-size: clamp(2rem, 4vw, 3.5rem); color: #f1edf9; }
+@media (max-width: 48rem) {
+  .ai-lab__viewport { overflow-x: auto; overscroll-behavior-x: contain; }
+  .ai-lab__scene { width: 960px; }
+  .ai-lab__intro { width: 40%; top: 3%; left: 2%; }
+  .ai-lab h1 { font-size: 2rem; }
+  .ai-lab__intro > p:last-child { font-size: 0.9rem; }
+  .ai-lab__screen span { font-size: 1rem; }
+  .ai-lab__screen small { font-size: 0.55rem; }
+  .ai-lab__mobile-hint { display: block; padding: 1rem; margin: 0; color: #b8a8ce; font-size: 0.8rem; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ai-lab__scene.is-returning .ai-lab__background,
+  .ai-lab__scene.is-returning .ai-lab__screens,
+  .ai-lab__scene.is-returning .ai-lab__light { transition: none; }
+  .ai-lab__word.is-changing { animation: none; }
+  .ai-lab__background, .ai-lab__screens, .ai-lab__light { transform: none; transition: none; }
+}

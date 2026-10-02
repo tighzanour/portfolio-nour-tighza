@@ -4,7 +4,7 @@ import { initModal } from "./components/modal.js?v=2";
 import { createHeroButtons } from "./hero.js?v=5";
 import { initHeroParallax } from "./animations.js";
 import { initAboutBook } from "./about.js?v=4";
-import { initAiLab } from "./ai-lab.js";
+import { initAiLab } from "./ai-lab.js?v=2";
 
 const projectsContainer = document.querySelector("#projects-list");
 const projectDialog = document.querySelector("#project-dialog");
