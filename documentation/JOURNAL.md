@@ -1,5 +1,13 @@
 # Journal de bord — Portfolio
 
+## Section bonus IA — 2026-10-01
+
+**Prompt :** _Crée une section IA accessible uniquement depuis le menu IA du header, pour présenter mes futurs mini-jeux, applications et outils créés avec ChatGPT et montrer mon travail de prompting._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** ajout d’une vue bonus masquée par défaut, d’un accès dans le header et d’un retour au portfolio. Les expériences seront ajoutées progressivement avec leur idée, leurs prompts, leurs ajustements et leur résultat.
+
 ---
 
 ## Bloc 1 — 28 août 2026

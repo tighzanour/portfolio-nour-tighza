@@ -1,0 +1,47 @@
+/* Le bonus est une vue indépendante, masquée à l’arrivée sur le site. */
+#contenu > [hidden] { display: none; }
+
+.site-header nav .navigation-ai {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-regular);
+}
+
+.site-header nav .navigation-ai:hover,
+.site-header nav .navigation-ai[aria-expanded="true"] {
+  background: transparent;
+  color: var(--color-accent-strong);
+}
+
+.ai-lab {
+  width: min(calc(100% - 3rem), var(--content-width));
+  min-height: calc(100svh - var(--header-height));
+  margin-inline: auto;
+  padding-block: clamp(2rem, 6vw, 5rem);
+}
+
+.ai-lab__back { margin-bottom: var(--space-7); }
+.ai-lab__eyebrow {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.ai-lab h1 { font-size: clamp(3rem, 7vw, 6rem); }
+.ai-lab__introduction { max-width: 42rem; color: var(--color-text-muted); font-size: 1.15rem; }
+.ai-lab__notebook {
+  max-width: 54rem;
+  margin-top: var(--space-7);
+  padding: clamp(1.5rem, 5vw, 4rem);
+  border: 0.35rem solid #705740;
+  background: #f3e8cd;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+  color: #5e4a3b;
+}
+.ai-lab__notebook h2 { color: #35251d; font-size: clamp(2rem, 4vw, 3.5rem); }
+.ai-lab__notebook .ai-lab__eyebrow { color: #9b613f; }
+.ai-lab__empty { margin: var(--space-6) 0 0; padding-top: var(--space-5); border-top: 1px solid #cbb99a; font-style: italic; }
