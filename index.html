@@ -273,13 +273,18 @@
 
         <!-- Le zoom est indépendant de la grille : il ne modifie jamais sa mise en page. -->
         <button id="dialog-image-expand" class="dialog-image-frame" type="button" aria-label="Fermer l’image agrandie" aria-pressed="false" hidden>
-              <img id="dialog-image" class="dialog-image" src="" alt="" hidden />
-              <span id="dialog-image-caption" class="dialog-image-caption" hidden></span>
-              <span class="dialog-image-hint" aria-hidden="true">Fermer le zoom ×</span>
+          <img id="dialog-image" class="dialog-image" src="" alt="" hidden />
+          <span id="dialog-image-caption" class="dialog-image-caption" hidden></span>
+          <span class="dialog-image-hint" aria-hidden="true">Fermer le zoom ×</span>
         </button>
 
         <article id="dialog-spread" class="dialog-spread">
           <section id="dialog-visual-page" class="dialog-page dialog-page--visual" aria-label="Médias du projet">
+            <button id="dialog-image-expand" class="dialog-image-frame" type="button" aria-label="Agrandir l’image du projet" aria-pressed="false">
+              <img id="dialog-image" class="dialog-image" src="" alt="" hidden />
+              <span class="dialog-image-hint" aria-hidden="true">Agrandir ↗</span>
+            </button>
+
             <section id="dialog-gallery-section" class="dialog-media-section" aria-labelledby="dialog-gallery-title" hidden>
               <h3 id="dialog-gallery-title">Explorer le projet en images</h3>
               <div id="dialog-gallery" class="dialog-gallery"></div>
@@ -320,8 +325,6 @@
               </div>
             </dl>
 
-            <section id="dialog-case-study" class="dialog-case-study" aria-label="Démarche du projet" hidden></section>
-
             <a id="dialog-link" class="dialog-link" href="" target="_blank" rel="noopener noreferrer" hidden> Voir le projet ↗ </a>
           </section>
         </article>
@@ -338,6 +341,6 @@
       <p>2026 Nour Tighza. Tous droits réservés.</p>
     </footer>
 
-    <script type="module" src="./js/main.js?v=22"></script>
+    <script type="module" src="./js/main.js?v=20"></script>
   </body>
 </html>
