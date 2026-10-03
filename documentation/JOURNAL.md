@@ -1,5 +1,13 @@
 # Journal de bord — Portfolio
 
+## Présenter Juicy, projet individuel WordPress — 2026-10-03
+
+**Prompt :** _Présente Juicy comme QLT à partir des consignes de Web 4, de mon rôle et de mes captures. Projet individuel : j’ai tout réalisé et imaginé l’identité visuelle à partir du thème imposé des jus. Intègre le lien https://202173398.tim-momo.com/tp_final/ et les sept images fournies._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** résumé de carte, rôle, outils et récit en trois parties : mandat, direction visuelle et intégration. Sept captures sont intégrées et légendées, de l’accueil à l’éditeur Elementor ; les anciennes sont conservées. Le lien ouvre le site public, consulté en lecture seule. Aucune commande ni aucun message de formulaire n’a été envoyé. La présence d’un formulaire ne prouve pas la réception des messages ; les objectifs de SEO, sécurité, conformité, API et responsive ne sont pas présentés comme validés par ces captures. Aucun commit automatique.
+
 ## Remplir les cadres de la galerie — 2026-10-03
 
 **Prompt :** _Les images qui ne cadrent pas bien dans les zones d’images doivent prendre l’espace complet._

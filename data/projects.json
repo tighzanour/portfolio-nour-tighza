@@ -61,29 +61,60 @@
   {
     "id": "juicy-wordpress",
     "year": "",
-    "image": "./assets/images/projects/juicy-wordpress/home.jpg",
-    "link": "",
+    "image": "./assets/images/projects/juicy-wordpress/00-accueil.png",
+    "link": "https://202173398.tim-momo.com/tp_final/",
     "video": "",
-    "role": "Conception et intégration d’un site WordPress",
+    "role": "Conception et réalisation complète du site : identité visuelle, mise en page et intégration WordPress.",
     "tasks": [
-      "Création d’une identité visuelle colorée pour la marque Juicy",
-      "Intégration des pages d’accueil, de boutique et de blogue",
-      "Présentation du catalogue et des fiches de produits",
-      "Adaptation de l’interface pour les écrans mobiles"
+      "Création d’une identité visuelle à partir du thème imposé des jus",
+      "Intégration des pages de marque, de boutique, de blogue et de contact",
+      "Configuration du catalogue WooCommerce et mise en valeur des produits",
+      "Mise en ligne du site WordPress"
     ],
     "tools": [
-      "WordPress"
+      "WordPress",
+      "Elementor",
+      "Astra",
+      "WooCommerce",
+      "Contact Form 7"
     ],
     "gallery": [
-      "./assets/images/projects/juicy-wordpress/products.jpg",
-      "./assets/images/projects/juicy-wordpress/shop.jpg",
-      "./assets/images/projects/juicy-wordpress/mobile.jpg"
+      "./assets/images/projects/juicy-wordpress/01-presentation-produits.png",
+      "./assets/images/projects/juicy-wordpress/02-boutique.png",
+      "./assets/images/projects/juicy-wordpress/03-histoire-marque.png",
+      "./assets/images/projects/juicy-wordpress/04-a-propos.png",
+      "./assets/images/projects/juicy-wordpress/05-formulaire.png",
+      "./assets/images/projects/juicy-wordpress/06-integration-elementor.png"
+    ],
+    "imageCaption": "L’accueil · Un hero fruité, une typographie affirmée et un appel à découvrir les produits.",
+    "galleryCaptions": [
+      "01 · Les produits — quatre saveurs mises en scène avec leurs couleurs, leur prix et un accès au panier.",
+      "02 · La boutique — catalogue WooCommerce présenté sous forme de carrousel de produits.",
+      "03 · L’histoire — présentation de la marque fictive et de son univers autour de la fraîcheur et des fruits.",
+      "04 · Le ton — une section À propos qui associe une composition typographique forte à un visuel ludique.",
+      "05 · Le contact — formulaire WordPress aux couleurs de la marque : nom, courriel, objet et message.",
+      "06 · La construction — vue de l’éditeur Elementor et de l’organisation des sections de l’accueil."
+    ],
+    "status": "Projet scolaire · Web 4 · Réalisation individuelle",
+    "caseStudy": [
+      {
+        "title": "01 · Le mandat",
+        "text": "Pour le projet final du cours Web 4 en Techniques d’intégration multimédia, j’ai conçu et réalisé seul le site d’une entreprise fictive. À partir du thème imposé des jus, j’ai imaginé l’identité visuelle de Juicy et structuré un site pensé comme une vitrine de marque et une boutique."
+      },
+      {
+        "title": "02 · Une identité qui donne envie de découvrir",
+        "text": "J’ai choisi une direction visuelle expressive : rouge vif, fruits en grand format, typographies affirmées et séparations en vagues. Les couleurs des saveurs distinguent les produits ; les sections d’histoire et de présentation donnent une personnalité à la marque. Le design relie ainsi l’univers de Juicy à son offre."
+      },
+      {
+        "title": "03 · Du design au site en ligne",
+        "text": "J’ai construit les mises en page avec Elementor sur WordPress, intégré le catalogue WooCommerce et organisé les pages d’accueil, de boutique, de blogue, d’À propos et de contact. Le formulaire reprend les codes visuels du site. Le projet est accessible en ligne pour découvrir l’interface et son contenu au-delà des captures."
+      }
     ],
     "title": "Juicy — WordPress",
     "category": "Design et développement web",
     "heroLabel": "Ordi portable",
     "heroImage": "./assets/images/hero/objects/laptop-msi.webp",
-    "description": "Conception et intégration du site WordPress de Juicy, une marque fictive de jus. Le projet réunit une identité visuelle colorée, une boutique avec catalogue de produits, un blogue et une interface adaptée aux appareils mobiles."
+    "description": "Projet individuel de Web 4 : création de Juicy, une marque fictive de jus, et réalisation de son site WordPress. Une identité fruitée et expressive, déclinée en pages de marque, catalogue WooCommerce et formulaire de contact."
   },
   {
     "id": "shopify-ventes",
