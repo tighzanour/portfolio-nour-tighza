@@ -180,3 +180,7 @@
 - #### Ajout d'une section IA [2026-10-02]
 
   _Ajoute un menu IA qui dirigera vers une section où je placerais des mini-jeux,outils, et autres créés par IA_
+
+- #### Ajustement du parallax [2026-10-02]
+
+  _lorsque le curseur quitte et reviens sur le hero, l'effet de parallax reset de façon instantanée, fait en sorte que ce soit progressif._
