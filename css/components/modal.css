@@ -1,8 +1,9 @@
 /* Grande fiche de projet inspirée des doubles pages du livre. */
 .project-dialog {
-  width: min(calc(100% - 2rem), 82rem);
+  width: min(calc(100% - 2rem), 100rem);
   max-width: none;
   max-height: 92svh;
+  height: 92svh;
   padding: 0;
   overflow: hidden;
   border: 0.5rem solid #705740;
@@ -26,6 +27,7 @@
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
   max-height: calc(92svh - 1rem);
+  height: 100%;
   background: #f3e8cd;
 }
 
@@ -76,7 +78,8 @@
 .dialog-spread {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.35fr) 1px minmax(0, 1fr);
+  align-items: start;
   min-height: 0;
   overflow: auto;
   overscroll-behavior: contain;
@@ -100,7 +103,7 @@
 
 .dialog-page {
   min-width: 0;
-  padding: clamp(2rem, 4vw, 4rem);
+  padding: clamp(1.25rem, 2.5vw, 3rem);
   background:
     linear-gradient(rgba(255, 255, 255, 0.1), transparent 40%),
     #f3e8cd;
@@ -115,6 +118,7 @@
 }
 
 .dialog-spine {
+  align-self: stretch;
   position: relative;
   z-index: 1;
   background: rgba(72, 47, 31, 0.35);
@@ -122,40 +126,44 @@
 }
 
 .dialog-image-frame {
-  position: relative;
+  position: absolute;
+  z-index: 12;
+  inset: 1rem;
   display: grid;
-  width: 100%;
-  min-height: 20rem;
-  padding: 0;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 1rem;
+  width: auto;
+  min-height: 0;
+  padding: 3.5rem 1rem 1rem;
   place-items: center;
   overflow: hidden;
   border: 1px solid rgba(83, 58, 42, 0.28);
   border-radius: 0;
-  background: #d8c9aa;
+  background: #17130f;
   box-shadow: 0 1rem 2.5rem rgba(54, 35, 23, 0.16);
   color: #fff8e9;
-  cursor: zoom-in;
+  cursor: zoom-out;
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .dialog-image-frame:hover,
 .dialog-image-frame:focus-visible {
   border-color: rgba(155, 79, 67, 0.75);
-  background: #d8c9aa;
+  background: #17130f;
   box-shadow: 0 1rem 2.5rem rgba(54, 35, 23, 0.16), 0 0 0 2px rgba(155, 79, 67, 0.14);
 }
 
 .dialog-image-hint {
   position: absolute;
   right: var(--space-3);
-  bottom: var(--space-3);
+  top: var(--space-3);
   padding: 0.4rem 0.65rem;
   border: 1px solid rgba(255, 248, 233, 0.35);
   background: rgba(35, 25, 20, 0.82);
   font-size: 0.75rem;
   letter-spacing: 0.05em;
-  opacity: 0;
-  transform: translateY(0.35rem);
+  opacity: 1;
+  transform: none;
   transition: opacity 160ms ease, transform 160ms ease;
 }
 
@@ -166,24 +174,20 @@
 }
 
 .dialog-image-frame.is-expanded {
-  position: fixed;
-  z-index: 12;
-  inset: 1.5rem;
-  width: auto;
-  min-height: 0;
   border-color: rgba(243, 232, 205, 0.45);
-  background: rgba(18, 14, 11, 0.96);
+  background: #17130f;
   box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.75);
   cursor: zoom-out;
 }
 
 .dialog-image-frame.is-expanded:hover,
 .dialog-image-frame.is-expanded:focus-visible {
-  background: rgba(18, 14, 11, 0.96);
+  background: #17130f;
 }
 
 .dialog-image-frame.is-expanded .dialog-image {
-  width: auto;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -198,17 +202,14 @@
 }
 
 .dialog-image {
+  display: block;
   width: 100%;
-  max-height: min(54svh, 36rem);
+  height: 100%;
+  min-height: 0;
   border-radius: 0;
-  background: #d8c9aa;
+  background: transparent;
   object-fit: contain;
   transition: opacity 160ms ease, transform 260ms ease;
-}
-
-.dialog-image.is-changing {
-  opacity: 0.3;
-  transform: scale(0.985);
 }
 
 .dialog-page--content h2 {
@@ -221,6 +222,55 @@
   max-width: 36rem;
   color: #5e4a3b;
   font-size: clamp(1rem, 1.4vw, 1.18rem);
+}
+
+.dialog-status {
+  width: fit-content;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(112, 87, 64, 0.35);
+  color: #7d4e32;
+  font-size: 0.8rem;
+}
+
+.dialog-image-caption {
+  max-width: 68rem;
+  margin: 0;
+  color: #f3e8cd;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.dialog-case-study {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+  padding: var(--space-5) 0 0;
+  border-top: 1px solid rgba(83, 58, 42, 0.25);
+}
+
+.dialog-case-study > section {
+  padding: 0;
+}
+
+.dialog-case-study h3 {
+  margin: 0 0 var(--space-2);
+  color: #49362b;
+  font-size: 1.4rem;
+}
+
+.dialog-case-study p {
+  margin: 0;
+  color: #5e4a3b;
+}
+
+.dialog-spread--case-study .dialog-page--content h2 {
+  font-size: clamp(2.4rem, 3.8vw, 4rem);
+}
+
+.dialog-spread--case-study .dialog-details {
+  gap: var(--space-4);
+  margin-top: var(--space-5);
 }
 
 .dialog-details {
@@ -279,6 +329,11 @@
 
 .dialog-media-section {
   margin-top: var(--space-6);
+  padding: 0;
+}
+
+.dialog-page--visual > .dialog-media-section:first-child {
+  margin-top: 0;
 }
 
 .dialog-media-section h3 {
@@ -291,38 +346,66 @@
 
 .dialog-gallery {
   display: grid;
-  grid-template-columns: repeat(4, minmax(4.5rem, 1fr));
-  gap: var(--space-3);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5) var(--space-4);
+}
+
+.dialog-gallery__item {
+  min-width: 0;
+  margin: 0;
+}
+
+.dialog-gallery__item figcaption {
+  margin-top: var(--space-3);
+  color: #5e4a3b;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.dialog-gallery--single .dialog-gallery__item {
+  grid-column: 1 / -1;
 }
 
 .dialog-gallery__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   min-height: 0;
   padding: 0;
   overflow: hidden;
   border: 2px solid transparent;
-  border-radius: var(--radius-small);
-  background: #d8c9aa;
+  border-radius: 0;
+  background: #e5d9bf;
   box-shadow: 0 0 0 1px rgba(83, 58, 42, 0.3);
+  cursor: zoom-in;
 }
 
 .dialog-gallery__button:hover:not(:disabled),
-.dialog-gallery__button:focus-visible,
-.dialog-gallery__button[aria-current="true"] {
+.dialog-gallery__button:focus-visible {
   border-color: #9b4f43;
   background: #d8c9aa;
 }
 
-.dialog-gallery__button[aria-current="true"] {
-  box-shadow: 0 0 0 2px rgba(155, 79, 67, 0.18);
+.dialog-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: transparent;
+  object-fit: contain;
+  transition: transform 180ms ease;
 }
 
-.dialog-gallery img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: 0;
-  background: #d8c9aa;
-  object-fit: cover;
-  transition: transform 180ms ease;
+.dialog-gallery__hint {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background: rgba(35, 25, 20, 0.85);
+  color: #fff8e9;
+  font-size: 0.7rem;
+  pointer-events: none;
 }
 
 .dialog-gallery__button:hover img,
@@ -393,6 +476,7 @@
   .project-dialog {
     width: min(calc(100% - 1rem), 42rem);
     max-height: 94svh;
+    height: 94svh;
     border-width: 0.35rem;
   }
 
@@ -417,16 +501,12 @@
     box-shadow: none;
   }
 
-  .dialog-image-frame {
-    min-height: 12rem;
-  }
-
   .dialog-image-frame.is-expanded {
     inset: 0.75rem;
   }
 
   .dialog-gallery {
-    grid-template-columns: repeat(3, minmax(4rem, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .dialog-details > div {
@@ -459,7 +539,7 @@
   }
 
   .dialog-gallery {
-    grid-template-columns: repeat(2, minmax(4rem, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .dialog-project-navigation {

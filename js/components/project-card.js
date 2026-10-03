@@ -17,7 +17,7 @@ function createProjectCard(project) {
     article.classList.add("project-card--with-image");
     image.className = "project-card__image";
     image.src = project.image;
-    image.alt = `Aperçu du projet ${project.title}`;
+    image.alt = project.imageCaption || `Aperçu du projet ${project.title}`;
     image.loading = "lazy";
     image.decoding = "async";
   }
@@ -33,7 +33,14 @@ function createProjectCard(project) {
   button.dataset.projectOpen = project.id;
   button.textContent = "Découvrir le projet";
 
-  content.append(category, title, description, button);
+  content.append(category, title, description);
+  if (project.status) {
+    const status = document.createElement("p");
+    status.className = "project-card__status";
+    status.textContent = project.status;
+    content.append(status);
+  }
+  content.append(button);
   article.append(...(project.image ? [image, content] : [content]));
   return article;
 }

@@ -1,5 +1,23 @@
 # Journal de bord — Portfolio
 
+## Une fiche projet pensée comme une galerie de boutique — 2026-10-02
+
+**Prompt :** _Revois l’affichage des images pour donner la priorité à l’expérience visuelle : une grille d’images à gauche et du texte à droite, comme dans une boutique en ligne. Empêche les changements de dimensions lorsqu’on passe d’une image à une autre._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** galerie de grandes images à deux colonnes, cadres à proportions fixes avec images entières, texte à droite et dimensions stables de la fiche. Le clic ouvre un zoom séparé, avec retour au clavier sur l’image sélectionnée. Les légendes et le style papier sont conservés ; sur mobile, les visuels passent avant le texte. Aucun commit automatique.
+
+## Présenter QLT comme une démarche de marque — 2026-10-02
+
+**Prompt :** _Analyse mes captures de progression de QLT et présente le projet dans sa carte et sa fiche : création d’une marque et d’un sac weekender de zéro, recherches assistées par ChatGPT, observations en boutique, explorations de matières et suivi dans Miro. Garde une présentation concise avec les informations utiles à un recruteur en marketing._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** présentation structurée autour du défi, de la recherche terrain, des choix créatifs et de la préparation du lancement. Sept captures fournies sont sélectionnées et légendées pour distinguer explorations IA, hypothèses et livrables. Le contenu reste dans le JSON local ; la galerie et les sections facultatives sont générées en JavaScript. Les années, liens et l’état du prototype restent à confirmer. Aucun résultat commercial ou test de fabrication n’est inventé.
+
+**À relire :** formulation de mon rôle, état actuel du projet et choix des images. Aucun commit automatique.
+
 ## Donner au laboratoire IA un décor de Tokyo — 2026-10-01
 
 **Prompt :** _Remplace le fond de la section IA par un hero inspiré des billboards de Tokyo, en utilisant les références fournies et le style artistique du portfolio._
@@ -184,3 +202,7 @@
 - #### Ajustement du parallax [2026-10-02]
 
   _lorsque le curseur quitte et reviens sur le hero, l'effet de parallax reset de façon instantanée, fait en sorte que ce soit progressif._
+
+- #### Ajustement de l'affichage des médias dans les modals. [2026-10-02]
+
+  _j'aimerais revoir le format de l'affichage des images, actuellement c'est pas le mieux, j'aimerais que lorsqu'on clique sur un projet, on ait une expérience visuelle en priorité, comme si on allait acheter dans une boutique en ligne, donc on verrait une grille d'images sur la gauche et du texte à droite, aussi, actuellement lorsqu'on change d'images, la dimension aussi change et c'est pas satisfaisant pour la page._

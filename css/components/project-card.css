@@ -82,6 +82,12 @@
   margin-top: var(--space-6);
 }
 
+.project-card__status {
+  margin: var(--space-4) 0 0;
+  color: var(--color-accent-strong);
+  font-size: 0.8rem;
+}
+
 .project-card:has(.project-card__button:focus-visible) {
   border-color: var(--color-accent);
 }

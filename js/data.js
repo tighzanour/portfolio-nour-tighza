@@ -49,7 +49,25 @@ export async function loadProjects() {
     if (!Array.isArray(gallery) || gallery.some((image) => typeof image !== "string" || !image.trim())) {
       throw new Error(`${label} : gallery doit être un tableau de chemins d'images.`);
     }
+    // Informations de présentation facultatives : les autres projets gardent leur format.
+    const status = project.status ?? "";
+    const imageCaption = project.imageCaption ?? "";
+    if (typeof status !== "string" || typeof imageCaption !== "string") {
+      throw new Error(`${label} : status et imageCaption doivent être du texte.`);
+    }
+    const galleryCaptions = project.galleryCaptions ?? [];
+    if (!Array.isArray(galleryCaptions) || galleryCaptions.some((caption) => typeof caption !== "string") ||
+        (galleryCaptions.length > 0 && galleryCaptions.length !== gallery.length)) {
+      throw new Error(`${label} : galleryCaptions doit correspondre aux images de gallery.`);
+    }
+    const caseStudy = project.caseStudy ?? [];
+    if (!Array.isArray(caseStudy) || caseStudy.some((section) => !section ||
+        typeof section.title !== "string" || !section.title.trim() ||
+        typeof section.text !== "string" || !section.text.trim())) {
+      throw new Error(`${label} : caseStudy doit contenir des sections title et text.`);
+    }
     // Les champs vides sont autorisés pendant la préparation du vrai contenu.
-    return { ...project, link: project.link ?? "", video: project.video ?? "", role, tasks, tools, gallery };
+    return { ...project, link: project.link ?? "", video: project.video ?? "", role, tasks, tools, gallery,
+      status, imageCaption, galleryCaptions, caseStudy };
   });
 }

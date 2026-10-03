@@ -260,8 +260,8 @@
   --object-width: clamp(17rem, 22vw, 31rem);
   --object-ratio: 1.5;
   z-index: 4;
-  top: 50%;
-  left: 71%;
+  top: 49%;
+  left: 68%;
 }
 
 .hero-stage__button:nth-child(5) {
@@ -269,7 +269,7 @@
   --object-ratio: 0.9;
   z-index: 3;
   top: 47%;
-  left: 25%;
+  left: 30%;
 }
 
 .hero-stage__button:nth-child(6) {
@@ -417,9 +417,7 @@
   place-items: center;
   padding-inline: var(--space-5);
   border-block: 1px solid rgba(213, 168, 95, 0.2);
-  background:
-    radial-gradient(circle at 75% 45%, rgba(116, 62, 31, 0.34), transparent 42%),
-    linear-gradient(135deg, #0b0d0c, #1a100b 60%, #0b0d0c);
+  background: radial-gradient(circle at 75% 45%, rgba(116, 62, 31, 0.34), transparent 42%), linear-gradient(135deg, #0b0d0c, #1a100b 60%, #0b0d0c);
 }
 
 .portfolio-transition__content {
@@ -547,7 +545,9 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: translateZ(0.5px);
-  box-shadow: 2px 0 0 #c8b799, 0 8px 20px rgb(35 21 9 / 12%);
+  box-shadow:
+    2px 0 0 #c8b799,
+    0 8px 20px rgb(35 21 9 / 12%);
 }
 
 .about-book__leaf-face--back {
@@ -939,7 +939,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
-
 
   .about-book__cover {
     height: min(68vw, 18rem);

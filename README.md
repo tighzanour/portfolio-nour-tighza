@@ -22,6 +22,8 @@ Les projets sont définis dans [`data/projects.json`](data/projects.json). Chaqu
 - `id`, `title`, `description`, `category`, `year` et `image`;
 - `link`, `video` et `gallery` pour les médias facultatifs;
 - `role`, `tasks` et `tools` pour les informations détaillées;
+- `status` et `caseStudy` pour le statut et les sections de présentation facultatives;
+- `imageCaption` et `galleryCaptions` pour contextualiser les visuels (le tableau des légendes suit l’ordre de `gallery`);
 - `heroLabel` et `heroImage` pour son objet dans l’atelier.
 
 Le module [`js/data.js`](js/data.js) charge et valide ces données. La modale et les cartes n’ont donc pas besoin d’être modifiées lorsqu’un projet est mis à jour.
@@ -40,7 +42,7 @@ index.html              Page principale
 
 ## Contenu à terminer
 
-- Ajouter les véritables médias et détails du projet QLT.
+- Confirmer l’année, les liens publics et l’avancement du prototype QLT. Sa présentation et une sélection de captures de progression sont intégrées.
 - Ajouter les années, liens publics et vidéos intégrées lorsqu’ils seront disponibles.
 - Ajouter les captures finales des composants dans `exports-composants/`.
 - Remplacer le lien de déploiement ci-dessous après la publication.

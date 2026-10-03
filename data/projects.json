@@ -2,18 +2,57 @@
   {
     "id": "qlt-marque",
     "year": "",
-    "image": "",
+    "image": "./assets/images/projects/qlt/techpack-v2.jpg",
     "link": "",
     "video": "",
-    "role": "",
-    "tasks": [],
-    "tools": [],
-    "gallery": [],
+    "role": "Créateur du projet : recherche, positionnement, direction créative et préparation du lancement.",
+    "tasks": [
+      "Analyse concurrentielle et observations en boutique",
+      "Exploration du produit et de l’identité de marque",
+      "Dossier technique, pistes web et plan de lancement"
+    ],
+    "tools": ["ChatGPT", "Miro"],
+    "gallery": [
+      "./assets/images/projects/qlt/exploration-ornementale.jpg",
+      "./assets/images/projects/qlt/direction-matelassee.jpg",
+      "./assets/images/projects/qlt/recherche-positionnement.jpg",
+      "./assets/images/projects/qlt/observation-bandouliere.jpg",
+      "./assets/images/projects/qlt/pistes-site-mobile.jpg",
+      "./assets/images/projects/qlt/preparation-marketing.jpg"
+    ],
+    "imageCaption": "Direction actuelle — dossier technique V2 et visualisations IA. Les spécifications restent à valider sur un prototype physique.",
+    "galleryCaptions": [
+      "01 · Explorer — premier concept ornemental généré avec l’IA, avant l’évolution du projet.",
+      "02 · Affiner — essais de matelassage, de textures et de silhouettes. Ces rendus IA sont des pistes de design, pas des produits fabriqués.",
+      "03 · Positionner — recherche assistée par IA, annotée sur Miro. Le « premium accessible » est une hypothèse de positionnement à valider.",
+      "04 · Observer — une bandoulière usée nourrit la réflexion sur le portage, le poids et les matériaux ; ce n’est pas un test du sac QLT.",
+      "05 · Présenter — pistes d’interface mobile pour mettre le produit en valeur. Les promesses affichées dans les maquettes ne sont pas des résultats de lancement.",
+      "06 · Préparer — réflexion marketing sur la cible, la différenciation et les canaux de lancement, organisée dans Miro."
+    ],
+    "status": "Projet personnel · En développement",
+    "caseStudy": [
+      {
+        "title": "Le défi",
+        "text": "Imaginer une marque et un sac weekender de zéro : une proposition premium et sobre pour les courts séjours, sans sacrifier le confort ni la simplicité d’usage. Mon objectif : relier une identité désirable à des besoins concrets."
+      },
+      {
+        "title": "De la recherche au terrain",
+        "text": "J’ai utilisé ChatGPT pour explorer le marché, le canvas, le cuir, les coûts et les étapes de développement, puis confronté ces pistes à mes observations chez Coach, Louis Vuitton, Balenciaga et Gucci. Dans Miro, j’ai documenté les comparaisons, les conseils et les erreurs à éviter."
+      },
+      {
+        "title": "L’IA explore, je fais les choix",
+        "text": "Les essais de textures et de formes m’ont fait passer d’un concept très ornementé à une direction matelassée. Le poids, le portage, une organisation intérieure simple et la qualité perçue sont devenus mes critères de décision. Les rendus IA servent à explorer, pas à prouver la faisabilité."
+      },
+      {
+        "title": "Ce que j’ai construit · La suite",
+        "text": "Le projet rassemble un univers de marque, un dossier technique V2, des pistes de site et un plan de lancement. La prochaine étape est de valider le sac sur un prototype et de mesurer l’intérêt de la cible avant la production : passer d’une intuition visuelle à une proposition à confronter au marché."
+      }
+    ],
     "title": "QLT — Création de marque",
-    "category": "Image de marque",
+    "category": "Stratégie de marque et produit",
     "heroLabel": "Sac weekender",
     "heroImage": "./assets/images/hero/objects/weekender-bag.webp",
-    "description": "Création de l’identité et de l’univers visuel de la marque QLT. Présentation détaillée à compléter."
+    "description": "D’une idée de sac weekender à un projet de marque : recherche concurrentielle, observations en boutique et explorations avec l’IA pour construire une direction produit et préparer son lancement."
   },
   {
     "id": "juicy-wordpress",
