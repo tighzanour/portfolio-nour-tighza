@@ -2,57 +2,61 @@
   {
     "id": "qlt-marque",
     "year": "",
-    "image": "./assets/images/projects/qlt/techpack-v2.jpg",
+    "image": "./assets/images/projects/qlt/00-sac-actuel.png",
     "link": "",
     "video": "",
-    "role": "Créateur du projet : recherche, positionnement, direction créative et préparation du lancement.",
+    "role": "Créateur du projet : stratégie de marque, direction créative, définition du produit et préparation du lancement.",
     "tasks": [
-      "Analyse concurrentielle et observations en boutique",
-      "Exploration du produit et de l’identité de marque",
-      "Dossier technique, pistes web et plan de lancement"
+      "Recherche de marché, positionnement et cahier des charges",
+      "Design produit, observations terrain et dossier technique",
+      "Identité de marque, boutique en ligne et stratégie de lancement"
     ],
     "tools": ["ChatGPT", "Miro"],
     "gallery": [
-      "./assets/images/projects/qlt/exploration-ornementale.jpg",
-      "./assets/images/projects/qlt/direction-matelassee.jpg",
-      "./assets/images/projects/qlt/recherche-positionnement.jpg",
-      "./assets/images/projects/qlt/observation-bandouliere.jpg",
-      "./assets/images/projects/qlt/pistes-site-mobile.jpg",
-      "./assets/images/projects/qlt/preparation-marketing.jpg"
+      "./assets/images/projects/qlt/01-recherche-marche.png",
+      "./assets/images/projects/qlt/02-evolution-concept.png",
+      "./assets/images/projects/qlt/03-observations-terrain.png",
+      "./assets/images/projects/qlt/04-techpack.png",
+      "./assets/images/projects/qlt/05-explorations-identite.png",
+      "./assets/images/projects/qlt/06-exploration-packaging.png"
     ],
-    "imageCaption": "Direction actuelle — dossier technique V2 et visualisations IA. Les spécifications restent à valider sur un prototype physique.",
+    "imageCaption": "Le concept actuel · Weekender matelassé QLT. Rendu IA ; la fabrication reste à valider sur un prototype physique.",
     "galleryCaptions": [
-      "01 · Explorer — premier concept ornemental généré avec l’IA, avant l’évolution du projet.",
-      "02 · Affiner — essais de matelassage, de textures et de silhouettes. Ces rendus IA sont des pistes de design, pas des produits fabriqués.",
-      "03 · Positionner — recherche assistée par IA, annotée sur Miro. Le « premium accessible » est une hypothèse de positionnement à valider.",
-      "04 · Observer — une bandoulière usée nourrit la réflexion sur le portage, le poids et les matériaux ; ce n’est pas un test du sac QLT.",
-      "05 · Présenter — pistes d’interface mobile pour mettre le produit en valeur. Les promesses affichées dans les maquettes ne sont pas des résultats de lancement.",
-      "06 · Préparer — réflexion marketing sur la cible, la différenciation et les canaux de lancement, organisée dans Miro."
+      "01 · L’opportunité — hypothèses de marché et frustrations clients explorées avec l’IA. Une base de réflexion, pas une validation de la demande.",
+      "02 · L’évolution — pistes de matières, de motifs et de matelassage explorées avec l’IA pour affiner le concept.",
+      "03 · Le terrain — comparaison de textures et observation d’une bandoulière usée pour nourrir les choix de matières et de portage.",
+      "04 · La conception — extrait du techpack, version 1.5 : présentation du produit, vues et repérage des composants.",
+      "05 · L’identité — exploration de noms, de typographies et de logos : QLT, Nubo et Pilo.",
+      "06 · L’univers — piste de packaging sous le nom « quilt ». Exploration visuelle IA, pas un emballage déjà produit."
     ],
     "status": "Projet personnel · En développement",
     "caseStudy": [
       {
-        "title": "Le défi",
-        "text": "Imaginer une marque et un sac weekender de zéro : une proposition premium et sobre pour les courts séjours, sans sacrifier le confort ni la simplicité d’usage. Mon objectif : relier une identité désirable à des besoins concrets."
+        "title": "01 · Partir d’un besoin, pas seulement d’une image",
+        "text": "L’idée d’un sac weekender devient une hypothèse de marché. Avec ChatGPT et Miro, j’explore les frustrations des clients, les offres concurrentes et les pistes de différenciation, puis j’établis un cahier des charges. Objectif : donner une logique au projet avant de dessiner le produit."
       },
       {
-        "title": "De la recherche au terrain",
-        "text": "J’ai utilisé ChatGPT pour explorer le marché, le canvas, le cuir, les coûts et les étapes de développement, puis confronté ces pistes à mes observations chez Coach, Louis Vuitton, Balenciaga et Gucci. Dans Miro, j’ai documenté les comparaisons, les conseils et les erreurs à éviter."
+        "title": "02 · Explorer un univers, choisir un concept",
+        "text": "J’explore les tendances, les textures et les silhouettes pour construire un univers distinctif. Les rendus IA permettent de comparer rapidement plusieurs directions, du sac ornementé au matelassé. Je sélectionne un premier concept en tenant compte de la cible, des matières et d’une première estimation du budget."
       },
       {
-        "title": "L’IA explore, je fais les choix",
-        "text": "Les essais de textures et de formes m’ont fait passer d’un concept très ornementé à une direction matelassée. Le poids, le portage, une organisation intérieure simple et la qualité perçue sont devenus mes critères de décision. Les rendus IA servent à explorer, pas à prouver la faisabilité."
+        "title": "03 · Confronter le design au réel",
+        "text": "Mes visites chez Coach, Chanel, Louis Vuitton, Gucci et Balenciaga enrichissent ma compréhension des matières, des finitions et des usages. Ces observations font évoluer le concept. Je précise ensuite le nylon, les dimensions, le volume, les poches, les anses, la bandoulière et les composants : passer d’un beau rendu à un produit à prototyper."
       },
       {
-        "title": "Ce que j’ai construit · La suite",
-        "text": "Le projet rassemble un univers de marque, un dossier technique V2, des pistes de site et un plan de lancement. La prochaine étape est de valider le sac sur un prototype et de mesurer l’intérêt de la cible avant la production : passer d’une intuition visuelle à une proposition à confronter au marché."
+        "title": "04 · Donner une existence à la marque",
+        "text": "Je travaille le nom, le logo et l’identité de QLT, puis la boutique en ligne et la présentation du produit. Un dossier technique complet structure les échanges avec des usines chinoises. J’apprends les méthodes de fabrication et les enjeux contractuels pour préparer la suite du développement."
+      },
+      {
+        "title": "05 · Préparer le lancement et la suite",
+        "text": "Je définis l’univers éditorial et les pistes de contenu pour Instagram, Facebook et TikTok, en analysant d’autres marques. Le plan couvre le budget, l’acquisition de clients et la vente d’un premier stock. Prochaines étapes : développer une communauté, mesurer l’intérêt et commander puis valider un prototype avant la production."
       }
     ],
     "title": "QLT — Création de marque",
     "category": "Stratégie de marque et produit",
     "heroLabel": "Sac weekender",
     "heroImage": "./assets/images/hero/objects/weekender-bag.webp",
-    "description": "D’une idée de sac weekender à un projet de marque : recherche concurrentielle, observations en boutique et explorations avec l’IA pour construire une direction produit et préparer son lancement."
+    "description": "Création d’une marque de sacs weekender, de l’opportunité de marché à la préparation du lancement. Recherche, design produit, identité et boutique en ligne : l’IA accélère l’exploration, mes observations et mes choix orientent le projet."
   },
   {
     "id": "juicy-wordpress",

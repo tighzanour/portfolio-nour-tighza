@@ -393,7 +393,8 @@
   height: 100%;
   border-radius: 0;
   background: transparent;
-  object-fit: contain;
+  /* Remplit le cadre sans déformer l’image ; le zoom conserve la vue entière. */
+  object-fit: cover;
   transition: transform 180ms ease;
 }
 

@@ -1,5 +1,29 @@
 # Journal de bord — Portfolio
 
+## Remplir les cadres de la galerie — 2026-10-03
+
+**Prompt :** _Les images qui ne cadrent pas bien dans les zones d’images doivent prendre l’espace complet._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** les images remplissent désormais les cadres fixes de la galerie sans déformation, avec recadrage des bords au besoin. Le zoom conserve l’image entière. Aucun commit automatique.
+
+## Intégrer les nouveaux visuels de QLT — 2026-10-03
+
+**Prompt :** _Pour l’instant, fais avec ces images._ Sept visuels fournis : sac actuel, recherche de marché, évolution du concept, observations terrain, extrait du techpack, essais de noms et de logos, exploration du packaging.
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** nouveaux fichiers intégrés sans modifier les originaux. Le sac noir devient la couverture de la carte et de la fiche ; les six autres images racontent la progression du projet. Les légendes distinguent les hypothèses, les rendus IA et les explorations de marque. L’extrait technique est identifié comme version 1.5, conformément au document fourni. Les anciennes captures sont conservées, mais retirées de la galerie active. Aucun commit automatique.
+
+## Organiser le récit et les visuels de QLT — 2026-10-02
+
+**Prompt :** _À partir de mes dix étapes de création de QLT, ajuste le texte et l’ordre des images de la carte et de la fiche. Regroupe les étapes répétitives et indique exactement quelles images de qualité préparer._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** récit regroupé en cinq phases, de l’opportunité à la préparation du lancement. Le dossier technique V2 présente la direction actuelle en ouverture, puis la galerie retrace la recherche, les explorations, le choix du concept, le terrain, les pistes de boutique et le marketing. Les captures existantes sont conservées en attendant des exports de qualité. La recherche reste une hypothèse de marché ; les rendus IA ne sont pas présentés comme un produit fabriqué. Aucun commit automatique.
+
 ## Une fiche projet pensée comme une galerie de boutique — 2026-10-02
 
 **Prompt :** _Revois l’affichage des images pour donner la priorité à l’expérience visuelle : une grille d’images à gauche et du texte à droite, comme dans une boutique en ligne. Empêche les changements de dimensions lorsqu’on passe d’une image à une autre._
