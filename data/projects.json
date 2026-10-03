@@ -119,53 +119,125 @@
   {
     "id": "shopify-ventes",
     "year": "",
-    "image": "./assets/images/projects/shopify/mugiwara-home.webp",
+    "image": "./assets/images/projects/shopify/00-mugiwara-accueil.png",
     "link": "",
     "video": "",
-    "role": "Conception et intégration e-commerce",
+    "role": "Création et design des boutiques, configuration des produits et des paramètres Shopify, suivi des statistiques.",
     "tasks": [
-      "Personnalisation de l’interface de boutiques thématiques",
-      "Organisation des produits et des collections",
-      "Adaptation de l’expérience pour les écrans mobiles",
-      "Consultation des données de ventes et de fréquentation"
+      "Design de boutiques adaptées à des communautés de niche",
+      "Configuration du catalogue et des paramètres Shopify",
+      "Suivi des visites, des ventes et des commandes"
     ],
     "tools": [
       "Shopify"
     ],
     "gallery": [
-      "./assets/images/projects/shopify/mugiwara-products.webp",
-      "./assets/images/projects/shopify/jeff-shark-collections.webp"
+      "./assets/images/projects/shopify/01-mugiwara-catalogue.png",
+      "./assets/images/projects/shopify/02-visites-par-emplacement.png",
+      "./assets/images/projects/shopify/03-ventes-commandes.png",
+      "./assets/images/projects/shopify/04-evolution-ventes.png",
+      "./assets/images/projects/shopify/05-commandes-anonymisees.png"
     ],
-    "title": "Shopify et ventes",
+    "imageCaption": "L’accueil · Mugiwara Shop, une boutique thématique autour de One Piece avec navigation, mise en avant produit et appel à l’achat.",
+    "galleryCaptions": [
+      "01 · Le catalogue — présentation des produits, des prix et des promotions dans une grille de boutique.",
+      "02 · L’audience — répartition des visites par emplacement, consultée dans les statistiques Shopify.",
+      "03 · L’activité — extrait affichant 30 commandes et 1,13 k$ de ventes avec le filtre « This month ». Le mois et la devise ne sont pas précisés dans la capture.",
+      "04 · Les ventes — tableau de bord en USD sur la période du 1er janvier au 5 juillet 2025. Cet extrait n’est pas additionné aux autres captures.",
+      "05 · Les commandes — aperçu des commandes et de leurs statuts, avec les informations clients masquées dans le visuel fourni."
+    ],
+    "status": "Projets clients · Communautés de niche",
+    "caseStudy": [
+      {
+        "title": "01 · Le besoin des clients",
+        "text": "J’ai réalisé plusieurs boutiques Shopify pour des clients à la tête de comptes populaires et spécialisés sur les réseaux sociaux. Leur besoin : proposer des produits à leur communauté dans une boutique adaptée à son univers. Les projets couvrent notamment One Piece, Marvel Rivals et les produits pour chats."
+      },
+      {
+        "title": "02 · Construire la boutique",
+        "text": "Mon travail rassemble la création et le design de l’interface, la configuration des produits et des paramètres Shopify. Pour Mugiwara Shop, les captures montrent une page d’accueil avec mise en avant produit et appel à l’achat, puis un catalogue organisé avec visuels, prix et promotions."
+      },
+      {
+        "title": "03 · Suivre l’activité après la création",
+        "text": "J’ai également suivi les statistiques des boutiques : origine des visites, évolution des ventes et commandes enregistrées. Les tableaux de bord complètent les captures de design par des traces d’activité commerciale. Chaque extrait garde son contexte ; les montants ne sont pas cumulés et ne constituent pas une mesure de l’effet du design."
+      }
+    ],
+    "title": "Shopify — Boutiques de niche",
     "category": "Commerce électronique",
     "heroLabel": "Dossier",
     "heroImage": "./assets/images/hero/objects/shopify-folder-perspective.webp",
-    "description": "Conception de boutiques Shopify thématiques, de la présentation des collections au suivi des performances. Le projet rassemble la personnalisation de l’interface, l’organisation du catalogue et l’adaptation de l’expérience sur mobile."
+    "description": "Création de boutiques Shopify pour des clients à la tête de communautés spécialisées sur les réseaux sociaux. Design, configuration des produits et des paramètres, puis suivi des visites, des ventes et des commandes."
   },
   {
     "id": "animation-3d",
     "year": "",
-    "image": "./assets/images/projects/animation-3d/vehicle-front.jpg",
+    "image": "./assets/images/projects/animation-3d/00-chevalier.jpg",
     "link": "",
     "video": "",
-    "role": "Conception, modélisation et animation 3D",
+    "status": "Projet scolaire · Animation 3D · Techniques d’intégration multimédia",
+    "role": "Construction du décor et de l’environnement, mise en scène et animation dans Maya, puis montage dans CapCut. Modèles 3D importés de Sketchfab, non modélisés par moi.",
     "tasks": [
-      "Recherche visuelle et préparation d’un storyboard",
-      "Modélisation d’un véhicule futuriste",
-      "Travail des matériaux, des couleurs et de l’éclairage",
-      "Préparation d’une séquence animée et de son montage"
+      "Préparation du scénarimage et de la direction visuelle",
+      "Construction des décors à partir de modèles importés",
+      "Animation, cadrage des caméras et éclairage dans Maya",
+      "Assemblage des séquences et montage final dans CapCut"
     ],
-    "tools": [],
+    "tools": ["Maya", "CapCut"],
+    "imageCaption": "Extrait du rendu animé : un chevalier dans un décor rouge traversé de colonnes.",
     "gallery": [
-      "./assets/images/projects/animation-3d/vehicle-side.jpg",
-      "./assets/images/projects/animation-3d/vehicle-rear.jpg",
-      "./assets/images/projects/animation-3d/storyboard.jpg"
+      "./assets/images/projects/animation-3d/01-scenarimage.jpg",
+      "./assets/images/projects/animation-3d/02-environnement.jpg",
+      "./assets/images/projects/animation-3d/03-personnage.jpg"
     ],
-    "title": "Animation 3D",
+    "galleryCaptions": [
+      "Scénarimage : intentions de plans, transitions et progression entre les environnements.",
+      "Plan du montage final : véhicule, personnage et composition d’un environnement clair.",
+      "Extrait du rendu animé : cadrage du personnage dans l’environnement rouge."
+    ],
+    "videos": [
+      {
+        "src": "./assets/videos/projects/animation-3d/00-montage-final.mp4",
+        "title": "Avant la fin — Film final",
+        "caption": "42 secondes · Montage réalisé dans CapCut. Lecture avec son au clic.",
+        "poster": "./assets/images/projects/animation-3d/02-environnement.jpg"
+      },
+      {
+        "src": "./assets/videos/projects/animation-3d/01-animation-marche.mp4",
+        "title": "Animation de marche dans Maya",
+        "caption": "Capture de travail : mouvement du personnage et squelette visible dans la scène.",
+        "poster": "./assets/images/projects/animation-3d/04-marche-maya.jpg"
+      },
+      {
+        "src": "./assets/videos/projects/animation-3d/02-extrait-chevalier.mp4",
+        "title": "Extrait — Le chevalier",
+        "caption": "Aperçu animé fourni, sans son.",
+        "poster": "./assets/images/projects/animation-3d/00-chevalier.jpg"
+      },
+      {
+        "src": "./assets/videos/projects/animation-3d/03-extrait-personnage.mp4",
+        "title": "Extrait — Le personnage",
+        "caption": "Aperçu animé fourni, sans son.",
+        "poster": "./assets/images/projects/animation-3d/03-personnage.jpg"
+      }
+    ],
+    "caseStudy": [
+      {
+        "title": "Du scénarimage à l’univers visuel",
+        "text": "Avant la fin est un court projet réalisé dans le cours d’animation 3D en Techniques d’intégration multimédia. Le scénarimage prépare l’enchaînement des plans et les transitions. Le film joue sur le contraste entre un environnement clair et un univers rouge, peuplé de colonnes, de personnages et de véhicules."
+      },
+      {
+        "title": "Construire et animer les scènes",
+        "text": "Les modèles proviennent de Sketchfab : mon travail porte sur la construction du décor et de l’environnement, leur composition et l’animation dans Maya. Les déplacements des personnages, les cadrages et l’éclairage donnent vie aux scènes. La capture du cycle de marche montre une étape de ce travail avant le rendu final."
+      },
+      {
+        "title": "Assembler le film",
+        "text": "Dans CapCut, j’assemble les séquences animées pour construire le rythme du film et passer d’une ambiance à l’autre. Le montage final, d’environ 42 secondes, réunit les scènes et les transitions préparées au fil du projet."
+      }
+    ],
+    "title": "Avant la fin — Animation 3D",
     "category": "Animation et mouvement",
     "heroLabel": "Ordi desktop",
     "heroImage": "./assets/images/hero/objects/desktop-workstation.webp",
-    "description": "Conception d’une séquence 3D autour d’un véhicule futuriste. Le projet passe de la recherche visuelle et du storyboard à la modélisation, au travail des matériaux, à l’éclairage et au montage final."
+    "description": "Un court film 3D aux ambiances contrastées. Construction des décors et animation de modèles importés de Sketchfab dans Maya, puis montage dans CapCut : du scénarimage au film final."
   },
   {
     "id": "platformer-2d",

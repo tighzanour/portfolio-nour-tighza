@@ -415,11 +415,37 @@
 }
 
 .dialog-video {
+  display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
+  object-fit: contain;
   border: 1px solid rgba(83, 58, 42, 0.3);
   border-radius: var(--radius-small);
   background: #35251d;
+}
+
+.dialog-video-item {
+  min-width: 0;
+  margin: 0;
+}
+
+.dialog-video-item figcaption {
+  margin-top: var(--space-2);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #574536;
+}
+
+.dialog-clips {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+@media (max-width: 30rem) {
+  .dialog-clips {
+    grid-template-columns: 1fr;
+  }
 }
 
 .dialog-link {

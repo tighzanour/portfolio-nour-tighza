@@ -49,6 +49,14 @@ export async function loadProjects() {
     if (!Array.isArray(gallery) || gallery.some((image) => typeof image !== "string" || !image.trim())) {
       throw new Error(`${label} : gallery doit être un tableau de chemins d'images.`);
     }
+    const videos = project.videos ?? [];
+    if (!Array.isArray(videos) || videos.some((clip) => !clip ||
+        typeof clip.src !== "string" || !/\.mp4$/i.test(clip.src) ||
+        typeof clip.title !== "string" || !clip.title.trim() ||
+        (clip.caption !== undefined && typeof clip.caption !== "string") ||
+        (clip.poster !== undefined && typeof clip.poster !== "string"))) {
+      throw new Error(`${label} : videos doit contenir des clips MP4 avec src et title.`);
+    }
     // Informations de présentation facultatives : les autres projets gardent leur format.
     const status = project.status ?? "";
     const imageCaption = project.imageCaption ?? "";
@@ -67,7 +75,7 @@ export async function loadProjects() {
       throw new Error(`${label} : caseStudy doit contenir des sections title et text.`);
     }
     // Les champs vides sont autorisés pendant la préparation du vrai contenu.
-    return { ...project, link: project.link ?? "", video: project.video ?? "", role, tasks, tools, gallery,
+    return { ...project, link: project.link ?? "", video: project.video ?? "", role, tasks, tools, gallery, videos,
       status, imageCaption, galleryCaptions, caseStudy };
   });
 }

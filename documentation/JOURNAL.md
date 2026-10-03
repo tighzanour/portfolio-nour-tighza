@@ -1,5 +1,21 @@
 # Journal de bord — Portfolio
 
+## Présenter Avant la fin, projet d’animation 3D — 2026-10-03
+
+**Prompt :** _Continue avec l’animation 3D du cours en Techniques d’intégration multimédia. Logiciels utilisés : Maya et CapCut. Utilise le montage final, la capture de marche dans Maya, le scénarimage et les deux GIF fournis. Le titre est « Avant la fin » ; je n’ai créé aucun modèle, ils viennent de Sketchfab. J’ai construit le décor et l’environnement, puis animé._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** fiche organisée autour du film final, du scénarimage, des rendus et des extraits de travail. Le rôle distingue explicitement la construction du décor et l’animation des modèles importés de Sketchfab. Les consignes du cours ne sont pas transformées en réalisations prouvées ; DaVinci n’est pas ajouté aux outils. Vidéos adaptées au Web, GIF convertis en MP4 sans son, lecteurs avec commandes et sans lecture automatique. Les originaux et les anciens médias restent conservés. Prompt consigné dans les deux journaux, sans commit automatique.
+
+## Présenter les réalisations Shopify pour des clients — 2026-10-03
+
+**Prompt :** _Continue avec Shopify : j’ai créé et designé plusieurs boutiques pour des clients ayant des comptes sociaux nichés et populaires, autour de One Piece, Marvel Rivals et des produits pour chats. J’ai configuré les produits et les paramètres Shopify, puis suivi les statistiques. Utilise les captures de boutique, de visites, de ventes et de commandes fournies._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** présentation centrée sur le besoin client, la création des boutiques et le suivi de leur activité. Six visuels sont intégrés sans modifier les originaux ; l’accueil Mugiwara ouvre la galerie et les données clients restent masquées. Les chiffres de captures différentes ne sont pas cumulés et aucune croissance n’est attribuée au design. Les anciennes images sont conservées. Les liens publics, les captures des autres boutiques et les périodes manquantes restent à préciser. Aucun commit automatique.
+
 ## Présenter Juicy, projet individuel WordPress — 2026-10-03
 
 **Prompt :** _Présente Juicy comme QLT à partir des consignes de Web 4, de mon rôle et de mes captures. Projet individuel : j’ai tout réalisé et imaginé l’identité visuelle à partir du thème imposé des jus. Intègre le lien https://202173398.tim-momo.com/tp_final/ et les sept images fournies._

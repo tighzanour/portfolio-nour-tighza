@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/components.css?v=12" />
     <link rel="stylesheet" href="./css/components/navigation.css?v=3" />
     <link rel="stylesheet" href="./css/components/project-card.css?v=3" />
-    <link rel="stylesheet" href="./css/components/modal.css?v=10" />
+    <link rel="stylesheet" href="./css/components/modal.css?v=11" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/components/ai-lab.css?v=3" />
   </head>
@@ -280,9 +280,18 @@
 
         <article id="dialog-spread" class="dialog-spread">
           <section id="dialog-visual-page" class="dialog-page dialog-page--visual" aria-label="Médias du projet">
+            <section id="dialog-film-section" class="dialog-media-section" aria-labelledby="dialog-film-title" hidden>
+              <h3 id="dialog-film-title">Montage final</h3>
+              <div id="dialog-film"></div>
+            </section>
             <section id="dialog-gallery-section" class="dialog-media-section" aria-labelledby="dialog-gallery-title" hidden>
               <h3 id="dialog-gallery-title">Explorer le projet en images</h3>
               <div id="dialog-gallery" class="dialog-gallery"></div>
+            </section>
+
+            <section id="dialog-clips-section" class="dialog-media-section" aria-labelledby="dialog-clips-title" hidden>
+              <h3 id="dialog-clips-title">Extraits et travail d’animation</h3>
+              <div id="dialog-clips" class="dialog-clips"></div>
             </section>
 
             <section id="dialog-video-section" class="dialog-media-section" aria-labelledby="dialog-video-title" hidden>
@@ -338,6 +347,6 @@
       <p>2026 Nour Tighza. Tous droits réservés.</p>
     </footer>
 
-    <script type="module" src="./js/main.js?v=22"></script>
+    <script type="module" src="./js/main.js?v=23"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-import { loadProjects } from "./data.js?v=5";
+import { loadProjects } from "./data.js?v=6";
 import { renderProjectCards } from "./components/project-card.js?v=4";
 import { initModal } from "./components/modal.js?v=2";
 import { createHeroButtons } from "./hero.js?v=5";
@@ -32,6 +32,10 @@ const dialogGallerySection = document.querySelector("#dialog-gallery-section");
 const dialogGallery = document.querySelector("#dialog-gallery");
 const dialogVideoSection = document.querySelector("#dialog-video-section");
 const dialogVideo = document.querySelector("#dialog-video");
+const dialogFilmSection = document.querySelector("#dialog-film-section");
+const dialogFilm = document.querySelector("#dialog-film");
+const dialogClipsSection = document.querySelector("#dialog-clips-section");
+const dialogClips = document.querySelector("#dialog-clips");
 const dialogLink = document.querySelector("#dialog-link");
 const dialogPrevious = document.querySelector("[data-project-previous]");
 const dialogNext = document.querySelector("[data-project-next]");
@@ -64,15 +68,46 @@ initAboutBook();
 initAiLab();
 const projectModal = initModal();
 
+function stopProjectVideos() {
+  projectDialog?.querySelectorAll("video").forEach((video) => {
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+  });
+}
+
+function createVideoFigure(clip, isMain = false) {
+  const figure = document.createElement("figure");
+  figure.className = "dialog-video-item";
+  const video = document.createElement("video");
+  video.className = "dialog-video";
+  video.controls = true;
+  video.playsInline = true;
+  video.preload = isMain ? "metadata" : "none";
+  video.src = clip.src;
+  if (clip.poster) video.poster = clip.poster;
+  video.setAttribute("aria-label", clip.title);
+  // Pas d'autoplay : la lecture et le son restent sous le contrôle du visiteur.
+  video.addEventListener("play", () => {
+    projectDialog?.querySelectorAll("video").forEach((other) => {
+      if (other !== video) other.pause();
+    });
+  });
+  const caption = document.createElement("figcaption");
+  caption.textContent = clip.caption ? `${clip.title} — ${clip.caption}` : clip.title;
+  figure.append(video, caption);
+  return figure;
+}
+
 export function openProjectDialog(project, button) {
   if (!dialogTitle || !dialogCategory || !dialogDescription) {
     return;
   }
 
+  stopProjectVideos();
   dialogTitle.textContent = project.title;
   setImageExpanded(false);
   imageTrigger = null;
-  if (dialogSpread) dialogSpread.scrollTop = 0;
   dialogCategory.textContent = project.category;
   dialogDescription.textContent = project.description;
   dialogSpread?.classList.toggle("dialog-spread--case-study", project.caseStudy.length > 0);
@@ -146,7 +181,7 @@ export function openProjectDialog(project, button) {
     }
     if (dialogImage) dialogImage.alt = caption || `Vue ${index + 1} du projet ${project.title}`;
   }
-  const hasVisualMedia = mediaSources.length > 0 || Boolean(project.video);
+  const hasVisualMedia = mediaSources.length > 0 || Boolean(project.video) || project.videos.length > 0;
   dialogSpread?.classList.toggle("dialog-spread--text-only", !hasVisualMedia);
 
   if (dialogImage) {
@@ -213,9 +248,18 @@ export function openProjectDialog(project, button) {
     dialogGallery.classList.toggle("dialog-gallery--single", galleryButtons.length === 1);
   }
 
+  if (dialogFilm && dialogFilmSection && dialogClips && dialogClipsSection) {
+    const [mainClip, ...clips] = project.videos;
+    dialogFilm.replaceChildren(...(mainClip ? [createVideoFigure(mainClip, true)] : []));
+    dialogFilmSection.hidden = !mainClip;
+    dialogClips.replaceChildren(...clips.map((clip) => createVideoFigure(clip)));
+    dialogClipsSection.hidden = clips.length === 0;
+  }
+
   if (dialogVideo && dialogVideoSection) {
     dialogVideoSection.hidden = !project.video;
-    dialogVideo.src = project.video || "";
+    if (project.video) dialogVideo.src = project.video;
+    else dialogVideo.removeAttribute("src");
     dialogVideo.title = project.video ? `Vidéo du projet ${project.title}` : "Vidéo du projet";
   }
 
@@ -225,6 +269,8 @@ export function openProjectDialog(project, button) {
   }
 
   if (!projectDialog?.open) projectModal.open(button);
+  // Le défilement d'une fiche fermée ne peut être réinitialisé qu'une fois visible.
+  if (dialogSpread) dialogSpread.scrollTop = 0;
 }
 
 function showAdjacentProject(direction) {
@@ -273,5 +319,6 @@ try {
 
 projectDialog?.addEventListener("close", () => {
   setImageExpanded(false);
-  if (dialogVideo) dialogVideo.src = "";
+  stopProjectVideos();
+  if (dialogVideo) dialogVideo.removeAttribute("src");
 });
