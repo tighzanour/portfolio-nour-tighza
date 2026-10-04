@@ -295,7 +295,6 @@
 
   **Texte conservé de la version racine :**
 
-
   **(extrait, 'arborescence du cours) :** _respecte cette arborescence, assures toi notamment de ça pour les popups : `js/components/modal.js`, seulement pour un one-pager avec modale : la logique d'ouverture et de fermeture._
 
 - #### Afficher les médias facultatifs dans les fiches de projets [2026-10-01]
@@ -335,3 +334,7 @@
 - #### Ajustement de l'affichage des médias dans les modals. [2026-10-02]
 
   _j'aimerais revoir le format de l'affichage des images, actuellement c'est pas le mieux, j'aimerais que lorsqu'on clique sur un projet, on ait une expérience visuelle en priorité, comme si on allait acheter dans une boutique en ligne, donc on verrait une grille d'images sur la gauche et du texte à droite, aussi, actuellement lorsqu'on change d'images, la dimension aussi change et c'est pas satisfaisant pour la page._
+
+- #### Modification du header et ajout des titres sur les objets. [2026-10-04]
+
+  _parfait, maintenant on va modifier le header et ajouter des titres sur les objets pour faciliter l'expérience, le header doit être transparent donc comme si il y en avait pas, les titres des projets seront affichés avec des cercles de couleur représentant leur état (completé, en cours), en haut à droite les menus, inspires toi de la référence envoyée._
