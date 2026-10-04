@@ -13,32 +13,52 @@ Le site présente mes projets dans un atelier interactif. Les objets du décor o
 - Images principales, galeries, liens et vidéos facultatifs.
 - Livre animé pour la section À propos.
 - Mise en page responsive et prise en charge de `prefers-reduced-motion`.
-- Images WebP optimisées pour accélérer le chargement.
+- Médias adaptés au Web : images WebP/PNG et vidéos MP4 avec commandes de lecture.
 
 ## Données des projets
 
 Les projets sont définis dans [`data/projects.json`](data/projects.json). Chaque projet utilise la même structure :
 
 - `id`, `title`, `description`, `category`, `year` et `image`;
-- `link`, `video` et `gallery` pour les médias facultatifs;
+- `link`, `video` (intégration externe), `videos` (clips MP4) et `gallery` pour les médias facultatifs;
 - `role`, `tasks` et `tools` pour les informations détaillées;
 - `status` et `caseStudy` pour le statut et les sections de présentation facultatives;
 - `imageCaption` et `galleryCaptions` pour contextualiser les visuels (le tableau des légendes suit l’ordre de `gallery`);
-- `heroLabel` et `heroImage` pour son objet dans l’atelier.
+- `heroLabel` et `heroImage` pour son objet dans l’atelier;
+- `videoHeading` et `clipsHeading` pour les titres des sections vidéo.
 
-Le module [`js/data.js`](js/data.js) charge et valide ces données. La modale et les cartes n’ont donc pas besoin d’être modifiées lorsqu’un projet est mis à jour.
+Le module [`js/data.js`](js/data.js) charge et valide ces données. Les composants d’affichage n’ont donc pas besoin d’être modifiés lorsqu’un projet est mis à jour.
 
 ## Structure principale
 
 ```text
-assets/                 Images et icônes
-css/                    Styles globaux et composants
-data/projects.json      Source locale des projets
-documentation/          Planification et journal de production
-exports-composants/     Captures des composants à remettre
-js/                     Chargement, composants et animations
-index.html              Page principale
+README.md
+index.html
+css/
+  variables.css         Variables communes, chargées en premier
+  base.css              Base et accessibilité
+  layout.css            Disposition générale
+  components/           Un fichier par composant
+js/
+  main.js               Point d’entrée
+  data.js               Chargement et validation JSON
+  components/           Cartes, modale, détails, hero, livre et laboratoire
+data/projects.json     Source locale des projets
+assets/                 Images, icônes et vidéos
+exports-composants/     Captures PNG exportées depuis Figma
+.github/copilot-instructions.md
+documentation/
+  PLANIFICATION.md
+  JOURNAL.md
+  QUALITY.md            Rapport qualité à compléter
 ```
+
+Les variables sont définies uniquement dans `css/variables.css`. Chaque feuille CSS est liée séparément dans le HTML, sans `@import`.
+`js/components/modal.js` gère seulement l’ouverture et la fermeture ; `js/components/project-details.js` remplit les fiches, les galeries et les vidéos.
+
+- [Planification](documentation/PLANIFICATION.md)
+- [Journal de production](documentation/JOURNAL.md)
+- [Rapport qualité à compléter](documentation/QUALITY.md)
 
 ## Contenu à terminer
 

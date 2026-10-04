@@ -1,16 +1,19 @@
-/* Structure générale des sections. */
-#projets,
-#apropos,
-#contact {
-  width: min(100% - (2 * var(--space-5)), var(--content-width));
-  margin-inline: auto;
+/* Disposition générale des sections et de la liste des projets. */
+main {
+  overflow: clip;
 }
 
-.site-footer {
-  padding: var(--space-6) var(--space-5);
-  border-top: 1px solid var(--color-border);
-  color: var(--color-text-muted);
-  text-align: center;
+section {
+  position: relative;
+  padding-block: var(--space-9);
+  scroll-margin-top: calc(var(--header-height) + var(--space-4));
+}
+
+@media (max-width: 40rem) {
+
+  section {
+    padding-block: var(--space-8);
+  }
 }
 
 #contact {
@@ -19,91 +22,24 @@
   place-items: center;
 }
 
-.contact-card {
-  position: relative;
-  width: min(100%, 44rem);
-  padding: clamp(3rem, 8vw, 6rem) clamp(2rem, 7vw, 5rem);
-  overflow: hidden;
-  border: 0.45rem solid #705740;
-  border-radius: 0.2rem;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
-    #f3e8cd;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.38);
-  color: #49362b;
-  text-align: center;
-}
+#projets,
+#apropos,
+#contact {
+  width: min(100% - (2 * var(--space-5)), var(--content-width));
 
-.contact-card::before {
-  position: absolute;
-  inset: 1rem;
-  border: 1px solid rgba(112, 87, 64, 0.28);
-  content: "";
-  pointer-events: none;
-}
-
-.contact-card__eyebrow {
-  margin-bottom: var(--space-6);
-  color: #9b613f;
-  font-size: 0.75rem;
-  font-weight: var(--font-weight-medium);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.contact-card h2 {
-  color: #35251d;
-  font-size: clamp(2.5rem, 6vw, 5rem);
-}
-
-.contact-card h2 em {
-  display: block;
-  color: #9b4f43;
-  font-weight: inherit;
-}
-
-.contact-card__availability {
-  max-width: 33rem;
-  margin: 0 auto var(--space-6);
-  color: #6b5140;
-}
-
-.contact-card__email {
-  position: relative;
-  display: inline-flex;
-  min-height: var(--control-height);
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
-  border: 1px solid #9b4f43;
-  background: #9b4f43;
-  color: #fff8e9;
-  font-weight: var(--font-weight-medium);
-  text-decoration: none;
-}
-
-.contact-card__email:hover {
-  border-color: #6f352f;
-  background: #6f352f;
-  color: #fff8e9;
-}
-
-.contact-card__signature {
-  margin: var(--space-7) 0 0;
-  color: #9b613f;
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-style: italic;
+  margin-inline: auto;
 }
 
 @media (max-width: 40rem) {
+
   #projets,
   #apropos,
   #contact {
     width: min(100% - (2 * var(--space-4)), var(--content-width));
   }
-
-  .contact-card {
-    border-width: 0.35rem;
-  }
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: var(--space-5);
 }

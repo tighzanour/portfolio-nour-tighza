@@ -320,26 +320,52 @@
   {
     "id": "marketing-reseaux-sociaux",
     "year": "",
-    "image": "./assets/images/projects/social-media/mugiwara-instagram.webp",
+    "image": "./assets/images/projects/social-media/00-resultats-comptes.png",
     "link": "",
     "video": "",
-    "role": "Création de contenu et gestion de comptes",
+    "status": "Projets personnels · Instagram et YouTube",
+    "role": "Veille de niches, lancement et gestion de comptes, sélection et republication de contenus, analyse des performances et adaptation à l’audience. Les contenus diffusés ne sont pas tous des créations personnelles.",
     "tasks": [
-      "Organisation de profils Instagram thématiques",
-      "Publication et adaptation de contenus pour les réseaux sociaux",
-      "Suivi des tableaux de bord professionnels",
-      "Analyse de la portée, des vues et de l’évolution des comptes"
+      "Repérage de niches, de tendances et de possibilités de positionnement face à la concurrence",
+      "Sélection de contenus et organisation d’un rythme de publication régulier",
+      "Suivi des abonnés, de la portée et des vues pour comprendre les réactions de chaque communauté",
+      "Tests et adaptation de la stratégie sur Instagram et YouTube"
     ],
     "tools": [
-      "Instagram"
+      "Instagram",
+      "YouTube"
     ],
+    "imageCaption": "Captures anonymisées : ancien compte One Piece à 100K abonnés et 10M de comptes atteints sur 30 jours ; compte chats à 257K abonnés ; publications Marvel Rivals à 4,9M, 146K et 662K vues. Instantanés distincts, non cumulés.",
     "gallery": [
-      "./assets/images/projects/social-media/goofy-kitty-cats-instagram.webp"
+      "./assets/images/projects/social-media/01-evolution-abonnes.png",
+      "./assets/images/projects/social-media/02-palier-one-piece.png"
     ],
-    "title": "Marketing et réseaux sociaux",
-    "category": "Stratégie de contenu",
+    "galleryCaptions": [
+      "Ancien compte One Piece : 105 216 abonnés, +25 221 abonnés nets et +31,5 % sur la période du 7 août au 5 septembre. L’année n’est pas indiquée dans la capture.",
+      "Visuel célébrant le palier des 100 000 abonnés de l’ancien compte One Piece."
+    ],
+    "caseStudy": [
+      {
+        "title": "Repérer une niche et trouver sa place",
+        "text": "Je crée des comptes autour de niches et de tendances qui ont un potentiel communautaire. J’observe les centres d’intérêt, les contenus disponibles et la concurrence pour trouver un positionnement. L’objectif est de rassembler une audience autour d’un univers qu’elle souhaite retrouver régulièrement."
+      },
+      {
+        "title": "Sélectionner, publier, observer",
+        "text": "Une partie des contenus vient d’autres plateformes et est republiée. Mon travail porte principalement sur leur sélection, leur diffusion et l’observation des réactions, plutôt que sur leur création originale. Cette approche suppose une réserve suffisante de contenus, avec une cadence visée d’au moins trois publications par jour. Je compare les résultats pour ajuster ce que je propose à chaque communauté."
+      },
+      {
+        "title": "Des résultats à différentes échelles",
+        "text": "J’ai auparavant développé un compte autour de One Piece, documenté ici au palier des 100 000 abonnés. Je gère aujourd’hui un compte chats à plus de 200 000 abonnés, dont une capture montre 257 000 abonnés. Mes deux comptes Marvel Rivals comptent moins de 10 000 abonnés, mais certaines publications dépassent 100 000, 500 000 et parfois un million de vues. Les captures distinguent ces métriques : vues, comptes atteints et abonnés ne mesurent pas la même chose."
+      },
+      {
+        "title": "Adapter la méthode, pas appliquer une recette",
+        "text": "J’ai aussi expérimenté la republication sur YouTube et obtenu des résultats satisfaisants ; cette expérience m’amène aujourd’hui à explorer d’autres méthodes sur cette plateforme. Au fil des comptes, j’apprends à nuancer les idées reçues sur les vues et les likes, à lire les attentes d’une audience et à adapter ma stratégie lorsque les usages ou la concurrence évoluent. Cette méthode repose sur des observations et des tests propres à chaque niche, plutôt que sur une recette de croissance universelle."
+      }
+    ],
+    "title": "Réseaux sociaux — Communautés de niche",
+    "category": "Stratégie et analyse d’audience",
     "heroLabel": "iPhone",
     "heroImage": "./assets/images/hero/objects/iphone-15-social.webp",
-    "description": "Gestion de comptes Instagram thématiques combinant création de contenu, organisation des profils et suivi des performances. Les tableaux de bord professionnels servent à observer la portée, les vues et l’évolution de chaque compte."
+    "description": "Développement de communautés Instagram autour de One Piece, des chats et de Marvel Rivals. Un compte chats à plus de 200 000 abonnés, des publications à forte portée : veille de niches, sélection de contenus et analyse des réactions de l’audience."
   }
 ]

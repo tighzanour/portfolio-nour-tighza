@@ -1,0 +1,37 @@
+/* Styles du composant transition. */
+.portfolio-transition {
+  display: grid;
+  min-height: 60svh;
+  place-items: center;
+  padding-inline: var(--space-5);
+  border-block: 1px solid rgba(213, 168, 95, 0.2);
+  background: radial-gradient(circle at 75% 45%, rgba(116, 62, 31, 0.34), transparent 42%), linear-gradient(135deg, #0b0d0c, #1a100b 60%, #0b0d0c);
+}
+
+.portfolio-transition__content {
+  width: min(100%, var(--content-width));
+}
+
+.portfolio-transition__eyebrow,
+.portfolio-transition__hint {
+  color: var(--color-accent-strong);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.portfolio-transition h2 {
+  max-width: 12ch;
+  margin-bottom: var(--space-6);
+}
+
+.portfolio-transition h2 em {
+  display: block;
+  color: var(--color-accent-strong);
+  font-weight: inherit;
+}
+
+.portfolio-transition__hint {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}

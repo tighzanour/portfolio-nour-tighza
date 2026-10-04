@@ -1,5 +1,21 @@
 # Journal de bord — Portfolio
 
+## Réorganiser le dépôt selon les consignes du cours — 2026-10-03
+
+**Prompt :** _Voici les indications pour l’arborescence, ajuste svp._
+
+**Résultat obtenu :** fusion des deux journaux en conservant les entrées propres à chacun, puis documentation regroupée dans `documentation/`. Variables CSS centralisées, styles et logique JavaScript répartis par composant. `main.js` devient le point d’entrée ; `modal.js` reste limité à l’ouverture et la fermeture. Liens CSS et imports mis à jour, aucun `@import`. Les captures Figma restent à exporter réellement. Aucun média supprimé, aucun commit automatique.
+
+**Validation :** 19 éléments attendus présents, 12 feuilles CSS et 7 imports JS résolus, 53 références aux médias existantes. Syntaxe JS et CSS vérifiée. Dans le navigateur : six fiches, navigation, zoom, lecture vidéo et arrêt à la fermeture, laboratoire IA et changement de page du livre testés. Comparaison du rendu sur ordinateur et mobile : dispositions conservées. Aucune erreur console observée pendant ces tests. Le rapport qualité général et les captures Figma restent à compléter.
+
+## Documenter les communautés de niche sur les réseaux sociaux — 2026-10-03
+
+**Prompt :** _Documente le dernier projet : je repère des niches et des tendances, puis crée des comptes Instagram pour y rassembler une communauté. Ancien compte One Piece, compte chats à plus de 200K abonnés et deux comptes Marvel Rivals de moins de 10K abonnés avec des publications à 100K, 500K et parfois plus d’un million de vues. Les contenus ne sont pas toujours créés par moi : je sélectionne et republie aussi des contenus d’autres plateformes. Mon objectif est de comprendre les réactions de l’audience et le fonctionnement des plateformes, puis d’adapter ma méthode. J’ai également expérimenté sur YouTube. Utilise les trois captures fournies ; le profil à 257K est bien le compte chats._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** présentation centrée sur la veille, le positionnement, la sélection et la diffusion de contenus, l’analyse et l’adaptation. La republication est explicitement distinguée de la création originale. Les trois captures anonymisées sont intégrées sans modification ; les anciennes images restent conservées. Les abonnés, les vues et les comptes atteints ne sont ni confondus ni cumulés ; les instantanés historiques ne sont pas présentés comme des mesures actuelles. L’année et les résultats chiffrés de YouTube ne sont pas inventés. Les changements de règles de YouTube ne sont pas présentés comme une politique vérifiée. Aucun commit automatique.
+
 ## Présenter Forward, jeu de plateforme dans Godot — 2026-10-03
 
 **Prompt :** _Le projet Platformer 2D est une création de jeu vidéo avec Godot et des assets gratuits sur itch.io, dans le cours d’Interactivité ludique. Plutôt qu’un simple platformer, j’ai imaginé un risque constant qui oblige le joueur à se dépêcher, avec une mécanique d’essais successifs jusqu’à réussir. Utilise le gameplay et les quatre GIF fournis. Le titre est « Forward » et la menace est un mur de feu qui poursuit le joueur._
@@ -237,6 +253,11 @@
 
   **Résultat :** ajout des dossiers et fichiers demandés en conservant les fichiers déjà présents. La modale sépare maintenant le remplissage du contenu dans `main.js` de sa logique d'ouverture et de fermeture dans `js/components/modal.js`.
 
+  **Texte conservé de la version racine :**
+
+
+  **(extrait, 'arborescence du cours) :** _respecte cette arborescence, assures toi notamment de ça pour les popups : `js/components/modal.js`, seulement pour un one-pager avec modale : la logique d'ouverture et de fermeture._
+
 - #### Afficher les médias facultatifs dans les fiches de projets [2026-10-01]
 
   **Prompt :** _c'est parti continuons, si besoin dis moi quoi t'envoyer_
@@ -254,3 +275,23 @@
   **Prompt :** _embelli la couleur de base du site, actuellement c'est simplement vert, utilise plutot cette image comme fond pour le header et la couleur de base du html etc, aussi fait en sorte que le header soit un peu glassy/transparent_
 
   **Résultat :** l’image fournie a été optimisée puis utilisée comme texture de fond générale. La palette verte est plus profonde et le header combine la texture avec une transparence, un flou léger et une bordure dorée discrète.
+
+- #### Ajouter du contenue dans les cartes pour les projets et ajouter la section contact [2026-10-01]
+
+  _Ajoute le contenue que je t'ai donné aux cartes et ajoute la section contact avec les éléments de base._
+
+- #### Optimisation des fichiers [2026-10-01]
+
+  _Optimise les fichiers._
+
+- #### Ajout d'une section IA [2026-10-02]
+
+  _Ajoute un menu IA qui dirigera vers une section où je placerais des mini-jeux,outils, et autres créés par IA_
+
+- #### Ajustement du parallax [2026-10-02]
+
+  _lorsque le curseur quitte et reviens sur le hero, l'effet de parallax reset de façon instantanée, fait en sorte que ce soit progressif._
+
+- #### Ajustement de l'affichage des médias dans les modals. [2026-10-02]
+
+  _j'aimerais revoir le format de l'affichage des images, actuellement c'est pas le mieux, j'aimerais que lorsqu'on clique sur un projet, on ait une expérience visuelle en priorité, comme si on allait acheter dans une boutique en ligne, donc on verrait une grille d'images sur la gauche et du texte à droite, aussi, actuellement lorsqu'on change d'images, la dimension aussi change et c'est pas satisfaisant pour la page._

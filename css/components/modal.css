@@ -1,4 +1,43 @@
-/* Grande fiche de projet inspirée des doubles pages du livre. */
+/* Styles du composant modal. */
+.dialog-category {
+  margin: 0;
+
+  color: var(--color-accent-strong);
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dialog-close {
+  flex-shrink: 0;
+}
+
+.dialog-content {
+  padding: var(--space-7);
+}
+
+.dialog-content h2 {
+  margin-bottom: var(--space-5);
+}
+
+.dialog-content p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+}
+
+@keyframes dialog-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 .project-dialog {
   width: min(calc(100% - 2rem), 100rem);
   max-width: none;
@@ -506,49 +545,82 @@
     height: 94svh;
     border-width: 0.35rem;
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-book {
     max-height: calc(94svh - 0.7rem);
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-spread {
     display: block;
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-spine {
     display: none;
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-page {
     padding: var(--space-6);
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-page--visual,
   .dialog-page--content {
     box-shadow: none;
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-image-frame.is-expanded {
     inset: 0.75rem;
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-details > div {
     grid-template-columns: 1fr;
     gap: var(--space-2);
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-project-navigation {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-project-navigation p {
     grid-column: 1 / -1;
     grid-row: 1;
   }
+}
+
+@media (max-width: 48rem) {
 
   .dialog-project-navigation button {
     grid-row: 2;
@@ -560,14 +632,23 @@
   .dialog-header {
     padding-inline: var(--space-4);
   }
+}
+
+@media (max-width: 28rem) {
 
   .dialog-close {
     padding-inline: var(--space-3);
   }
+}
+
+@media (max-width: 28rem) {
 
   .dialog-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+@media (max-width: 28rem) {
 
   .dialog-project-navigation {
     padding-inline: var(--space-4);

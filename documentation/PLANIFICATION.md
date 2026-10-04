@@ -78,7 +78,9 @@ Le fichier contiendra:
 Le fichier sera chargé de façon asynchrone avec `fetch()` en JavaScript.
 
 `js/data.js` exporte `loadProjects()`, qui retourne un tableau sans modifier le HTML.
-`js/components/project-card.js` affiche les cartes et `js/main.js` utilise les mêmes données pour les objets du hero et la modale.
+`js/main.js` charge les données puis initialise les composants dans `js/components/`.
+`project-card.js` affiche les cartes ; `hero.js` crée les objets interactifs et gère le parallaxe.
+`project-details.js` remplit les fiches et gère leurs galeries, vidéos et navigation.
 `js/components/modal.js` contient uniquement la logique d'ouverture et de fermeture de la modale.
 Un changement de source ne nécessitera de modifier que `data.js`.
 
@@ -89,9 +91,10 @@ Chaque projet utilise les propriétés communes `id`, `title`, `description`, `c
 `gallery` est un tableau de chemins d'images ; `video` sera une URL d'intégration
 YouTube ou Vimeo, pas une URL de page de visionnement.
 
-À compléter : les années et les images principales (obligatoires pour la remise),
-ainsi que les liens, vidéos et galeries disponibles. Pour le moment, leurs valeurs
-sont vides ; les six projets existants sont conservés sans duplication fictive.
+Les six projets possèdent maintenant leurs images principales et leurs présentations.
+Les années et certains liens publics restent à confirmer, sans inventer de données.
+`videos` contient les clips MP4 locaux (titre, source, affiche et ratio facultatifs) ;
+`video` reste réservé à une URL d’intégration externe.
 
 Raisons du choix:
 
@@ -126,7 +129,10 @@ Le CSS sera utilisé pour :
 - produire les effets de survol
 - gérer éléments interactifs
 
-Les styles seront organisés dans plusieurs fichiers pour faciliter leur modifications.
+Les styles sont organisés par composant dans `css/components/`.
+Les variables communes vivent dans `css/variables.css`, lié en premier dans le HTML.
+`base.css` contient la base et l’accessibilité ; `layout.css` contient la disposition générale.
+Chaque feuille est liée séparément : aucun `@import`.
 
 ### JavaScript vanilla
 
@@ -141,14 +147,8 @@ JavaScript servira à:
 
 J’utilise JavaScript vanilla afin de démontrer et pratiquer ma compréhension des bases sans dépendre d’un framework.
 
-### Anime.js
+### Animations
 
-Anime.js sera utilisé pour les animations complexes, comme:
-
-- le déplacement en profondeur du décor;
-- l’ouverture du livre;
-- l’apparition progressive de certaines sections quand on scroll;
-- les transitions pour les objets.
-
-J'ai choisit Anime.js parceque c'est légé et ça permet de controler les animations de façon précise.
-Les effets simples, comme les survols des boutons, resteront en CSS car j'y suis habitué.
+Anime.js était envisagé dans la planification initiale. L’implémentation actuelle utilise
+les animations CSS, `requestAnimationFrame` et la Web Animations API native pour le livre,
+sans bibliothèque externe. Les préférences de réduction des mouvements sont prises en compte.
