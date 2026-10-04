@@ -12,6 +12,8 @@
   --color-border: #314437;
   --color-focus: #f5d58a;
   --color-placeholder: #1c2d22;
+  --color-status-completed: #85bf9b;
+  --color-status-ongoing: #e9b768;
 
   /* Typographie */
   --font-body: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;

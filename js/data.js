@@ -61,6 +61,11 @@ export async function loadProjects() {
     }
     // Informations de présentation facultatives : les autres projets gardent leur format.
     const status = project.status ?? "";
+    const progress = project.progress ?? "ongoing";
+    const heroTitle = project.heroTitle ?? project.title;
+    if (!["completed", "ongoing"].includes(progress) || typeof heroTitle !== "string" || !heroTitle.trim()) {
+      throw new Error(`${label} : progress doit être completed ou ongoing et heroTitle doit être du texte non vide.`);
+    }
     const imageCaption = project.imageCaption ?? "";
     const videoHeading = project.videoHeading ?? "Montage final";
     const clipsHeading = project.clipsHeading ?? "Extraits et travail d’animation";
@@ -84,6 +89,6 @@ export async function loadProjects() {
     }
     // Les champs vides sont autorisés pendant la préparation du vrai contenu.
     return { ...project, link: project.link ?? "", video: project.video ?? "", role, tasks, tools, gallery, videos,
-      status, imageCaption, galleryCaptions, caseStudy, videoHeading, clipsHeading };
+      status, progress, heroTitle, imageCaption, galleryCaptions, caseStudy, videoHeading, clipsHeading };
   });
 }

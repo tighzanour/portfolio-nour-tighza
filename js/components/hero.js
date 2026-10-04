@@ -3,11 +3,13 @@ const heroStage = document.querySelector(".hero-stage");
 
 function createHeroButton(project, openProjectDialog) {
   const button = document.createElement("button");
+  const progressLabel = project.progress === "completed" ? "Terminé" : "En cours";
 
   button.classList.add("hero-stage__button");
   button.type = "button";
   button.dataset.projectId = project.id;
-  button.setAttribute("aria-label", `${project.heroLabel} : ouvrir le projet ${project.title}`);
+  button.dataset.progress = project.progress;
+  button.setAttribute("aria-label", `${project.heroLabel} : ouvrir le projet ${project.title} — ${progressLabel}`);
 
   if (project.heroImage) {
     const objectVisual = document.createElement("span");
@@ -22,6 +24,22 @@ function createHeroButton(project, openProjectDialog) {
     objectVisual.append(objectImage);
     button.append(objectVisual);
   }
+
+  const label = document.createElement("span");
+  const title = document.createElement("span");
+  const dot = document.createElement("span");
+  const name = document.createElement("span");
+  const hint = document.createElement("span");
+  label.classList.add("hero-stage__label");
+  label.setAttribute("aria-hidden", "true");
+  title.classList.add("hero-stage__label-title");
+  dot.classList.add("hero-stage__status-dot");
+  name.textContent = project.heroTitle;
+  hint.classList.add("hero-stage__label-hint");
+  hint.textContent = `${progressLabel} · Voir le projet`;
+  title.append(dot, name);
+  label.append(title, hint);
+  button.append(label);
 
   button.addEventListener("click", () => {
     openProjectDialog(project, button);

@@ -1,5 +1,15 @@
 # Journal de bord — Portfolio
 
+## Header transparent et étiquettes de projets — 2026-10-04
+
+**Prompt :** _Modifier le header pour qu’il soit transparent, placer les menus en haut à droite et ajouter sur les objets les titres des projets avec des cercles de couleur représentant leur état, en s’inspirant de la référence fournie._
+
+**Précision confirmée :** Juicy, Avant la fin et Forward terminés (vert) ; QLT, Shopify et Réseaux sociaux en cours (ambre).
+
+**Résultat obtenu :** header superposé au décor sans fond, texture, flou ni ombre de barre ; logo et identité à gauche, menu discret en haut à droite. Six étiquettes toujours visibles et cliquables, titre court, pastille et état écrit. Champs `heroTitle` et `progress` centralisés et validés dans les données JSON, sans remplacer les textes de contexte existants. Grille de trois colonnes sur tablette et deux sur mobile pour éviter les chevauchements ; positionnement dans le décor conservé sur ordinateur. Zoom et unique halo léger existants conservés, sans animation ajoutée aux pastilles. Arborescence respectée, aucun commit automatique.
+
+**Validation :** six fiches ouvertes et fermées au clavier, étiquette Forward testée au clic, navigation Projets et retour au hero vérifiés. Labo IA ouvert puis quitté sans chevauchement avec le header. Formats 320, 390, 820, 1050 et 1280 px contrôlés sans débordement horizontal ; les six étiquettes sont accessibles au point central sur tablette et ordinateur. Couleurs des trois états terminés et des trois états en cours confirmées. Aucune erreur console observée ; syntaxe des modules JS, audit des chemins et `git diff --check` réussis.
+
 ## Intégrer le logo scarabée-café — 2026-10-04
 
 **Prompt :** _Parfait, utilise les._

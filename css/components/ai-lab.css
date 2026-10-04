@@ -9,6 +9,9 @@
   background: transparent;
   color: var(--color-text-muted);
   font-weight: var(--font-weight-regular);
+  text-transform: inherit;
+  letter-spacing: inherit;
+  text-shadow: inherit;
 }
 
 .site-header nav .navigation-ai:hover,
@@ -30,8 +33,7 @@ body.is-ai-lab {
   background: #090913;
 }
 body.is-ai-lab::before { background: #090913; filter: none; }
-body.is-ai-lab .site-header { background: rgba(10, 8, 20, 0.85); border-bottom-color: rgba(178, 123, 233, 0.35); }
-body.is-ai-lab .site-header::before { background: linear-gradient(90deg, #17233a, #2f183b); opacity: 0.28; }
+body.is-ai-lab .site-header { position: relative; background: transparent; }
 body.is-ai-lab .site-footer { background: #090913; border-color: #393044; }
 .ai-lab { width: 100%; min-height: 0; padding: 0; margin: 0; }
 .ai-lab__viewport { overflow: hidden; background: #090913; }

@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: calc(100svh - var(--header-height));
+  min-height: 100svh;
   padding: 0;
   overflow: hidden;
   background: radial-gradient(circle at 50% 45%, rgba(213, 168, 95, 0.1), transparent 42%), linear-gradient(180deg, #101512 0%, var(--color-background) 72%);
@@ -11,7 +11,7 @@
 .hero-content {
   position: absolute;
   z-index: 3;
-  top: clamp(2rem, 6vh, 5rem);
+  top: clamp(6.5rem, 12vh, 8rem);
   left: clamp(1.5rem, 4vw, 5rem);
   width: min(30rem, calc(100% - 3rem));
   pointer-events: none;
@@ -28,13 +28,13 @@
 
 .hero h1 {
   margin-bottom: var(--space-2);
-  font-size: clamp(2.75rem, 7vw, 6rem);
+  font-size: clamp(2.75rem, 4vw, 3.5rem);
 }
 
 .hero-introduction {
   margin-bottom: 0;
   color: var(--color-text-muted);
-  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  font-size: 0.95rem;
 }
 
 .hero-stage {
@@ -42,7 +42,7 @@
   --scene-y: 0rem;
   position: relative;
   width: 100%;
-  height: clamp(42rem, calc(100svh - var(--header-height)), 68rem);
+  height: clamp(42rem, 100svh, 68rem);
   overflow: hidden;
   background-color: #0b0d0c;
   background:
@@ -72,6 +72,7 @@
 }
 
 .hero-stage__button {
+  --label-angle: 0deg;
   --parallax-x: 0rem;
   --parallax-y: 0rem;
   --object-width: 10rem;
@@ -96,6 +97,67 @@
   transition:
     filter 180ms ease,
     transform 180ms ease;
+}
+
+.hero-stage__label {
+  position: absolute;
+  z-index: 1;
+  top: 78%;
+  left: 50%;
+  display: grid;
+  gap: 0.2rem;
+  width: max-content;
+  max-width: 12rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid rgba(242, 234, 216, 0.4);
+  border-radius: 0.15rem;
+  background: rgba(6, 11, 8, 0.94);
+  color: var(--color-text);
+  text-align: left;
+  transform: translateX(-50%) rotate(var(--label-angle));
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.35);
+}
+
+.hero-stage__label-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.hero-stage__status-dot {
+  flex: 0 0 0.45rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--color-status-ongoing);
+}
+
+.hero-stage__button[data-progress="completed"] .hero-stage__status-dot {
+  background: var(--color-status-completed);
+}
+
+.hero-stage__label-hint {
+  padding-left: 0.85rem;
+  color: var(--color-text-muted);
+  font-size: 0.625rem;
+  font-weight: var(--font-weight-regular);
+  letter-spacing: 0.025em;
+  line-height: 1.4;
+}
+
+.hero-stage__button:hover .hero-stage__label,
+.hero-stage__button:focus-visible .hero-stage__label {
+  border-color: var(--color-focus);
+}
+
+.hero-stage__button:focus-visible .hero-stage__label {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
 }
 
 .hero-stage__button::before {
@@ -164,6 +226,7 @@
 }
 
 .hero-stage__button:nth-child(1) {
+  --label-angle: 5deg;
   --object-width: clamp(16rem, 24vw, 34rem);
   --object-ratio: 1.65;
   z-index: 4;
@@ -207,12 +270,13 @@
 .hero-stage__button:nth-child(5) {
   --object-width: clamp(10rem, 14vw, 19rem);
   --object-ratio: 0.9;
-  z-index: 3;
+  z-index: 6;
   top: 47%;
   left: 30%;
 }
 
 .hero-stage__button:nth-child(6) {
+  --label-angle: -6deg;
   --object-width: clamp(8rem, 9vw, 13rem);
   --object-ratio: 1.65;
   z-index: 6;
@@ -238,15 +302,18 @@
   user-select: none;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
 
   .hero {
     min-height: auto;
-    padding: var(--space-6) var(--space-4);
+    padding: 8.5rem var(--space-4) var(--space-6);
+    background:
+      linear-gradient(rgba(5, 10, 7, 0.86), rgba(5, 10, 7, 0.88)),
+      url("../../assets/images/hero/background/hero-workshop-pov.webp") center top / auto 100% no-repeat;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
 
   .hero-content {
     position: relative;
@@ -257,7 +324,7 @@
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
 
   .hero-stage {
     display: grid;
@@ -266,10 +333,44 @@
     height: auto;
     min-height: 0;
     padding: var(--space-6) var(--space-3);
+    overflow: visible;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .hero-stage::before,
+  .hero-stage::after {
+    display: none;
+  }
+
+  .hero-stage__label {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: none;
+    margin-top: 0.25rem;
+    padding: 0.55rem 0.45rem;
+    transform: none;
+  }
+
+  .hero-stage__label-title {
+    font-size: 0.7rem;
+    letter-spacing: 0.025em;
+  }
+
+  .hero-stage__label-hint {
+    font-size: 0.625rem;
+  }
+
+  .hero-stage__object-visual {
+    display: flex;
+    align-items: flex-end;
+    min-height: 7.5rem;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
 
   .hero-stage__button,
   .hero-stage__button:nth-child(n) {
@@ -278,11 +379,12 @@
     top: auto;
     left: auto;
     width: 100%;
+    justify-content: flex-end;
     transform: none;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
 
   .hero-stage__button:hover:not(:disabled),
   .hero-stage__button:focus-visible {
@@ -290,23 +392,39 @@
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
 
   .hero-stage__button:nth-child(2) .hero-stage__object-image {
     --object-transform: none;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
 
   .hero-stage__button:nth-child(3) .hero-stage__object-image {
     --object-transform: none;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
 
   .hero-stage__foreground-chair {
     display: none;
+  }
+}
+
+@media (min-width: 40.001rem) and (max-width: 64rem) {
+  .hero-stage {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-7) var(--space-5);
+  }
+
+  .hero-stage__button,
+  .hero-stage__button:nth-child(n) {
+    --object-width: 9rem;
+  }
+
+  .hero-stage__object-visual {
+    min-height: 10rem;
   }
 }
