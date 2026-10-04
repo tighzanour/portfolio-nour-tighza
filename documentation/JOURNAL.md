@@ -1,5 +1,21 @@
 # Journal de bord — Portfolio
 
+## Remplacer DM Sans par Manrope — 2026-10-04
+
+**Prompt :** _let's take manrope_
+
+**Résultat obtenu :** Manrope remplace DM Sans pour les textes, la navigation, les titres secondaires et les légendes. Special Elite reste réservée aux grands titres h1/h2. Deux fichiers WOFF2 officiels sont intégrés localement avec les accents latins, les graisses de 400 à 700 et la licence OFL. Les passages italiques conservent leur style par synthèse du navigateur, Manrope ne proposant pas de vraie italique. Les fichiers DM Sans restent conservés, mais ne sont plus déclarés ni chargés. Arborescence par composants conservée, aucun commit automatique.
+
+**Validation :** chargement de Manrope en 400, 600 et 700 confirmé avec les accents français ; Special Elite reste chargée sur les grands titres. Header vérifié à 1280 px, page et fiche Réseaux sociaux vérifiées à 390 et 320 px sans débordement horizontal. Aucune erreur console observée. Audit des chemins CSS, JS et médias réussi ; `git diff --check` sans erreur.
+
+## Essayer Special Elite et DM Sans — 2026-10-04
+
+**Prompt :** _Essayons Special Elite pour les grands titres et DM Sans pour le reste._
+
+**Résultat obtenu :** Special Elite réservée aux titres h1/h2 ; DM Sans appliquée aux textes, à la navigation, aux titres secondaires et aux légendes. Polices officielles intégrées localement dans `assets/fonts/` au format WOFF2, avec les sous-ensembles latins, les accents et les licences d’origine. Graisses DM Sans de 400 à 700 et vraie italique ; Special Elite en 400. Variables centralisées, aucun `@import`, structure par composants conservée. Aucun commit automatique.
+
+**Validation :** chargement réel des deux familles confirmé dans le navigateur, y compris les accents français. Header et textes vérifiés sur ordinateur ; fiche vérifiée à 390 px. À 320 px, tailles des titres longs ajustées et débordement du fond mobile corrigé : plus de défilement horizontal sur la page ou dans le texte de la fiche Réseaux sociaux. Chemins des fichiers CSS et des polices validés, aucune erreur console observée.
+
 ## Réorganiser le dépôt selon les consignes du cours — 2026-10-03
 
 **Prompt :** _Voici les indications pour l’arborescence, ajuste svp._

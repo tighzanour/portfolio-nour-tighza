@@ -214,7 +214,7 @@
 .about-book__signature {
   margin-top: var(--space-8);
   color: #9b613f;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.35rem;
   font-style: italic;
 }
@@ -226,7 +226,7 @@
 .about-book__skills li {
   padding-block: var(--space-4);
   border-bottom: 1px solid rgba(83, 58, 42, 0.25);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(1.25rem, 2.5vw, 2rem);
 }
 

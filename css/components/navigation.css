@@ -34,7 +34,7 @@
 
 .site-logo {
   color: var(--color-text);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.25rem;
   font-weight: var(--font-weight-medium);
   text-decoration: none;

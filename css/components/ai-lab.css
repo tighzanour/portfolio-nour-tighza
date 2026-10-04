@@ -84,7 +84,7 @@ body.is-ai-lab .site-footer { background: #090913; border-color: #393044; }
   gap: 0.2rem; min-height: 0; padding: 0.2rem;
   border: 0; border-radius: 0; clip-path: var(--shape);
   background: rgba(12, 13, 38, 0.3); color: #f5edff;
-  font-family: 'Courier New', monospace; font-weight: 400; text-shadow: 0 0 0.6rem #7364ef;
+  font-family: var(--font-body); font-weight: 400; text-shadow: 0 0 0.6rem #7364ef;
   transition: background 180ms ease, box-shadow 180ms ease;
 }
 .ai-lab__screen::after {

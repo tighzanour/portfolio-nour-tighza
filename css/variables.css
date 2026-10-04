@@ -14,15 +14,15 @@
   --color-placeholder: #1c2d22;
 
   /* Typographie */
-  --font-body: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Special Elite", "Courier New", monospace;
   --font-size-body: 1rem;
   --line-height-body: 1.6;
-  --line-height-heading: 1.1;
+  --line-height-heading: 1.2;
   --font-weight-regular: 400;
   --font-weight-medium: 600;
   --font-weight-bold: 700;
-  --letter-spacing-heading: -0.025em;
+  --letter-spacing-heading: 0;
 
   /* Espacements */
   --space-1: 0.25rem;

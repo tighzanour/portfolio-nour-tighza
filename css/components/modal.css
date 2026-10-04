@@ -655,6 +655,13 @@
   }
 }
 
+/* Les mots longs des titres restent lisibles sur les téléphones étroits. */
+@media (max-width: 23rem) {
+  .dialog-spread--case-study .dialog-page--content h2 {
+    font-size: 1.875rem;
+  }
+}
+
 @keyframes dialog-book-entrance {
   from {
     opacity: 0;

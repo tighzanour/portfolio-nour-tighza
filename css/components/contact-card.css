@@ -71,7 +71,7 @@
 .contact-card__signature {
   margin: var(--space-7) 0 0;
   color: #9b613f;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.35rem;
   font-style: italic;
 }

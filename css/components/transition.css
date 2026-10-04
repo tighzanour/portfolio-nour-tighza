@@ -35,3 +35,10 @@
   margin-bottom: 0;
   color: var(--color-text-muted);
 }
+
+/* Le titre reste entier sur les petits écrans malgré les lettres plus larges. */
+@media (max-width: 23rem) {
+  .portfolio-transition h2 {
+    font-size: 1.875rem;
+  }
+}
