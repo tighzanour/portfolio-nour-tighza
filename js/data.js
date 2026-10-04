@@ -54,12 +54,20 @@ export async function loadProjects() {
         typeof clip.src !== "string" || !/\.mp4$/i.test(clip.src) ||
         typeof clip.title !== "string" || !clip.title.trim() ||
         (clip.caption !== undefined && typeof clip.caption !== "string") ||
+        (clip.aspectRatio !== undefined && (typeof clip.aspectRatio !== "string" ||
+          !/^[1-9]\d{0,3}\s*\/\s*[1-9]\d{0,3}$/.test(clip.aspectRatio))) ||
         (clip.poster !== undefined && typeof clip.poster !== "string"))) {
       throw new Error(`${label} : videos doit contenir des clips MP4 avec src et title.`);
     }
     // Informations de présentation facultatives : les autres projets gardent leur format.
     const status = project.status ?? "";
     const imageCaption = project.imageCaption ?? "";
+    const videoHeading = project.videoHeading ?? "Montage final";
+    const clipsHeading = project.clipsHeading ?? "Extraits et travail d’animation";
+    if (typeof videoHeading !== "string" || !videoHeading.trim() ||
+        typeof clipsHeading !== "string" || !clipsHeading.trim()) {
+      throw new Error(`${label} : les titres des sections vidéo doivent être du texte non vide.`);
+    }
     if (typeof status !== "string" || typeof imageCaption !== "string") {
       throw new Error(`${label} : status et imageCaption doivent être du texte.`);
     }
@@ -76,6 +84,6 @@ export async function loadProjects() {
     }
     // Les champs vides sont autorisés pendant la préparation du vrai contenu.
     return { ...project, link: project.link ?? "", video: project.video ?? "", role, tasks, tools, gallery, videos,
-      status, imageCaption, galleryCaptions, caseStudy };
+      status, imageCaption, galleryCaptions, caseStudy, videoHeading, clipsHeading };
   });
 }

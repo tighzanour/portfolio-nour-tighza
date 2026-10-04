@@ -1,4 +1,4 @@
-import { loadProjects } from "./data.js?v=6";
+import { loadProjects } from "./data.js?v=7";
 import { renderProjectCards } from "./components/project-card.js?v=4";
 import { initModal } from "./components/modal.js?v=2";
 import { createHeroButtons } from "./hero.js?v=5";
@@ -34,8 +34,10 @@ const dialogVideoSection = document.querySelector("#dialog-video-section");
 const dialogVideo = document.querySelector("#dialog-video");
 const dialogFilmSection = document.querySelector("#dialog-film-section");
 const dialogFilm = document.querySelector("#dialog-film");
+const dialogFilmTitle = document.querySelector("#dialog-film-title");
 const dialogClipsSection = document.querySelector("#dialog-clips-section");
 const dialogClips = document.querySelector("#dialog-clips");
+const dialogClipsTitle = document.querySelector("#dialog-clips-title");
 const dialogLink = document.querySelector("#dialog-link");
 const dialogPrevious = document.querySelector("[data-project-previous]");
 const dialogNext = document.querySelector("[data-project-next]");
@@ -81,6 +83,7 @@ function createVideoFigure(clip, isMain = false) {
   figure.className = "dialog-video-item";
   const video = document.createElement("video");
   video.className = "dialog-video";
+  video.style.aspectRatio = clip.aspectRatio || "16 / 9";
   video.controls = true;
   video.playsInline = true;
   video.preload = isMain ? "metadata" : "none";
@@ -250,6 +253,8 @@ export function openProjectDialog(project, button) {
 
   if (dialogFilm && dialogFilmSection && dialogClips && dialogClipsSection) {
     const [mainClip, ...clips] = project.videos;
+    if (dialogFilmTitle) dialogFilmTitle.textContent = project.videoHeading;
+    if (dialogClipsTitle) dialogClipsTitle.textContent = project.clipsHeading;
     dialogFilm.replaceChildren(...(mainClip ? [createVideoFigure(mainClip, true)] : []));
     dialogFilmSection.hidden = !mainClip;
     dialogClips.replaceChildren(...clips.map((clip) => createVideoFigure(clip)));

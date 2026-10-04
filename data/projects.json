@@ -242,24 +242,80 @@
   {
     "id": "platformer-2d",
     "year": "",
-    "image": "./assets/images/projects/platformer-2d/red-panda-sprites.png",
+    "image": "./assets/images/projects/platformer-2d/01-parcours-foret.jpg",
     "link": "",
     "video": "",
-    "role": "Conception et développement d’un jeu 2D",
+    "status": "Projet scolaire · Interactivité ludique",
+    "role": "Conception des mécaniques, construction des niveaux et développement dans Godot, avec intégration d’assets visuels gratuits provenant d’itch.io.",
     "tasks": [
-      "Conception d’un panda roux comme personnage jouable",
-      "Création et intégration de sprites en pixel art",
-      "Développement d’une expérience de plateforme en deux dimensions"
+      "Conception d’un danger constant : un mur de feu poursuit le joueur",
+      "Construction des parcours et intégration d’assets gratuits",
+      "Développement des déplacements, des sauts et de la boucle échec / nouvel essai dans Godot"
     ],
     "tools": [
       "Godot"
     ],
-    "gallery": [],
-    "title": "Platformer 2D",
+    "imageCaption": "Un premier aperçu du jeu : personnage, plateformes et environnement en pixel art. Visuels issus d’assets gratuits.",
+    "gallery": [
+      "./assets/images/projects/platformer-2d/02-parcours-souterrain.jpg"
+    ],
+    "galleryCaptions": [
+      "Un autre parcours : des plateformes espacées et une progression verticale à maîtriser."
+    ],
+    "videoHeading": "Gameplay du jeu",
+    "clipsHeading": "Extraits de gameplay",
+    "videos": [
+      {
+        "src": "./assets/videos/projects/platformer-2d/00-gameplay.mp4",
+        "title": "Forward — Gameplay",
+        "caption": "Une minute de jeu pour découvrir les déplacements et les parcours. Lecture avec son au clic.",
+        "poster": "./assets/images/projects/platformer-2d/01-parcours-foret.jpg",
+        "aspectRatio": "4 / 3"
+      },
+      {
+        "src": "./assets/videos/projects/platformer-2d/01-parcours-foret.mp4",
+        "title": "Se déplacer et franchir les plateformes",
+        "caption": "Capture directe du jeu, sans son.",
+        "poster": "./assets/images/projects/platformer-2d/01-parcours-foret.jpg",
+        "aspectRatio": "4 / 3"
+      },
+      {
+        "src": "./assets/videos/projects/platformer-2d/02-parcours-souterrain.mp4",
+        "title": "Maîtriser les sauts",
+        "caption": "Capture directe d’un autre parcours, sans son.",
+        "poster": "./assets/images/projects/platformer-2d/02-parcours-souterrain.jpg",
+        "aspectRatio": "4 / 3"
+      },
+      {
+        "src": "./assets/videos/projects/platformer-2d/03-menace-en-action.mp4",
+        "title": "Le mur de feu en action",
+        "caption": "Séquence filmée sur ordinateur : la menace oblige à avancer. Sans son.",
+        "poster": "./assets/images/projects/platformer-2d/03-menace-en-action.jpg",
+        "aspectRatio": "4 / 3"
+      },
+      {
+        "src": "./assets/videos/projects/platformer-2d/04-sauts-sous-pression.mp4",
+        "title": "Avancer sous pression",
+        "caption": "Séquence filmée sur ordinateur : enchaîner les sauts avec le feu à proximité. Sans son.",
+        "poster": "./assets/images/projects/platformer-2d/04-sauts-sous-pression.jpg",
+        "aspectRatio": "4 / 3"
+      }
+    ],
+    "caseStudy": [
+      {
+        "title": "Un platformer sous pression",
+        "text": "Plutôt qu’un simple jeu de plateforme, j’ai imaginé un risque constant : un mur de feu poursuit le joueur et l’oblige à se dépêcher. Forward combine cette urgence avec une boucle d’essais et d’erreurs. Chaque échec invite à recommencer, à apprendre le parcours et à mieux anticiper les sauts pour réussir."
+      },
+      {
+        "title": "Construire l’expérience dans Godot",
+        "text": "Réalisé dans le cours d’Interactivité ludique en Techniques d’intégration multimédia, le jeu est développé dans Godot avec des assets gratuits trouvés sur itch.io. Mon travail porte sur la conception du jeu, la construction des niveaux, l’intégration des éléments visuels et les mécaniques de déplacement, de danger et de reprise après un échec. Les assets sont des ressources externes ; ma contribution concerne leur intégration et le fonctionnement du jeu."
+      }
+    ],
+    "title": "Forward — Platformer 2D",
     "category": "Jeu et interactivité",
     "heroLabel": "Peluche panda roux",
     "heroImage": "./assets/images/hero/objects/red-panda-plush.webp",
-    "description": "Création d’un jeu de plateforme en deux dimensions mettant en scène un panda roux en pixel art. Le projet combine la conception du personnage, la préparation de ses sprites et leur intégration dans Godot."
+    "description": "Un platformer 2D où un mur de feu poursuit le joueur : avancer vite, échouer, recommencer et apprendre le parcours. Conception et développement dans Godot, avec des assets gratuits provenant d’itch.io."
   },
   {
     "id": "marketing-reseaux-sociaux",

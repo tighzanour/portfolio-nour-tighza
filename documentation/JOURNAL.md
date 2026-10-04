@@ -1,5 +1,13 @@
 # Journal de bord — Portfolio
 
+## Présenter Forward, jeu de plateforme dans Godot — 2026-10-03
+
+**Prompt :** _Le projet Platformer 2D est une création de jeu vidéo avec Godot et des assets gratuits sur itch.io, dans le cours d’Interactivité ludique. Plutôt qu’un simple platformer, j’ai imaginé un risque constant qui oblige le joueur à se dépêcher, avec une mécanique d’essais successifs jusqu’à réussir. Utilise le gameplay et les quatre GIF fournis. Le titre est « Forward » et la menace est un mur de feu qui poursuit le joueur._
+
+**Outil utilisé :** ChatGPT / Codex.
+
+**Résultat obtenu :** fiche centrée sur le concept, les mécaniques et l’intégration dans Godot. La création des sprites n’est plus attribuée à mon travail : les assets proviennent d’itch.io. Gameplay en premier, captures directes du jeu puis quatre extraits animés, dont deux séquences filmées sur ordinateur. Fichiers allégés, GIF convertis en MP4 et proportions 4:3 conservées sans couper la zone de jeu. Les critères du cours ne sont pas présentés comme des résultats validés ; performance, addons et crédits complets ne sont pas inventés. Originaux et anciennes images conservés ; aucun commit automatique.
+
 ## Présenter Avant la fin, projet d’animation 3D — 2026-10-03
 
 **Prompt :** _Continue avec l’animation 3D du cours en Techniques d’intégration multimédia. Logiciels utilisés : Maya et CapCut. Utilise le montage final, la capture de marche dans Maya, le scénarimage et les deux GIF fournis. Le titre est « Avant la fin » ; je n’ai créé aucun modèle, ils viennent de Sketchfab. J’ai construit le décor et l’environnement, puis animé._
