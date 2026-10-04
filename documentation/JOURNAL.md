@@ -1,5 +1,19 @@
 # Journal de bord — Portfolio
 
+## Intégrer le logo scarabée-café — 2026-10-04
+
+**Prompt :** _Parfait, utilise les._
+
+**Résultat obtenu :** scarabée ajouté au lien d’accueil du header à côté du nom, avec la silhouette originale en masque CSS teinté par la couleur du texte pour le fond sombre. PNG réduit à 192 px pour ce masque. Favicons PNG 16 et 32 px et icône Apple 180 px issus de l’aperçu clair, sans régénérer ni redessiner le symbole. Originaux et ancien favicon conservés. Nom accessible du lien inchangé ; symbole décoratif masqué aux lecteurs d’écran. Aucun commit automatique.
+
+**Validation :** symbole visible sur le header sombre à 1280 px ; rendu mobile contrôlé à 390 et 320 px sans débordement horizontal. Lien du logo testé au clavier et retour à `#hero` confirmé. Fichiers d’icônes servis en HTTP 200 avec le type PNG ; références 16/32/180 px présentes dans le document. PNG 16 et 32 px inspectés : silhouette identifiable, détails du grain naturellement plus petits à 16 px. Aucune erreur console observée. Audit de structure et `git diff --check` réussis.
+
+## Générer un logo scarabée-café — 2026-10-04
+
+**Prompt :** _Génère un logo du même style que ma référence : un scarabée avec une graine de café à la place du bas du corps, destiné au favicon et au logo principal du portfolio._
+
+**Résultat obtenu :** symbole noir épuré généré avec l’outil d’image intégré, abdomen en grain de café à fente courbe, fond transparent et aperçu sur fond clair. Assets ajoutés dans `assets/icons/`, prompts consignés dans `documentation/logo-scarabee-prompt.md`. PNG principal 1254 × 1254 avec transparence confirmée. Le header et le favicon existants restent inchangés ; lisibilité à 16/32 pixels à vérifier lors de l’intégration. Aucun commit automatique.
+
 ## Remplacer DM Sans par Manrope — 2026-10-04
 
 **Prompt :** _let's take manrope_
