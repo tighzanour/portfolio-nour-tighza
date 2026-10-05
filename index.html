@@ -10,7 +10,7 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="./css/variables.css?v=28" />
-    <link rel="stylesheet" href="./css/base.css?v=27" />
+    <link rel="stylesheet" href="./css/base.css?v=28" />
     <link rel="stylesheet" href="./css/layout.css?v=25" />
     <link rel="stylesheet" href="./css/components/navigation.css?v=28" />
     <link rel="stylesheet" href="./css/components/hero.css?v=28" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/components/contact-card.css?v=26" />
     <link rel="stylesheet" href="./css/components/footer.css?v=25" />
     <link rel="stylesheet" href="./css/components/modal.css?v=26" />
-    <link rel="stylesheet" href="./css/components/ai-lab.css?v=28" />
+    <link rel="stylesheet" href="./css/components/ai-lab.css?v=29" />
   </head>
 
   <body>
@@ -173,100 +173,14 @@
           <p class="contact-card__signature">À bientôt, Nour.</p>
         </article>
       </section>
-      <!-- Bonus accessible uniquement depuis le menu IA. -->
+      <!-- Base vide pour le prochain mini-projet IA. -->
       <section id="ia" class="ai-lab" aria-labelledby="ai-title" hidden>
-        <div class="ai-lab__viewport">
-          <div class="ai-lab__scene" data-lab-scene>
-            <div class="ai-lab__background" aria-hidden="true"></div>
-            <div class="ai-lab__light" aria-hidden="true"></div>
-            <header class="ai-lab__intro">
-              <button class="ai-lab__back" type="button" data-close-ai>← Quitter le labo</button>
-              <p class="ai-lab__eyebrow">Accès caché · Section bonus</p>
-              <h1 id="ai-title" tabindex="-1" aria-label="L’IA donne plus de place à ma créativité">
-                L’IA donne plus de<br /><span class="ai-lab__word" aria-hidden="true" data-ai-word>place</span><br />à ma créativité.
-              </h1>
-            </header>
-            <div class="ai-lab__screens" role="group" aria-label="Écrans du laboratoire">
-              <button
-                class="ai-lab__screen"
-                type="button"
-                data-lab-slot="01"
-                style="--x: 12.6%; --y: 28.5%; --w: 9.8%; --h: 17.5%; --shape: polygon(10% 0, 100% 25%, 92% 100%, 0 76%)"
-                aria-controls="lab-experiment"
-                aria-expanded="false"
-                aria-label="Écran 01, mini-jeu à venir"
-              >
-                <span>01</span><small>Mini-jeu</small>
-              </button>
-              <button
-                class="ai-lab__screen"
-                type="button"
-                data-lab-slot="02"
-                style="--x: 10.8%; --y: 45%; --w: 12%; --h: 21.2%; --shape: polygon(9% 0, 100% 13%, 94% 100%, 0 87%)"
-                aria-controls="lab-experiment"
-                aria-expanded="false"
-                aria-label="Écran 02, application à venir"
-              >
-                <span>02</span><small>Application</small>
-              </button>
-              <button
-                class="ai-lab__screen ai-lab__screen--main"
-                type="button"
-                data-lab-slot="03"
-                style="--x: 47%; --y: 23%; --w: 26%; --h: 39%; --shape: polygon(0 36%, 98% 0, 100% 77%, 0 100%)"
-                aria-controls="lab-experiment"
-                aria-expanded="false"
-                aria-label="Écran 03, outil à venir"
-              >
-                <span>03</span><small>Outil · À venir</small>
-              </button>
-              <button
-                class="ai-lab__screen"
-                type="button"
-                data-lab-slot="04"
-                style="--x: 50.7%; --y: 6%; --w: 15.4%; --h: 26%; --shape: polygon(0 34%, 96% 0, 100% 69%, 0 100%)"
-                aria-controls="lab-experiment"
-                aria-expanded="false"
-                aria-label="Écran 04, mini-jeu à venir"
-              >
-                <span>04</span><small>Mini-jeu</small>
-              </button>
-              <button
-                class="ai-lab__screen"
-                type="button"
-                data-lab-slot="05"
-                style="--x: 84.1%; --y: 7.2%; --w: 15%; --h: 27%; --shape: polygon(0 0, 90% 23%, 100% 100%, 10% 80%)"
-                aria-controls="lab-experiment"
-                aria-expanded="false"
-                aria-label="Écran 05, application à venir"
-              >
-                <span>05</span><small>Application</small>
-              </button>
-              <button
-                class="ai-lab__screen"
-                type="button"
-                data-lab-slot="06"
-                style="--x: 85.6%; --y: 33%; --w: 14.4%; --h: 32%; --shape: polygon(0 0, 90% 8%, 100% 100%, 12% 94%)"
-                aria-controls="lab-experiment"
-                aria-expanded="false"
-                aria-label="Écran 06, outil à venir"
-              >
-                <span>06</span><small>Outil</small>
-              </button>
-            </div>
-            <p class="ai-lab__scene-note">Sélectionne un écran pour explorer le labo.</p>
-          </div>
-        </div>
-        <p class="ai-lab__mobile-hint">Fais glisser le décor pour découvrir les écrans →</p>
-        <p class="ai-lab__description">Mini-jeux, applications et outils créés avec ChatGPT. Chaque panneau ouvre une nouvelle expérience.</p>
-        <article id="lab-experiment" class="ai-lab__experiment" hidden aria-labelledby="lab-experiment-title">
-          <p class="ai-lab__eyebrow" data-lab-number></p>
-          <h2 id="lab-experiment-title" tabindex="-1">Expérience à venir</h2>
-          <p>
-            Cet écran accueillera une expérience interactive. Elle présentera l’idée de départ, les prompts utilisés et les ajustements réalisés avec ChatGPT.
-          </p>
-          <button type="button" data-close-experiment>Retour aux écrans ↑</button>
-        </article>
+        <button class="ai-lab__back" type="button" data-close-ai>← Retour au portfolio</button>
+        <header class="ai-lab__intro">
+          <h1 id="ai-title" tabindex="-1">IA</h1>
+          <p>Un espace prêt pour un nouveau mini-projet et sa documentation.</p>
+        </header>
+        <div id="ai-project-root"></div>
       </section>
     </main>
 
@@ -355,6 +269,6 @@
       <p>2026 Nour Tighza. Tous droits réservés.</p>
     </footer>
 
-    <script type="module" src="./js/main.js?v=28"></script>
+    <script type="module" src="./js/main.js?v=30"></script>
   </body>
 </html>

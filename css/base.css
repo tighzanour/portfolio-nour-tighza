@@ -44,7 +44,7 @@
 }
 
 html {
-  min-width: 20rem;
+  min-width: 0;
   background: var(--color-background);
   color: var(--color-text);
   color-scheme: dark;

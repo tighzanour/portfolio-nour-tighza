@@ -15,6 +15,12 @@ Le site présente mes projets dans un atelier interactif. Les objets du décor o
 - Mise en page responsive et prise en charge de `prefers-reduced-motion`.
 - Médias adaptés au Web : images WebP/PNG et vidéos MP4 avec commandes de lecture.
 
+## Section IA
+
+La section accessible depuis le menu **IA** a été remise à zéro. Elle conserve seulement une vue vide et un bouton de retour au portfolio. Le prochain mini-projet prévu est un clicker accompagné d’une documentation de la logique de prompts ; ni le jeu ni cette documentation ne sont encore implémentés.
+
+**Lancer :** ouvrir `index.html` dans VS Code puis **Go Live**. Aucun build, clé API ou dépendance à installer.
+
 ## Données des projets
 
 Les projets sont définis dans [`data/projects.json`](data/projects.json). Chaque projet utilise la même structure :

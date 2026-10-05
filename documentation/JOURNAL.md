@@ -1,5 +1,25 @@
 # Journal de bord — Portfolio
 
+## Remettre la section IA à zéro — 2026-10-04
+
+**Prompt :** _Retirer complètement OVERLAY, effacer le contenu de la section IA et la préparer pour un nouveau mini-projet : un clicker avec une documentation montrant ma logique de prompts. Commencer seulement par le nettoyage._
+
+**Résultat :** suppression des modules, styles, tests et documentation technique du comparateur ; retrait des écrans, décors, animations, parallaxe et anciens placeholders du labo. Seule reste une vue IA sobre avec titre, emplacement vide pour le prochain projet et retour au portfolio, sans API ni timer. README mis à jour. Le clicker et sa documentation ne sont pas encore créés. Copie vérifiée des fichiers retirés hors du dépôt dans `outputs/ia-retiree-20261004` du workspace Codex ; ancienne entrée ci-dessous conservée uniquement comme historique. Aucun commit ni changement de branche.
+
+**Validation :** ouverture et retour testés dans le navigateur, fermeture avec Échap et restitution du focus au bouton IA, navigation Projets depuis IA. À 320 px, largeur défilable égale à la largeur utile (305 px avec barre verticale), aucun débordement horizontal. Emplacement du nouveau projet vide et aucun ancien écran dans le DOM. Aucune erreur console observée. Syntaxe JavaScript, audit d’arborescence/chemins (12 CSS, 7 imports, 6 projets) et `git diff --check` réussis ; aucune référence active à OVERLAY dans HTML/JS/CSS/README. Les anciennes mentions du journal sont historiques uniquement.
+
+## OVERLAY — comparateur crypto dans le labo IA — 2026-10-04
+
+**Statut historique :** projet retiré du portfolio à la demande de l’utilisateur le même jour. Le résultat et les tests ci-dessous décrivent la version antérieure, pas une fonctionnalité actuelle. Sa documentation technique a été archivée hors du dépôt puis retirée.
+
+**Prompt :** _Concevoir et implémenter OVERLAY, un comparateur visuel de 2 à 5 actifs. Priorité à une V1 crypto fiable et légère : données réelles gratuites, performances normalisées, modes PRICE et RATIO, corrélation des rendements, divergence, volatilité, drawdown, simulation historique, cache, accessibilité, responsive et tests. Prévoir les actions sans faux cours ni clé frontend ; ne pas alourdir le portfolio._
+
+**Résultat obtenu :** écran 03 du laboratoire et carte compacte pour essayer OVERLAY ; import dynamique à l’ouverture. SVG natif sans bibliothèque, six cryptos sur marchés Kraken/USD, six périodes jusqu’à 1Y. Adaptateur indépendant, clôtures UTC communes, bougie ouverte séparée du calcul, PRICE explicitement logarithmique. Métriques et méthodologie accessibles en texte, sélection 2–5, navigation des dates au clavier/touch, mise en évidence de la divergence. Cache 60 s, file espacée, timeout, abort, états erreur/quota/partiel sans données artificielles. Actions désactivées ; aucun LLM, clé, backend, installation, commit ou changement de branche.
+
+**Validation :** 20 tests automatisés réussis, incluant rendements constants en virgule flottante ; accès public Kraken et CORS localhost vérifiés. BTC/ETH réels en 1M/3M/1Y, BTC/SOL, trois puis cinq actifs, toutes les six cryptos chargées. Passage rapide 1D → 7D sans réponse obsolète affichée ; 288 clôtures de 5 minutes en 1D, 168 horaires en 7D. Modes PRICE/RATIO, curseur clavier, clic sur graphique et divergence vérifiés ; ratio désactivé à trois actifs, sixième ajout interdit, état vide sous deux actifs. Formats 320/390 px sans débordement global après correction du `min-width` HTML préexistant (barre de défilement verticale prise en compte). Focus conservé sur le bouton divergence ; retour aux écrans, placeholder voisin et retour au portfolio vérifiés. Rechargements réussis et aucune erreur console observée. Cas panne, quota et historique incomplet testés avec fixtures exclusivement dans les tests, pas une panne réelle provoquée sur Kraken. Production distante non testée.
+
+**Limites de cette ancienne version :** prix propres à Kraken, clôtures et non extrêmes intrabougie, fréquence non temps réel, volatilité non annualisée, aucune recommandation d’investissement. MAX, actions et périodes personnalisées étaient réservés à une V2 abandonnée.
+
 ## Header transparent et étiquettes de projets — 2026-10-04
 
 **Prompt :** _Modifier le header pour qu’il soit transparent, placer les menus en haut à droite et ajouter sur les objets les titres des projets avec des cercles de couleur représentant leur état, en s’inspirant de la référence fournie._
