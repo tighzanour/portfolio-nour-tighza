@@ -4,10 +4,14 @@ import { initProjectDetails } from "./components/project-details.js?v=1";
 import { createHeroButtons, initHeroParallax } from "./components/hero.js?v=2";
 import { initAboutBook } from "./components/about-book.js?v=1";
 import { initAiLab } from "./components/ai-lab.js?v=3";
+import { initCoffeeCounter } from "./components/coffee-counter.js?v=8";
+import { initCoffeeMarket, calculateCoffeePrice } from "./components/coffee-market.js?v=1";
 
 // Point d’entrée : charge les données et initialise les composants.
 initAboutBook();
 initAiLab();
+const coffeeCounter = initCoffeeCounter();
+initCoffeeMarket({ onQuote: (quote) => coffeeCounter?.setPrice(calculateCoffeePrice(quote.value)) });
 
 try {
   const projects = await loadProjects();

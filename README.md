@@ -17,9 +17,15 @@ Le site présente mes projets dans un atelier interactif. Les objets du décor o
 
 ## Section IA
 
-La section accessible depuis le menu **IA** a été remise à zéro. Elle conserve seulement une vue vide et un bouton de retour au portfolio. Le prochain mini-projet prévu est un clicker accompagné d’une documentation de la logique de prompts ; ni le jeu ni cette documentation ne sont encore implémentés.
+Les commandes du café sont regroupées dans une barre fixe au bas de l’écran : caisse, préparation, recrutement, évolution et règlement des salaires selon l’état de chaque personnage. Les fiches détaillées restent consultables sans perdre l’accès aux commandes. Voir [l’interface sans défilement pour les actions](documentation/coffee-controls.md).
 
-**Lancer :** ouvrir `index.html` dans VS Code puis **Go Live**. Aucun build, clé API ou dépendance à installer.
+La section accessible depuis le menu **IA** présente **Coffee Empire** : cliquer sur la tasse ou « Préparer un café » sert un café au prix affiché. Souris, Entrée et Espace sont pris en charge. Deux employés peuvent travailler ensemble : l’étudiant (embauche 30 $, trois tenues/paliers, services de 3 à 2 secondes et bonus de 0 à 10 %) et la barista chaleureuse (embauche 60 $, un café / 4 secondes, bonus de 25 % sur ses propres ventes). Salaires étudiants : 3/6/12 $ ; barista : 6 $, toutes les 60 secondes actives. Une hausse étudiante verse la nouvelle paie immédiatement. Les prochaines tenues de la barista restent à définir.
+
+Caisse commune, statistiques et paies individuelles : un impayé suspend seulement la personne concernée jusqu’à un règlement explicite, sans dette supplémentaire. Les clics manuels restent disponibles. Hors IA/onglet visible, toutes les horloges sont en pause, sans gains hors ligne. Valeurs fictives et provisoires, une embauche par personnage. Voir [les règles et prompts de l’étudiant](documentation/coffee-staff-progression.md) et [la barista et l’horloge d’équipe](documentation/coffee-warm-barista.md).
+
+Le prix fictif est indexé sur le cours Arabica fourni par l’API publique de Buon Ma Thuot Coffee, sans clé ni abonnement : 3 $ au cours de référence, avec 20 % du prix suivant les grains (modèle provisoire). Le panneau affiche la source cliquable, le cours en USD/lb, sa date et les états ancien/cache/indisponible. Ce sont les derniers prix de règlement disponibles, pas du temps réel. Appel à l’ouverture puis toutes les 30 minutes seulement lorsque IA et l’onglet sont visibles. Seul le cours est conservé localement ; la caisse et l’équipe repartent à zéro au rechargement. Le décor et le scarabée du portfolio restent inchangés. Voir [la démarche](documentation/coffee-empire.md) et [la connexion au marché](documentation/coffee-market.md).
+
+**Lancer :** ouvrir `index.html` dans VS Code puis **Go Live**. Aucun build, clé API ou dépendance à installer. Internet est nécessaire pour vérifier le cours. Sans cours ni cache utilisable, le jeu conserve un prix de secours fictif de 3 $, explicitement non connecté au marché.
 
 ## Données des projets
 

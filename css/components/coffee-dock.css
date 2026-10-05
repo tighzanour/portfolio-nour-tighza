@@ -1,0 +1,56 @@
+/* Commandes uniques, accessibles sans descendre jusqu’aux fiches de l’équipe. */
+body.is-ai-lab .ai-lab { padding-bottom: calc(var(--coffee-dock-height) + var(--space-6)); }
+html:has(body.is-ai-lab) { scroll-padding-bottom: calc(var(--coffee-dock-height) + var(--space-4)); }
+.coffee-dock {
+  position: fixed;
+  z-index: 30;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: var(--space-4);
+  width: min(calc(100% - 2rem), var(--content-width));
+  padding: var(--space-3) var(--space-4) calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+  border: 2px solid var(--coffee-brown);
+  border-bottom: 0;
+  background: var(--coffee-cream);
+  color: var(--coffee-surface);
+  font-size: 0.75rem;
+}
+.coffee-dock[hidden], .coffee-dock__button[hidden] { display: none; }
+body:not(.is-ai-lab) .coffee-dock { display: none; }
+.coffee-dock__play, .coffee-dock__worker { min-width: 0; }
+.coffee-dock__wallet { display: flex; justify-content: space-between; gap: var(--space-2); margin: 0 0 var(--space-2); }
+.coffee-dock__wallet strong { font-variant-numeric: tabular-nums; }
+.coffee-dock__worker { border-left: 1px solid var(--coffee-caramel); padding: 0 0 0 var(--space-4); }
+.coffee-dock__worker h3 { margin: 0; font: inherit; font-weight: var(--font-weight-bold); color: inherit; }
+.coffee-dock__status { margin: var(--space-1) 0 var(--space-2); font-size: 0.6875rem; font-variant-numeric: tabular-nums; }
+.coffee-dock__worker[data-suspended="true"] .coffee-dock__status { font-weight: var(--font-weight-bold); text-decoration: underline; }
+.coffee-dock__button {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--space-2);
+  border: 2px solid var(--coffee-brown);
+  border-radius: 0;
+  background: var(--coffee-latte);
+  color: var(--coffee-surface);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+.coffee-dock__button--brew { background: var(--coffee-accent); }
+.coffee-dock__button span { display: block; font-size: 0.625rem; font-weight: var(--font-weight-regular); }
+.coffee-dock__button:hover:not(:disabled) { background: var(--coffee-accent); border-color: var(--coffee-brown); }
+.coffee-dock__button:disabled { background: var(--coffee-paper); color: var(--coffee-brown); opacity: 1; }
+.coffee-dock__button:focus-visible { outline: 3px solid var(--coffee-surface); outline-offset: 2px; }
+/* Le dernier contenu et les éléments ciblés au clavier ne passent pas sous la barre. */
+body.is-ai-lab :is(button, a, summary) { scroll-margin-bottom: calc(var(--coffee-dock-height) + var(--space-4)); }
+@media (max-width: 40rem) {
+  .coffee-dock { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); padding-inline: var(--space-2); }
+  .coffee-dock__play { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1.8fr; align-items: center; gap: var(--space-2); }
+  .coffee-dock__wallet { flex-direction: column; gap: 0; margin: 0; }
+  .coffee-dock__worker { border-left: 0; border-top: 1px solid var(--coffee-caramel); padding: var(--space-2) 0 0; }
+  .coffee-dock__status { min-height: 2.6em; }
+}

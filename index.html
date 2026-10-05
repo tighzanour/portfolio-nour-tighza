@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/scarabee-cafe-apple-touch-180.png?v=1" />
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="./css/variables.css?v=28" />
+    <link rel="stylesheet" href="./css/variables.css?v=30" />
     <link rel="stylesheet" href="./css/base.css?v=28" />
     <link rel="stylesheet" href="./css/layout.css?v=25" />
     <link rel="stylesheet" href="./css/components/navigation.css?v=28" />
@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="./css/components/footer.css?v=25" />
     <link rel="stylesheet" href="./css/components/modal.css?v=26" />
     <link rel="stylesheet" href="./css/components/ai-lab.css?v=29" />
+    <link rel="stylesheet" href="./css/components/coffee-brand.css?v=2" />
+    <link rel="stylesheet" href="./css/components/coffee-counter.css?v=5" />
+    <link rel="stylesheet" href="./css/components/coffee-market.css?v=1" />
+    <link rel="stylesheet" href="./css/components/coffee-staff.css?v=2" />
+    <link rel="stylesheet" href="./css/components/coffee-dock.css?v=1" />
   </head>
 
   <body>
@@ -173,14 +178,177 @@
           <p class="contact-card__signature">À bientôt, Nour.</p>
         </article>
       </section>
-      <!-- Base vide pour le prochain mini-projet IA. -->
+      <!-- Première boucle du clicker, isolée des projets du portfolio. -->
       <section id="ia" class="ai-lab" aria-labelledby="ai-title" hidden>
         <button class="ai-lab__back" type="button" data-close-ai>← Retour au portfolio</button>
         <header class="ai-lab__intro">
-          <h1 id="ai-title" tabindex="-1">IA</h1>
-          <p>Un espace prêt pour un nouveau mini-projet et sa documentation.</p>
+          <h1 id="ai-title" tabindex="-1">Coffee Empire</h1>
+          <p>Exploration IA · Étape 07 — Deux personnalités, deux façons de servir le café.</p>
         </header>
-        <div id="ai-project-root"></div>
+        <div id="ai-project-root" class="coffee-brand">
+          <section class="coffee-counter" aria-labelledby="coffee-counter-title">
+            <header class="coffee-counter__header">
+              <img class="coffee-counter__logo" src="./assets/images/coffee-empire-logo-v1.png" alt="Coffee Empire" width="1374" height="1145" decoding="async" />
+              <div class="coffee-counter__heading">
+                <p class="coffee-counter__eyebrow">Petit café · Vue de face</p>
+                <h2 id="coffee-counter-title">Le premier comptoir.</h2>
+              </div>
+              <span class="coffee-counter__badge">Prototype</span>
+            </header>
+            <dl class="coffee-counter__stats" aria-label="Compteurs du café">
+              <div><dt>Caisse du jeu</dt><dd data-coffee-money>0,00 $</dd></div>
+              <div><dt>Cafés servis</dt><dd data-coffee-count>0</dd></div>
+              <div><dt>Prix du jeu / café</dt><dd data-coffee-price>3,00 $</dd></div>
+            </dl>
+            <figure class="coffee-counter__scene">
+              <img class="coffee-counter__background" src="./assets/images/coffee-counter-v1.png" alt="Petit café en pixel art vu de face : comptoir en bois, étagères, machine à espresso et éclairage ambré." width="1672" height="941" loading="lazy" decoding="async" />
+              <img class="coffee-counter__barista coffee-counter__barista--student" data-coffee-barista src="./assets/images/coffee-student-v1.png" alt="L’étudiant engagé derrière le comptoir : chemise crème, pull brun et regard un peu blasé." width="1122" height="1402" loading="lazy" decoding="async" hidden />
+              <img class="coffee-counter__barista coffee-counter__barista--warm" data-coffee-worker="barista" src="./assets/images/coffee-warm-barista-v1.png" alt="La barista souriante : cheveux foncés, lunettes et chemise crème." width="1122" height="1402" loading="lazy" decoding="async" hidden />
+              <img class="coffee-counter__foreground" src="./assets/images/coffee-counter-v1.png" alt="" aria-hidden="true" width="1672" height="941" loading="lazy" decoding="async" />
+              <button class="coffee-counter__cup" type="button" data-brew-coffee disabled aria-label="Préparer un café avec la tasse" aria-describedby="coffee-counter-action-note">
+                <img class="coffee-counter__cup-image" src="./assets/images/coffee-cup-v1.png" alt="" width="1402" height="1122" loading="lazy" decoding="async" />
+              </button>
+              <figcaption class="coffee-counter__scene-caption" data-coffee-feedback role="status" aria-live="polite" aria-atomic="true">Le café commence ici.</figcaption>
+            </figure>
+            <aside class="coffee-dock" aria-label="Commandes du café" hidden>
+              <div class="coffee-dock__play">
+                <p class="coffee-dock__wallet">Caisse <strong data-dock-money>0,00 $</strong></p>
+                <button class="coffee-dock__button coffee-dock__button--brew" type="button" data-brew-coffee disabled aria-describedby="coffee-counter-action-note">Préparer un café <span data-coffee-gain>1 clic = 1 café · +3,00 $</span></button>
+                <p id="coffee-counter-action-note" class="coffee-counter__sr-only">JavaScript est nécessaire pour activer la préparation.</p>
+              </div>
+              <section class="coffee-dock__worker" data-employee-controls="student" aria-labelledby="coffee-dock-student-title">
+                <h3 id="coffee-dock-student-title">L’étudiant</h3>
+                <p class="coffee-dock__status" data-dock-state>À recruter</p>
+                <button class="coffee-dock__button" type="button" data-hire-employee disabled aria-describedby="coffee-employee-note">Embaucher · 30,00 $</button>
+                <button class="coffee-dock__button" type="button" data-promote-employee disabled hidden aria-describedby="coffee-employee-preview coffee-employee-note">Évoluer · 6,00 $</button>
+                <button class="coffee-dock__button" type="button" data-pay-employee disabled hidden aria-describedby="coffee-employee-note">Régler le salaire</button>
+              </section>
+              <section class="coffee-dock__worker" data-employee-controls="barista" aria-labelledby="coffee-dock-barista-title">
+                <h3 id="coffee-dock-barista-title">La barista</h3>
+                <p class="coffee-dock__status" data-dock-state>À recruter</p>
+                <button class="coffee-dock__button" type="button" data-hire-employee disabled aria-describedby="coffee-barista-note">Embaucher · 60,00 $</button>
+                <button class="coffee-dock__button" type="button" data-promote-employee disabled hidden aria-describedby="coffee-barista-preview">Évolution à venir</button>
+                <button class="coffee-dock__button" type="button" data-pay-employee disabled hidden aria-describedby="coffee-barista-note">Régler le salaire</button>
+              </section>
+            </aside>
+            <section class="coffee-staff" data-employee-card="student" aria-labelledby="coffee-staff-title">
+              <header class="coffee-staff__heading">
+                <p class="coffee-staff__eyebrow">Équipe · Premier personnage</p>
+                <h3 id="coffee-staff-title" data-employee-level>L’étudiant · Débutant · 1 / 3</h3>
+                <p data-employee-description>Peu motivé, mais il faut bien financer ses études.</p>
+              </header>
+              <dl class="coffee-staff__stats">
+                <div><dt>Employés</dt><dd class="coffee-staff__state" data-employee-state>0 / 1</dd></div>
+                <div><dt>Rythme</dt><dd data-employee-rhythm>1 café / 3 s</dd></div>
+                <div><dt>Gain automatique</dt><dd data-employee-rate>0,00 $ / service</dd></div>
+                <div><dt>Salaire du jeu</dt><dd data-employee-salary>3,00 $ / min active</dd></div>
+                <div><dt>Bonus sur ses ventes</dt><dd data-employee-quality>+0 %</dd></div>
+                <div><dt>Prochaine paie</dt><dd data-employee-payday>Après embauche</dd></div>
+              </dl>
+              <div class="coffee-staff__controls">
+                <p id="coffee-employee-note" class="coffee-staff__note" data-employee-note role="status" aria-live="polite" aria-atomic="true">Il manque 30,00 $ pour embaucher.</p>
+              </div>
+              <p id="coffee-employee-preview" class="coffee-staff__preview" data-employee-preview>Prochain palier : Impliqué · Pull vert sombre et cravate.</p>
+              <p class="coffee-staff__fine-print">Valeurs fictives et provisoires · Embauche : 30 $ · Salaire toutes les 60 secondes actives. Une hausse verse la nouvelle paie immédiatement et recommence le cycle. Si la caisse est insuffisante, l’employé s’arrête jusqu’au règlement, sans dette supplémentaire. Hors du jeu : horloge en pause, aucun gain hors ligne.</p>
+            </section>
+            <section class="coffee-staff" data-employee-card="barista" aria-labelledby="coffee-barista-title">
+              <header class="coffee-staff__heading">
+                <p class="coffee-staff__eyebrow">Équipe · Spécialité qualité</p>
+                <h3 id="coffee-barista-title" data-employee-level>La barista · Passionnée</h3>
+                <p data-employee-description>Un sourire contagieux et le souci du café bien fait. Elle mise sur la qualité.</p>
+              </header>
+              <dl class="coffee-staff__stats">
+                <div><dt>Employée</dt><dd class="coffee-staff__state" data-employee-state>0 / 1</dd></div>
+                <div><dt>Rythme</dt><dd data-employee-rhythm>1 café / 4 s</dd></div>
+                <div><dt>Gain automatique</dt><dd data-employee-rate>0,00 $ / service</dd></div>
+                <div><dt>Salaire du jeu</dt><dd data-employee-salary>6,00 $ / min active</dd></div>
+                <div><dt>Bonus sur ses ventes</dt><dd data-employee-quality>+25 %</dd></div>
+                <div><dt>Prochaine paie</dt><dd data-employee-payday>Après embauche</dd></div>
+              </dl>
+              <div class="coffee-staff__controls">
+                <p id="coffee-barista-note" class="coffee-staff__note" data-employee-note role="status" aria-live="polite" aria-atomic="true">Il manque 60,00 $ pour embaucher.</p>
+              </div>
+              <p id="coffee-barista-preview" class="coffee-staff__preview" data-employee-preview>Tenue de départ validée. Les prochaines tenues et les paliers d’évolution restent à définir.</p>
+              <p class="coffee-staff__fine-print">Valeurs fictives et provisoires · Embauche : 60 $ · Sa paie et ses services ont leur propre échéance. Le bonus concerne ses cafés seulement. En cas d’impayé, seule cette employée s’arrête jusqu’au règlement, sans dette supplémentaire.</p>
+            </section>
+            <section class="coffee-market" aria-labelledby="coffee-market-title">
+              <header class="coffee-market__header">
+                <h3 id="coffee-market-title">Marché · Arabica</h3>
+                <span class="coffee-market__status" data-market-status>Non connecté</span>
+              </header>
+              <p class="coffee-market__quote"><strong class="coffee-market__price" data-market-price>—</strong><span data-market-change>Variation non fournie</span></p>
+              <time class="coffee-market__time" data-market-time>Cours non reçu</time>
+              <p class="coffee-market__message" data-market-message role="status" aria-live="polite" aria-atomic="true">Prix de secours : 3 $ fictifs, non reliés au marché. JavaScript est nécessaire pour vérifier le cours.</p>
+              <p>Dernier prix de règlement du contrat proche fourni par la source, pas une cotation instantanée. Vérification toutes les 30 minutes uniquement lorsque le jeu est visible.</p>
+              <div class="coffee-market__footer">
+                <a class="coffee-market__source" href="https://buonmathuotcoffee.com" target="_blank" rel="noopener noreferrer">Données café : Buon Ma Thuot Coffee</a>
+                <button class="coffee-market__refresh" type="button" data-market-refresh disabled>Actualiser le cours</button>
+              </div>
+              <details class="coffee-market__method">
+                <summary>Comment le cours influence-t-il la tasse ?</summary>
+                <p>Modèle de jeu provisoire : prix = 2,40 $ + 0,60 $ × (cours Arabica / 3,249). Référence : 3,249 USD/lb, cours fourni daté du 27 septembre 2026. Une hausse des grains de 10 % fait passer la tasse de 3,00 $ à 3,06 $. Arrondi au centime ; seuls les prochains cafés utilisent le nouveau prix.</p>
+                <p>Le dollar du jeu est fictif. Ce calcul n’est ni le prix observé dans un café ni une conversion USD/CAD. Le cours reste celui fourni par Buon Ma Thuot Coffee ; sa précision et sa cadence ne sont pas vérifiées indépendamment auprès d’ICE.</p>
+              </details>
+            </section>
+          </section>
+          <p class="coffee-counter__note">API publique sans clé ni abonnement · Prix du jeu indexé sur le cours disponible, même ancien. Seul le dernier cours est conservé localement ; la caisse et l’équipe repartent à zéro au rechargement.</p>
+          <details class="coffee-counter__brand-guide">
+            <summary>Voir le logo validé et la palette</summary>
+          <figure class="coffee-brand__poster" aria-labelledby="coffee-logo-caption">
+            <div class="coffee-brand__poster-main">
+              <p class="coffee-brand__eyebrow">Du premier café à l’empire.</p>
+              <img class="coffee-brand__logo" src="./assets/images/coffee-empire-logo-v1.png" alt="Coffee Empire — logo en pixel art, tasse de café et vapeur en couronne" width="1374" height="1145" decoding="async" />
+              <figcaption id="coffee-logo-caption" class="coffee-brand__poster-caption">Logo validé · Pixel art rétro, crème et lumière ambrée.</figcaption>
+            </div>
+          </figure>
+
+          <section class="coffee-brand__section" aria-labelledby="coffee-palette-title">
+            <header class="coffee-brand__section-heading">
+              <div><p class="coffee-brand__eyebrow">01 / Couleurs</p><h2 id="coffee-palette-title">Chaleur, sans sucre ajouté.</h2></div>
+              <p>Des aplats naturels, des ombres profondes et un accent doré réservé aux éléments importants.</p>
+            </header>
+            <ul class="coffee-brand__palette" aria-label="Palette principale">
+              <li class="coffee-brand__swatch coffee-brand__swatch--night"><span class="coffee-brand__color" aria-hidden="true"></span><strong>Nuit</strong><code>#191512</code><small>Fond</small></li>
+              <li class="coffee-brand__swatch coffee-brand__swatch--espresso"><span class="coffee-brand__color" aria-hidden="true"></span><strong>Espresso</strong><code>#2D211C</code><small>Surfaces</small></li>
+              <li class="coffee-brand__swatch coffee-brand__swatch--brown"><span class="coffee-brand__color" aria-hidden="true"></span><strong>Café</strong><code>#684834</code><small>Structure</small></li>
+              <li class="coffee-brand__swatch coffee-brand__swatch--caramel"><span class="coffee-brand__color" aria-hidden="true"></span><strong>Caramel</strong><code>#A8754F</code><small>Illustrations</small></li>
+              <li class="coffee-brand__swatch coffee-brand__swatch--latte"><span class="coffee-brand__color" aria-hidden="true"></span><strong>Latte</strong><code>#C9A77D</code><small>Illustrations</small></li>
+              <li class="coffee-brand__swatch coffee-brand__swatch--cream"><span class="coffee-brand__color" aria-hidden="true"></span><strong>Crème</strong><code>#E8D9C5</code><small>Fond clair</small></li>
+              <li class="coffee-brand__swatch coffee-brand__swatch--gold"><span class="coffee-brand__color" aria-hidden="true"></span><strong>Or</strong><code>#D2A14A</code><small>Accent</small></li>
+            </ul>
+            <details class="coffee-brand__tokens">
+              <summary>Couleurs d’interface &amp; états</summary>
+              <dl class="coffee-brand__token-list">
+                <div><dt>Texte / papier</dt><dd><code>#F5F0E8</code> · lecture principale</dd></div>
+                <div><dt>Texte secondaire</dt><dd><code>#B8ABA0</code> · informations discrètes</dd></div>
+                <div><dt>Charbon</dt><dd><code>#282522</code> · surface surélevée</dd></div>
+                <div><dt>Réussite</dt><dd><code>#96B18A</code> · vert sauge</dd></div>
+                <div><dt>Attention</dt><dd><code>#D2A14A</code> · or</dd></div>
+                <div><dt>Danger</dt><dd><code>#E29982</code> · brique éclaircie pour la lisibilité</dd></div>
+                <div><dt>Désactivé</dt><dd><code>#9C938B</code> · neutre, sans réduire l’opacité du texte</dd></div>
+              </dl>
+            </details>
+          </section>
+
+          <section class="coffee-brand__section" aria-labelledby="coffee-variants-title">
+            <header class="coffee-brand__section-heading">
+              <div><p class="coffee-brand__eyebrow">02 / Logo</p><h2 id="coffee-variants-title">Une identité, deux fonds.</h2></div>
+              <p>Une tasse, une vapeur en couronne et des lettres rétro. Le même logo transparent, sans recoloration.</p>
+            </header>
+            <div class="coffee-brand__variants">
+              <figure class="coffee-brand__variant coffee-brand__variant--dark">
+                <img class="coffee-brand__logo coffee-brand__logo--compact" src="./assets/images/coffee-empire-logo-v1.png" alt="Logo Coffee Empire sur fond espresso" width="1374" height="1145" loading="lazy" decoding="async" />
+                <figcaption>Sur fond espresso</figcaption>
+              </figure>
+              <figure class="coffee-brand__variant coffee-brand__variant--light">
+                <img class="coffee-brand__logo coffee-brand__logo--compact" src="./assets/images/coffee-empire-logo-v1.png" alt="Logo Coffee Empire sur fond crème" width="1374" height="1145" loading="lazy" decoding="async" />
+                <figcaption>Sur fond crème</figcaption>
+              </figure>
+            </div>
+          </section>
+          <p class="coffee-brand__note">Logo validé · Ventes manuelles et premier employé en test. Le logo scarabée du portfolio reste inchangé.</p>
+          </details>
+        </div>
       </section>
     </main>
 
@@ -269,6 +437,6 @@
       <p>2026 Nour Tighza. Tous droits réservés.</p>
     </footer>
 
-    <script type="module" src="./js/main.js?v=30"></script>
+    <script type="module" src="./js/main.js?v=39"></script>
   </body>
 </html>
