@@ -251,6 +251,8 @@
 .hero-stage__button:nth-child(3) {
   --object-width: clamp(15rem, 20vw, 28rem);
   --object-ratio: 1.5;
+  /* L’étiquette appartient au contexte du bouton : celui-ci passe devant la chaise (5). */
+  z-index: 6;
   top: 60%;
   left: 48%;
 }
