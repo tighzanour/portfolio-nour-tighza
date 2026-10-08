@@ -46,7 +46,8 @@ export function initAboutBook() {
     const smallScreen = mobileLayout.matches;
     const restoreFocus = document.activeElement === trigger;
 
-    if (!motionPreference.matches && typeof book.animate === "function") {
+    // Sur téléphone, la navigation change les pages immédiatement, sans feuille animée.
+    if (!smallScreen && !motionPreference.matches && typeof book.animate === "function") {
       isTurning = true;
       updateControls();
       book.setAttribute("aria-busy", "true");
@@ -130,7 +131,7 @@ export function initAboutBook() {
   nextButton?.addEventListener("click", () => showSpread(currentSpread + 1, nextButton));
   updateSpread(0);
   updateControls();
-  if (motionPreference.matches || !("IntersectionObserver" in window)) {
+  if (mobileLayout.matches || motionPreference.matches || !("IntersectionObserver" in window)) {
     section.classList.add("is-open");
     return;
   }

@@ -131,3 +131,32 @@
 .project-card:has(.project-card__button:focus-visible) {
   border-color: var(--color-accent);
 }
+
+/* Deux cartes par ligne : les détails restent disponibles dans la fiche complète. */
+@media (max-width: 40rem) {
+  .project-card { border-radius: 0.75rem; }
+
+  .project-card__image { aspect-ratio: 4 / 3; }
+
+  .project-card__content {
+    grid-template-rows: 2.65rem 4.5rem auto;
+    gap: 0.45rem;
+    padding: 0.65rem;
+  }
+
+  .project-card__category {
+    font-size: 0.58rem;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .project-card__title { font-size: 0.9rem; line-height: 1.25; }
+  .project-card__description,
+  .project-card__status { display: none; }
+
+  .project-card__button {
+    min-height: 2rem;
+    font-size: 0.68rem;
+    line-height: 1.4;
+  }
+}

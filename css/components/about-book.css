@@ -237,7 +237,7 @@
 }
 
 .about-book__tool-group {
-  padding-block: var(--space-5);
+  padding-block: var(--space-4);
   border-top: 1px solid rgba(83, 58, 42, 0.25);
 }
 
@@ -246,7 +246,7 @@
 }
 
 .about-book__tool-group h3 {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
   color: #35251d;
   font-size: clamp(1.25rem, 2vw, 1.75rem);
 }
@@ -257,33 +257,60 @@
 }
 
 .about-book__tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.25rem, 1fr));
+  gap: var(--space-2);
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.about-book__tools li {
+.about-book__tool {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-2);
-  min-width: 4.5rem;
-  padding: var(--space-2) 0;
-  border: 0;
-  background: none;
-  color: #49362b;
-  font-size: 0.9rem;
+  min-width: 0;
+  padding: var(--space-3) var(--space-1) var(--space-2);
+  border: 1px solid var(--color-tool-border);
+  border-radius: var(--radius-medium);
+  background: var(--color-tool-surface);
+  box-shadow: 0 2px 0 rgb(73 54 43 / 6%);
+  color: var(--color-tool-ink);
+  text-align: center;
 }
 
-.about-book__tools img {
-  width: 2.5rem;
-  height: 2.5rem;
+.about-book__tool-icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--color-tool-border);
+  border-radius: var(--radius-medium);
+  background: rgb(212 192 157 / 15%);
+}
+
+.about-book__tool-icon img {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
   padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
   object-fit: contain;
+}
+
+.about-book__tool-icon--wide img { width: 2.15rem; }
+
+.about-book__tool-name {
+  display: block;
+  min-height: 2.6em;
+  max-width: 100%;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .about-book__note {
@@ -339,6 +366,18 @@
   .about-book {
     min-height: 0;
     border-width: 0.35rem;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .about-book__cover,
+  .about-book__turn-stage { display: none; }
+
+  .about-book__controls {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
 
@@ -387,6 +426,16 @@
   .about-book__page {
     padding: var(--space-6);
   }
+
+  .about-book__tools {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .about-book__tool {
+    padding-inline: var(--space-1);
+  }
+
+  .about-book__tool-name { font-size: 0.6875rem; }
 }
 
 @media (max-width: 40rem) {
@@ -417,6 +466,16 @@
   .about-book__status {
     order: -1;
     width: 100%;
+  }
+}
+
+@media (max-width: 22rem) {
+  .about-book__spread--tools .about-book__page {
+    padding-inline: var(--space-5);
+  }
+
+  .about-book__tools {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

@@ -96,13 +96,24 @@
   .site-header {
     align-items: flex-start;
     flex-direction: column;
-    gap: var(--space-1);
+    gap: 0.3rem;
     padding: var(--space-4);
   }
 
   .site-header nav {
-    align-self: flex-end;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    width: 100%;
+    padding: 0;
     font-size: 0.68rem;
+  }
+
+  .site-header nav a {
+    justify-content: center;
+    min-height: 2.75rem;
+    padding-inline: 0.25rem;
   }
 
   .site-logo__identity {
@@ -113,13 +124,5 @@
     flex-basis: 2.5rem;
     width: 2.5rem;
     height: 2.5rem;
-  }
-}
-
-@media (max-width: 40rem) {
-
-  .site-header nav {
-    justify-content: flex-end;
-    gap: var(--space-4);
   }
 }
