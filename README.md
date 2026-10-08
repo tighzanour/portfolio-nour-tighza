@@ -42,7 +42,7 @@ css/
 js/
   main.js               Point d’entrée
   data.js               Chargement et validation JSON
-  components/           Cartes, modale, détails, hero, livre et laboratoire
+  components/           Cartes, modale, détails, hero et livre
 data/projects.json     Source locale des projets
 assets/                 Images, icônes et vidéos
 exports-composants/     Captures PNG exportées depuis Figma

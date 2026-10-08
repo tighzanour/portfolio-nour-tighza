@@ -31,6 +31,12 @@
   font-weight: inherit;
 }
 
+.portfolio-transition__text {
+  max-width: 42rem;
+  margin-bottom: var(--space-6);
+  color: var(--color-text-muted);
+}
+
 .portfolio-transition__hint {
   margin-bottom: 0;
   color: var(--color-text-muted);

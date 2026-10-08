@@ -27,7 +27,7 @@
     opacity 600ms ease 350ms,
     transform 900ms cubic-bezier(0.2, 0.75, 0.2, 1) 250ms;
 }
-/* Le ratio fixe une taille minimale ; les deux doubles pages partagent la hauteur du contenu. */
+/* Le ratio fixe une taille minimale ; les doubles pages partagent la hauteur du contenu. */
 .about-book::before {
   content: "";
   grid-area: 1 / 1;
@@ -201,9 +201,15 @@
 }
 
 .about-book h2 {
-  max-width: 9ch;
+  max-width: 14ch;
   color: #35251d;
-  font-size: clamp(2.5rem, 5vw, 4.75rem);
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+}
+
+.about-book__spread--personal h3 {
+  margin-block: var(--space-6) var(--space-3);
+  color: #35251d;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
 }
 
 .about-book__page > p:not(.about-book__eyebrow, .about-book__signature) {

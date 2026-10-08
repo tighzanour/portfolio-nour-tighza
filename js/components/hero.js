@@ -36,7 +36,7 @@ function createHeroButton(project, openProjectDialog) {
   dot.classList.add("hero-stage__status-dot");
   name.textContent = project.heroTitle;
   hint.classList.add("hero-stage__label-hint");
-  hint.textContent = `${progressLabel} · Voir le projet`;
+  hint.textContent = `${progressLabel} · Découvrir`;
   title.append(dot, name);
   label.append(title, hint);
   button.append(label);

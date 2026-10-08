@@ -15,25 +15,6 @@
   --color-status-completed: #85bf9b;
   --color-status-ongoing: #e9b768;
 
-  /* Coffee Empire : identité indépendante du portfolio. */
-  --coffee-dock-height: 0px;
-  --coffee-background: #191512;
-  --coffee-surface: #2d211c;
-  --coffee-surface-elevated: #282522;
-  --coffee-brown: #684834;
-  --coffee-caramel: #a8754f;
-  --coffee-latte: #c9a77d;
-  --coffee-cream: #e8d9c5;
-  --coffee-paper: #f5f0e8;
-  --coffee-border: #684834;
-  --coffee-text-primary: #f5f0e8;
-  --coffee-text-secondary: #b8aba0;
-  --coffee-accent: #d2a14a;
-  --coffee-success: #96b18a;
-  --coffee-warning: #d2a14a;
-  --coffee-danger: #e29982;
-  --coffee-disabled: #9c938b;
-
   /* Typographie */
   --font-body: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: "Special Elite", "Courier New", monospace;

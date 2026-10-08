@@ -1,11 +1,11 @@
 [
   {
     "id": "qlt-marque",
-    "heroTitle": "QLT — Weekender",
+    "heroTitle": "Création de marque",
     "progress": "ongoing",
-    "year": "",
+    "year": "2026",
     "image": "./assets/images/projects/qlt/00-sac-actuel.png",
-    "link": "",
+    "link": "https://qltmade.com",
     "video": "",
     "role": "Créateur du projet : stratégie de marque, direction créative, définition du produit et préparation du lancement.",
     "tasks": [
@@ -13,7 +13,10 @@
       "Design produit, observations terrain et dossier technique",
       "Identité de marque, boutique en ligne et stratégie de lancement"
     ],
-    "tools": ["ChatGPT", "Miro"],
+    "tools": [
+      "ChatGPT",
+      "Miro"
+    ],
     "gallery": [
       "./assets/images/projects/qlt/01-recherche-marche.png",
       "./assets/images/projects/qlt/02-evolution-concept.png",
@@ -24,34 +27,34 @@
     ],
     "imageCaption": "Le concept actuel · Weekender matelassé QLT. Rendu IA ; la fabrication reste à valider sur un prototype physique.",
     "galleryCaptions": [
-      "01 · L’opportunité — hypothèses de marché et frustrations clients explorées avec l’IA. Une base de réflexion, pas une validation de la demande.",
+      "01 · L’opportunité — hypothèses de marché et frustrations clients explorées avec l’IA. Une base de réflexion, plutôt qu’une validation de la demande.",
       "02 · L’évolution — pistes de matières, de motifs et de matelassage explorées avec l’IA pour affiner le concept.",
-      "03 · Le terrain — comparaison de textures et observation d’une bandoulière usée pour nourrir les choix de matières et de portage.",
-      "04 · La conception — extrait du techpack, version 1.5 : présentation du produit, vues et repérage des composants.",
-      "05 · L’identité — exploration de noms, de typographies et de logos : QLT, Nubo et Pilo.",
-      "06 · L’univers — piste de packaging sous le nom « quilt ». Exploration visuelle IA, pas un emballage déjà produit."
+      "03 · Le terrain — comparaison de textures et observation des matières utilisées pour confronter le concept aux réalités du marché.",
+      "04 · La conception — extrait du techpack, présentation du produit, vues et repérage des composants.",
+      "05 · L’identité — construction de la marque, exploration de typographies et de logos.",
+      "06 · Tests visuels — explorations réalisées avec l’IA."
     ],
     "status": "Projet personnel · En développement",
     "caseStudy": [
       {
-        "title": "01 · Partir d’un besoin, pas seulement d’une image",
-        "text": "L’idée d’un sac weekender devient une hypothèse de marché. Avec ChatGPT et Miro, j’explore les frustrations des clients, les offres concurrentes et les pistes de différenciation, puis j’établis un cahier des charges. Objectif : donner une logique au projet avant de dessiner le produit."
+        "title": "01 · Commencer par un besoin réel",
+        "text": "L’idée d’un sac weekender devient une hypothèse de marché. Avec ChatGPT et Miro, j’explore les frustrations des clients, les offres concurrentes et les pistes de différenciation, puis je construis un cahier des charges. Objectif : donner une logique au projet avant de continuer."
       },
       {
-        "title": "02 · Explorer un univers, choisir un concept",
-        "text": "J’explore les tendances, les textures et les silhouettes pour construire un univers distinctif. Les rendus IA permettent de comparer rapidement plusieurs directions, du sac ornementé au matelassé. Je sélectionne un premier concept en tenant compte de la cible, des matières et d’une première estimation du budget."
+        "title": "02 · Explorer un univers et choisir un concept",
+        "text": "J’explore les tendances, les textures et les silhouettes pour construire un univers distinctif. Les rendus IA permettent de comparer rapidement plusieurs directions, du sac ornementé au sac matelassé. Je sélectionne un premier concept en tenant compte de la cible, des matières et d’une première estimation du budget. Les choix précédents donnent une direction cohérente au projet."
       },
       {
-        "title": "03 · Confronter le design au réel",
-        "text": "Mes visites chez Coach, Chanel, Louis Vuitton, Gucci et Balenciaga enrichissent ma compréhension des matières, des finitions et des usages. Ces observations font évoluer le concept. Je précise ensuite le nylon, les dimensions, le volume, les poches, les anses, la bandoulière et les composants : passer d’un beau rendu à un produit à prototyper."
+        "title": "03 · Confronter le design à la réalité",
+        "text": "Mes visites chez Coach, Chanel, Louis Vuitton, Gucci et Balenciaga enrichissent ma compréhension des matières, des finitions et des usages. Ces observations font évoluer le concept. Je précise ensuite le nylon, les dimensions, le volume, les poches, les anses, la bandoulière et les composants : passer d’un beau rendu à un produit à prototyper. Je transforme progressivement mes idées en un produit réel."
       },
       {
-        "title": "04 · Donner une existence à la marque",
+        "title": "04 · Faire exister la marque",
         "text": "Je travaille le nom, le logo et l’identité de QLT, puis la boutique en ligne et la présentation du produit. Un dossier technique complet structure les échanges avec des usines chinoises. J’apprends les méthodes de fabrication et les enjeux contractuels pour préparer la suite du développement."
       },
       {
         "title": "05 · Préparer le lancement et la suite",
-        "text": "Je définis l’univers éditorial et les pistes de contenu pour Instagram, Facebook et TikTok, en analysant d’autres marques. Le plan couvre le budget, l’acquisition de clients et la vente d’un premier stock. Prochaines étapes : développer une communauté, mesurer l’intérêt et commander puis valider un prototype avant la production."
+        "text": "Je définis l’univers et les pistes de contenu pour Instagram, Facebook et TikTok, en analysant d’autres marques. Le plan couvre le budget, l’acquisition de clients et la vente d’un premier stock.  Prochaines étapes : développer une communauté, mesurer l’intérêt et commander puis valider un prototype avant la production."
       }
     ],
     "title": "QLT — Création de marque",
@@ -62,9 +65,9 @@
   },
   {
     "id": "juicy-wordpress",
-    "heroTitle": "Juicy — WordPress",
+    "heroTitle": "Création de site web",
     "progress": "completed",
-    "year": "",
+    "year": "2025",
     "image": "./assets/images/projects/juicy-wordpress/00-accueil.png",
     "link": "https://202173398.tim-momo.com/tp_final/",
     "video": "",
@@ -90,13 +93,13 @@
       "./assets/images/projects/juicy-wordpress/05-formulaire.png",
       "./assets/images/projects/juicy-wordpress/06-integration-elementor.png"
     ],
-    "imageCaption": "L’accueil · Un hero fruité, une typographie affirmée et un appel à découvrir les produits.",
+    "imageCaption": "L’accueil · Un hero intuitif et parlant, une typographie affirmée et un appel à découvrir les produits.",
     "galleryCaptions": [
       "01 · Les produits — quatre saveurs mises en scène avec leurs couleurs, leur prix et un accès au panier.",
       "02 · La boutique — catalogue WooCommerce présenté sous forme de carrousel de produits.",
       "03 · L’histoire — présentation de la marque fictive et de son univers autour de la fraîcheur et des fruits.",
-      "04 · Le ton — une section À propos qui associe une composition typographique forte à un visuel ludique.",
-      "05 · Le contact — formulaire WordPress aux couleurs de la marque : nom, courriel, objet et message.",
+      "04 · Le ton — une section À propos qui associe une composition typographique forte à un visuel coloré.",
+      "05 · Le contact — formulaire WordPress fonctionnel aux couleurs de la marque : nom, courriel, objet et message.",
       "06 · La construction — vue de l’éditeur Elementor et de l’organisation des sections de l’accueil."
     ],
     "status": "Projet scolaire · Web 4 · Réalisation individuelle",
@@ -107,7 +110,7 @@
       },
       {
         "title": "02 · Une identité qui donne envie de découvrir",
-        "text": "J’ai choisi une direction visuelle expressive : rouge vif, fruits en grand format, typographies affirmées et séparations en vagues. Les couleurs des saveurs distinguent les produits ; les sections d’histoire et de présentation donnent une personnalité à la marque. Le design relie ainsi l’univers de Juicy à son offre."
+        "text": "J’ai choisi une direction visuelle expressive : rouge vif, fruits en grand format, typographies affirmées et séparations en vagues. Les couleurs des saveurs différencient les produits de façon claire ; les sections d’histoire et de présentation donnent une personnalité à la marque. Le design relie ainsi l’univers de Juicy à son offre. L’objectif : transmettre une énergie dynamique dès l’arrivée sur le site."
       },
       {
         "title": "03 · Du design au site en ligne",
@@ -118,13 +121,13 @@
     "category": "Design et développement web",
     "heroLabel": "Ordi portable",
     "heroImage": "./assets/images/hero/objects/laptop-msi.webp",
-    "description": "Projet individuel de Web 4 : création de Juicy, une marque fictive de jus, et réalisation de son site WordPress. Une identité fruitée et expressive, déclinée en pages de marque, catalogue WooCommerce et formulaire de contact."
+    "description": "Projet individuel de Web 4 : création de Juicy, une marque fictive de jus, et réalisation d’un site WordPress. Une identité fruitée et expressive, un catalogue WooCommerce et un formulaire de contact."
   },
   {
     "id": "shopify-ventes",
-    "heroTitle": "Shopify — Boutiques",
+    "heroTitle": "Création de boutiques",
     "progress": "ongoing",
-    "year": "",
+    "year": "2022–2026",
     "image": "./assets/images/projects/shopify/00-mugiwara-accueil.png",
     "link": "",
     "video": "",
@@ -135,7 +138,8 @@
       "Suivi des visites, des ventes et des commandes"
     ],
     "tools": [
-      "Shopify"
+      "Shopify",
+      "ChatGPT"
     ],
     "gallery": [
       "./assets/images/projects/shopify/01-mugiwara-catalogue.png",
@@ -144,38 +148,38 @@
       "./assets/images/projects/shopify/04-evolution-ventes.png",
       "./assets/images/projects/shopify/05-commandes-anonymisees.png"
     ],
-    "imageCaption": "L’accueil · Mugiwara Shop, une boutique thématique autour de One Piece avec navigation, mise en avant produit et appel à l’achat.",
+    "imageCaption": "L’accueil · Mugiwara Shop, une boutique thématique autour de One Piece : navigation, mise en avant produit et appel à l’achat. Capture de 2022 ; la typographie d’origine n’est pas restituée.",
     "galleryCaptions": [
       "01 · Le catalogue — présentation des produits, des prix et des promotions dans une grille de boutique.",
       "02 · L’audience — répartition des visites par emplacement, consultée dans les statistiques Shopify.",
-      "03 · L’activité — extrait affichant 30 commandes et 1,13 k$ de ventes avec le filtre « This month ». Le mois et la devise ne sont pas précisés dans la capture.",
-      "04 · Les ventes — tableau de bord en USD sur la période du 1er janvier au 5 juillet 2025. Cet extrait n’est pas additionné aux autres captures.",
-      "05 · Les commandes — aperçu des commandes et de leurs statuts, avec les informations clients masquées dans le visuel fourni."
+      "03 · L’activité — exemple de statistiques : 30 commandes et 1,13 k$ de ventes sur un mois.",
+      "04 · Les ventes — tableau de bord en USD sur la période du 1er janvier au 5 juillet 2025.",
+      "05 · Les commandes — aperçu des commandes et de leurs statuts (informations clients masquées)."
     ],
     "status": "Projets clients · Communautés de niche",
     "caseStudy": [
       {
         "title": "01 · Le besoin des clients",
-        "text": "J’ai réalisé plusieurs boutiques Shopify pour des clients à la tête de comptes populaires et spécialisés sur les réseaux sociaux. Leur besoin : proposer des produits à leur communauté dans une boutique adaptée à son univers. Les projets couvrent notamment One Piece, Marvel Rivals et les produits pour chats."
+        "text": "J’ai réalisé plusieurs boutiques Shopify pour des clients ayant des comptes populaires et spécialisés sur les réseaux sociaux. Leur besoin : proposer des produits à leur communauté dans une boutique adaptée à son univers. J’ai notamment travaillé sur des boutiques autour de One Piece, de Marvel Rivals et de produits pour chats."
       },
       {
         "title": "02 · Construire la boutique",
-        "text": "Mon travail rassemble la création et le design de l’interface, la configuration des produits et des paramètres Shopify. Pour Mugiwara Shop, les captures montrent une page d’accueil avec mise en avant produit et appel à l’achat, puis un catalogue organisé avec visuels, prix et promotions."
+        "text": "Mon travail rassemble la création et le design de l’interface, la configuration des produits et des paramètres Shopify."
       },
       {
-        "title": "03 · Suivre l’activité après la création",
-        "text": "J’ai également suivi les statistiques des boutiques : origine des visites, évolution des ventes et commandes enregistrées. Les tableaux de bord complètent les captures de design par des traces d’activité commerciale. Chaque extrait garde son contexte ; les montants ne sont pas cumulés et ne constituent pas une mesure de l’effet du design."
+        "title": "03 · Suivre l’activité",
+        "text": "J’ai également suivi les statistiques des boutiques : origine des visites, évolution des ventes et commandes enregistrées. Ces observations orientent les ajustements de la boutique pour améliorer l’expérience d’achat et sa performance."
       }
     ],
     "title": "Shopify — Boutiques de niche",
-    "category": "Commerce électronique",
+    "category": "Commerce en ligne",
     "heroLabel": "Dossier",
     "heroImage": "./assets/images/hero/objects/shopify-folder-perspective.webp",
     "description": "Création de boutiques Shopify pour des clients à la tête de communautés spécialisées sur les réseaux sociaux. Design, configuration des produits et des paramètres, puis suivi des visites, des ventes et des commandes."
   },
   {
     "id": "animation-3d",
-    "heroTitle": "Avant la fin — 3D",
+    "heroTitle": "Montage vidéo et animation 3D",
     "progress": "completed",
     "year": "",
     "image": "./assets/images/projects/animation-3d/00-chevalier.jpg",
@@ -189,15 +193,18 @@
       "Animation, cadrage des caméras et éclairage dans Maya",
       "Assemblage des séquences et montage final dans CapCut"
     ],
-    "tools": ["Maya", "CapCut"],
-    "imageCaption": "Extrait du rendu animé : un chevalier dans un décor rouge traversé de colonnes.",
+    "tools": [
+      "Maya",
+      "CapCut"
+    ],
+    "imageCaption": "Extrait du rendu animé : un personnage low poly dans un décor rouge.",
     "gallery": [
       "./assets/images/projects/animation-3d/01-scenarimage.jpg",
       "./assets/images/projects/animation-3d/02-environnement.jpg",
       "./assets/images/projects/animation-3d/03-personnage.jpg"
     ],
     "galleryCaptions": [
-      "Scénarimage : intentions de plans, transitions et progression entre les environnements.",
+      "Scénarimage : intentions des plans, transitions et progression entre les environnements.",
       "Plan du montage final : véhicule, personnage et composition d’un environnement clair.",
       "Extrait du rendu animé : cadrage du personnage dans l’environnement rouge."
     ],
@@ -216,28 +223,28 @@
       },
       {
         "src": "./assets/videos/projects/animation-3d/02-extrait-chevalier.mp4",
-        "title": "Extrait — Le chevalier",
-        "caption": "Aperçu animé fourni, sans son.",
+        "title": "Extrait — Le personnage low poly",
+        "caption": "Aperçu animé.",
         "poster": "./assets/images/projects/animation-3d/00-chevalier.jpg"
       },
       {
         "src": "./assets/videos/projects/animation-3d/03-extrait-personnage.mp4",
         "title": "Extrait — Le personnage",
-        "caption": "Aperçu animé fourni, sans son.",
+        "caption": "Aperçu animé.",
         "poster": "./assets/images/projects/animation-3d/03-personnage.jpg"
       }
     ],
     "caseStudy": [
       {
         "title": "Du scénarimage à l’univers visuel",
-        "text": "Avant la fin est un court projet réalisé dans le cours d’animation 3D en Techniques d’intégration multimédia. Le scénarimage prépare l’enchaînement des plans et les transitions. Le film joue sur le contraste entre un environnement clair et un univers rouge, peuplé de colonnes, de personnages et de véhicules."
+        "text": "Avant la fin est un court projet réalisé dans le cours d’animation 3D en Techniques d’intégration multimédia. Le scénarimage prépare l’enchaînement des plans et les transitions. Le film joue sur le contraste entre un environnement clair et un univers rouge : deux ambiances qui expriment des émotions opposées à travers plusieurs symboles."
       },
       {
         "title": "Construire et animer les scènes",
-        "text": "Les modèles proviennent de Sketchfab : mon travail porte sur la construction du décor et de l’environnement, leur composition et l’animation dans Maya. Les déplacements des personnages, les cadrages et l’éclairage donnent vie aux scènes. La capture du cycle de marche montre une étape de ce travail avant le rendu final."
+        "text": "Les modèles proviennent de Sketchfab : mon travail porte sur la construction du décor et de l’environnement, leur composition et l’animation dans Maya. Les déplacements des personnages, les cadrages et l’éclairage donnent vie aux scènes."
       },
       {
-        "title": "Assembler le film",
+        "title": "Assembler le film et ajouter des effets",
         "text": "Dans CapCut, j’assemble les séquences animées pour construire le rythme du film et passer d’une ambiance à l’autre. Le montage final, d’environ 42 secondes, réunit les scènes et les transitions préparées au fil du projet."
       }
     ],
@@ -245,11 +252,11 @@
     "category": "Animation et mouvement",
     "heroLabel": "Ordi desktop",
     "heroImage": "./assets/images/hero/objects/desktop-workstation.webp",
-    "description": "Un court film 3D aux ambiances contrastées. Construction des décors et animation de modèles importés de Sketchfab dans Maya, puis montage dans CapCut : du scénarimage au film final."
+    "description": "Un court film 3D aux ambiances contrastées. Construction des décors et animation de modèles importés de Sketchfab vers Maya, puis montage dans CapCut : du scénarimage au film final."
   },
   {
     "id": "platformer-2d",
-    "heroTitle": "Forward — Jeu 2D",
+    "heroTitle": "Création de jeu vidéo 2D",
     "progress": "completed",
     "year": "",
     "image": "./assets/images/projects/platformer-2d/01-parcours-foret.jpg",
@@ -263,7 +270,8 @@
       "Développement des déplacements, des sauts et de la boucle échec / nouvel essai dans Godot"
     ],
     "tools": [
-      "Godot"
+      "Godot",
+      "ChatGPT (aide au code)"
     ],
     "imageCaption": "Un premier aperçu du jeu : personnage, plateformes et environnement en pixel art. Visuels issus d’assets gratuits.",
     "gallery": [
@@ -285,28 +293,28 @@
       {
         "src": "./assets/videos/projects/platformer-2d/01-parcours-foret.mp4",
         "title": "Se déplacer et franchir les plateformes",
-        "caption": "Capture directe du jeu, sans son.",
+        "caption": "Capture directe du jeu.",
         "poster": "./assets/images/projects/platformer-2d/01-parcours-foret.jpg",
         "aspectRatio": "4 / 3"
       },
       {
         "src": "./assets/videos/projects/platformer-2d/02-parcours-souterrain.mp4",
         "title": "Maîtriser les sauts",
-        "caption": "Capture directe d’un autre parcours, sans son.",
+        "caption": "Capture directe d’un autre parcours.",
         "poster": "./assets/images/projects/platformer-2d/02-parcours-souterrain.jpg",
         "aspectRatio": "4 / 3"
       },
       {
         "src": "./assets/videos/projects/platformer-2d/03-menace-en-action.mp4",
         "title": "Le mur de feu en action",
-        "caption": "Séquence filmée sur ordinateur : la menace oblige à avancer. Sans son.",
+        "caption": "Séquence filmée sur ordinateur : la menace oblige à avancer.",
         "poster": "./assets/images/projects/platformer-2d/03-menace-en-action.jpg",
         "aspectRatio": "4 / 3"
       },
       {
         "src": "./assets/videos/projects/platformer-2d/04-sauts-sous-pression.mp4",
         "title": "Avancer sous pression",
-        "caption": "Séquence filmée sur ordinateur : enchaîner les sauts avec le feu à proximité. Sans son.",
+        "caption": "Séquence filmée sur ordinateur : enchaîner les sauts avec le feu à proximité.",
         "poster": "./assets/images/projects/platformer-2d/04-sauts-sous-pression.jpg",
         "aspectRatio": "4 / 3"
       }
@@ -318,7 +326,7 @@
       },
       {
         "title": "Construire l’expérience dans Godot",
-        "text": "Réalisé dans le cours d’Interactivité ludique en Techniques d’intégration multimédia, le jeu est développé dans Godot avec des assets gratuits trouvés sur itch.io. Mon travail porte sur la conception du jeu, la construction des niveaux, l’intégration des éléments visuels et les mécaniques de déplacement, de danger et de reprise après un échec. Les assets sont des ressources externes ; ma contribution concerne leur intégration et le fonctionnement du jeu."
+        "text": "Réalisé dans le cours d’Interactivité ludique en Techniques d’intégration multimédia, le jeu est développé dans Godot avec des assets gratuits trouvés sur itch.io. Mon travail consiste en la conception du jeu, la construction des niveaux, l’intégration des éléments visuels et les mécaniques de déplacement, de danger et de reprise après un échec. Les assets sont des ressources externes ; ma contribution concerne leur intégration et le fonctionnement du jeu."
       }
     ],
     "title": "Forward — Platformer 2D",
@@ -329,7 +337,7 @@
   },
   {
     "id": "marketing-reseaux-sociaux",
-    "heroTitle": "Réseaux sociaux",
+    "heroTitle": "Gestion de réseaux sociaux",
     "progress": "ongoing",
     "year": "",
     "image": "./assets/images/projects/social-media/00-resultats-comptes.png",
@@ -341,7 +349,7 @@
       "Repérage de niches, de tendances et de possibilités de positionnement face à la concurrence",
       "Sélection de contenus et organisation d’un rythme de publication régulier",
       "Suivi des abonnés, de la portée et des vues pour comprendre les réactions de chaque communauté",
-      "Tests et adaptation de la stratégie sur Instagram et YouTube"
+      "Tests et adaptation de la stratégie sur Instagram, YouTube et d’autres plateformes"
     ],
     "tools": [
       "Instagram",
@@ -353,8 +361,8 @@
       "./assets/images/projects/social-media/02-palier-one-piece.png"
     ],
     "galleryCaptions": [
-      "Ancien compte One Piece : 105 216 abonnés, +25 221 abonnés nets et +31,5 % sur la période du 7 août au 5 septembre. L’année n’est pas indiquée dans la capture.",
-      "Visuel célébrant le palier des 100 000 abonnés de l’ancien compte One Piece."
+      "Ancien compte Instagram : 105 216 abonnés, +25 221 abonnés nets et +31,5 % du 7 août au 5 septembre 2022.",
+      "Célébration du palier des 100 000 abonnés de l’ancien compte sur la niche One Piece."
     ],
     "caseStudy": [
       {
@@ -367,17 +375,17 @@
       },
       {
         "title": "Des résultats à différentes échelles",
-        "text": "J’ai auparavant développé un compte autour de One Piece, documenté ici au palier des 100 000 abonnés. Je gère aujourd’hui un compte chats à plus de 200 000 abonnés, dont une capture montre 257 000 abonnés. Mes deux comptes Marvel Rivals comptent moins de 10 000 abonnés, mais certaines publications dépassent 100 000, 500 000 et parfois un million de vues. Les captures distinguent ces métriques : vues, comptes atteints et abonnés ne mesurent pas la même chose."
+        "text": "J’ai auparavant développé un compte autour de One Piece, documenté ici au palier des 100 000 abonnés. Je gère aujourd’hui un compte chats à plus de 200 000 abonnés. Mes deux comptes Marvel Rivals comptent moins de 10 000 abonnés, mais certaines publications dépassent 100 000, 500 000 et parfois un million de vues. Les captures distinguent ces métriques : vues, comptes atteints et abonnés ne mesurent pas la même chose."
       },
       {
-        "title": "Adapter la méthode, pas appliquer une recette",
-        "text": "J’ai aussi expérimenté la republication sur YouTube et obtenu des résultats satisfaisants ; cette expérience m’amène aujourd’hui à explorer d’autres méthodes sur cette plateforme. Au fil des comptes, j’apprends à nuancer les idées reçues sur les vues et les likes, à lire les attentes d’une audience et à adapter ma stratégie lorsque les usages ou la concurrence évoluent. Cette méthode repose sur des observations et des tests propres à chaque niche, plutôt que sur une recette de croissance universelle."
+        "title": "Adapter la méthode, même sur d’autres plateformes",
+        "text": "J’ai aussi expérimenté la republication sur YouTube et obtenu des résultats satisfaisants ; cette expérience m’amène aujourd’hui à explorer d’autres méthodes sur cette plateforme. Au fil des comptes, j’apprends à nuancer les idées reçues sur les vues et les likes, à lire les attentes d’une audience et à adapter ma stratégie lorsque les usages ou la concurrence évoluent. Cette méthode repose sur des observations et des tests propres à chaque niche, plutôt que sur une méthode de croissance universelle."
       }
     ],
     "title": "Réseaux sociaux — Communautés de niche",
     "category": "Stratégie et analyse d’audience",
     "heroLabel": "iPhone",
     "heroImage": "./assets/images/hero/objects/iphone-15-social.webp",
-    "description": "Développement de communautés Instagram autour de One Piece, des chats et de Marvel Rivals. Un compte chats à plus de 200 000 abonnés, des publications à forte portée : veille de niches, sélection de contenus et analyse des réactions de l’audience."
+    "description": "Développement de communautés Instagram autour de niches comme One Piece, les chats et Marvel Rivals. Un compte chats à plus de 200 000 abonnés, des publications à forte portée : veille de niches, sélection de contenus et analyse des réactions de l’audience."
   }
 ]
