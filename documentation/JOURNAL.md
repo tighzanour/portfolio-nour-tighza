@@ -358,3 +358,7 @@
 - #### Modification du header et ajout des titres sur les objets. [2026-10-04]
 
   _parfait, maintenant on va modifier le header et ajouter des titres sur les objets pour faciliter l'expérience, le header doit être transparent donc comme si il y en avait pas, les titres des projets seront affichés avec des cercles de couleur représentant leur état (completé, en cours), en haut à droite les menus, inspires toi de la référence envoyée._
+
+- #### Ajustement de la section ''mes projets''' [2026-10-05]
+
+  _bien, maintenant ajuste cette section : je veux que les projets ne soient pas aussi long en hauteur, et qu'on puisse simplement cliquer sur les cartes directement pour ouvrir, pas juste avec les boutons, aussi, alignes les tous de façon symétrique, et ajoute une animation d'apparition simple au scroll._

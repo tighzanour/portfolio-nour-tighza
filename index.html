@@ -11,11 +11,11 @@
 
     <link rel="stylesheet" href="./css/variables.css?v=31" />
     <link rel="stylesheet" href="./css/base.css?v=28" />
-    <link rel="stylesheet" href="./css/layout.css?v=25" />
+    <link rel="stylesheet" href="./css/layout.css?v=26" />
     <link rel="stylesheet" href="./css/components/navigation.css?v=28" />
     <link rel="stylesheet" href="./css/components/hero.css?v=29" />
-    <link rel="stylesheet" href="./css/components/project-card.css?v=25" />
-    <link rel="stylesheet" href="./css/components/transition.css?v=27" />
+    <link rel="stylesheet" href="./css/components/project-card.css?v=26" />
+    <link rel="stylesheet" href="./css/components/transition.css?v=29" />
     <link rel="stylesheet" href="./css/components/about-book.css?v=28" />
     <link rel="stylesheet" href="./css/components/contact-card.css?v=26" />
     <link rel="stylesheet" href="./css/components/footer.css?v=25" />
@@ -62,13 +62,29 @@
 
       <section class="portfolio-transition" aria-labelledby="transition-title">
         <div class="portfolio-transition__content">
-          <p class="portfolio-transition__eyebrow">À propos.</p>
+          <div class="portfolio-transition__copy">
+          <p class="portfolio-transition__eyebrow">Compétences.</p>
           <h2 id="transition-title">
             Perfectionniste,
             <em>mais pas parfait.</em>
           </h2>
           <p class="portfolio-transition__text">Lorsqu’un projet me plaît, je découvre souvent ce dont je ne me pensais pas capable. J’apprends progressivement à travailler avec mes défauts et à en faire des forces. Mon perfectionnisme peut ralentir une étape, mais il m’aide aussi à prendre des décisions qui changent la direction d’un projet.</p>
           <p class="portfolio-transition__hint">Quelques pages sur moi</p>
+          </div>
+          <div class="portfolio-transition__emblem">
+            <button class="scarab" type="button" data-scarab aria-label="Faire tourner le scarabée café" aria-describedby="scarab-help">
+              <span class="scarab__float" aria-hidden="true">
+                <span class="scarab__rotor">
+                  <span class="scarab__edge scarab__edge--one"></span>
+                  <span class="scarab__edge scarab__edge--two"></span>
+                  <span class="scarab__edge scarab__edge--three"></span>
+                  <span class="scarab__face scarab__face--front"></span>
+                  <span class="scarab__face scarab__face--back"></span>
+                </span>
+              </span>
+            </button>
+            <p class="scarab__help" id="scarab-help">Glissez pour tourner · Cliquez pour retourner<br>Au clavier : ← → · Début pour remettre à plat</p>
+          </div>
         </div>
       </section>
 
@@ -279,6 +295,6 @@
       <p>2026 Nour Tighza. Tous droits réservés.</p>
     </footer>
 
-    <script type="module" src="./js/main.js?v=41"></script>
+    <script type="module" src="./js/main.js?v=43"></script>
   </body>
 </html>

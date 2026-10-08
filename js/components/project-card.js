@@ -31,6 +31,8 @@ function createProjectCard(project) {
   button.className = "project-card__button";
   button.type = "button";
   button.dataset.projectOpen = project.id;
+  button.setAttribute("aria-label", `Découvrir le projet ${project.title}`);
+  button.setAttribute("aria-haspopup", "dialog");
   button.textContent = "Découvrir le projet";
 
   content.append(category, title, description);
@@ -45,9 +47,32 @@ function createProjectCard(project) {
   return article;
 }
 
+function revealProjectCards(cards) {
+  // Le contenu reste visible si les animations ne sont pas disponibles.
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    || !("IntersectionObserver" in window) || !("animate" in Element.prototype)) return;
+
+  const revealed = new Set();
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.animate([
+        { opacity: 0, transform: "translateY(1rem)" },
+        { opacity: 1, transform: "translateY(0)" },
+      ], { duration: 450, easing: "cubic-bezier(0.2, 0.7, 0.2, 1)" });
+      revealed.add(entry.target);
+      observer.unobserve(entry.target);
+    }
+    if (cards.every((card) => revealed.has(card))) observer.disconnect();
+  }, { threshold: 0.12 });
+  cards.forEach((card) => observer.observe(card));
+}
+
 export function renderProjectCards(projects, onProjectOpen) {
   if (!projectsContainer) throw new Error("Le conteneur des projets est introuvable.");
-  projectsContainer.replaceChildren(...projects.map(createProjectCard));
+  const cards = projects.map(createProjectCard);
+  projectsContainer.replaceChildren(...cards);
+  revealProjectCards(cards);
 
   projectsContainer.addEventListener("click", (event) => {
     const button = event.target.closest("[data-project-open]");

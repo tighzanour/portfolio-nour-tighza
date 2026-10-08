@@ -9,7 +9,84 @@
 }
 
 .portfolio-transition__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
   width: min(100%, var(--content-width));
+}
+
+.portfolio-transition__copy { min-width: 0; }
+
+.portfolio-transition__emblem { min-width: 0; text-align: center; }
+
+.scarab {
+  position: relative;
+  display: block;
+  width: min(100%, 23rem);
+  aspect-ratio: 1;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  perspective: 900px;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.scarab:hover:not(:disabled) { background: transparent; }
+.scarab.is-dragging { cursor: grabbing; }
+
+.scarab__float,
+.scarab__rotor {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+
+.scarab__float { transform: translate3d(var(--scarab-x, 0px), var(--scarab-y, 0px), 0); }
+.scarab__rotor { transform: rotateX(var(--scarab-angle, 0deg)); }
+
+.scarab__face,
+.scarab__edge {
+  position: absolute;
+  inset: 0;
+  -webkit-mask: url("../../assets/icons/scarabee-cafe-logo-192.png") center / contain no-repeat;
+  mask: url("../../assets/icons/scarabee-cafe-logo-192.png") center / contain no-repeat;
+}
+
+.scarab__face {
+  background: linear-gradient(125deg, #fff0c7 8%, #e6bb70 32%, #93622f 52%, #f3d89a 73%, #c9954d);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.scarab__face--front { transform: translateZ(4px); }
+.scarab__face--back {
+  /* Le verso garde le même contour : pas de silhouette inversée superposée. */
+  transform: translateZ(-4px);
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+.scarab__edge { background: #966736; }
+.scarab__edge--one { transform: translateZ(-2px); }
+.scarab__edge--two { transform: translateZ(0); }
+.scarab__edge--three { transform: translateZ(2px); }
+
+.scarab__help {
+  margin: 1rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.7rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 48rem) {
+  .portfolio-transition__content { grid-template-columns: 1fr; }
+  .scarab { width: min(70vw, 16rem); }
 }
 
 .portfolio-transition__eyebrow,
@@ -22,6 +99,7 @@
 
 .portfolio-transition h2 {
   max-width: 12ch;
+  font-size: clamp(2.25rem, 4.5vw, 4.5rem);
   margin-bottom: var(--space-6);
 }
 
@@ -45,6 +123,6 @@
 /* Le titre reste entier sur les petits écrans malgré les lettres plus larges. */
 @media (max-width: 23rem) {
   .portfolio-transition h2 {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 }
