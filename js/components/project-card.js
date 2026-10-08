@@ -27,7 +27,7 @@ function createProjectCard(project) {
   title.className = "project-card__title";
   title.textContent = project.title;
   description.className = "project-card__description";
-  description.textContent = project.description;
+  description.textContent = project.shortDescription;
   button.className = "project-card__button";
   button.type = "button";
   button.dataset.projectOpen = project.id;

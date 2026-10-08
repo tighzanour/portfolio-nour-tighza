@@ -28,6 +28,11 @@ export async function loadProjects() {
     for (const key of ["title", "description", "category"]) {
       if (!project[key].trim()) throw new Error(`${label} : ${key} est vide.`);
     }
+    // Une carte peut avoir un résumé court sans raccourcir la fiche détaillée.
+    const shortDescription = project.shortDescription ?? project.description;
+    if (typeof shortDescription !== "string" || !shortDescription.trim()) {
+      throw new Error(`${label} : shortDescription doit être du texte non vide.`);
+    }
     for (const key of ["link", "video"]) {
       if (project[key] !== undefined && typeof project[key] !== "string") {
         throw new Error(`${label} : ${key} doit être une chaîne de texte.`);
@@ -88,7 +93,7 @@ export async function loadProjects() {
       throw new Error(`${label} : caseStudy doit contenir des sections title et text.`);
     }
     // Les champs vides sont autorisés pendant la préparation du vrai contenu.
-    return { ...project, link: project.link ?? "", video: project.video ?? "", role, tasks, tools, gallery, videos,
+    return { ...project, shortDescription, link: project.link ?? "", video: project.video ?? "", role, tasks, tools, gallery, videos,
       status, progress, heroTitle, imageCaption, galleryCaptions, caseStudy, videoHeading, clipsHeading };
   });
 }

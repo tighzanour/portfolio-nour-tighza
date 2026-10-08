@@ -1,5 +1,5 @@
-import { loadProjects } from "./data.js?v=8";
-import { renderProjectCards } from "./components/project-card.js?v=5";
+import { loadProjects } from "./data.js?v=9";
+import { renderProjectCards } from "./components/project-card.js?v=6";
 import { initProjectDetails } from "./components/project-details.js?v=1";
 import { createHeroButtons, initHeroParallax } from "./components/hero.js?v=3";
 import { initAboutBook } from "./components/about-book.js?v=3";
@@ -10,8 +10,11 @@ initAboutBook();
 initScarab();
 
 try {
+  // 1. Charger et vérifier la source commune des projets.
   const projects = await loadProjects();
+  // 2. Préparer la fiche réutilisable et son action d'ouverture.
   const { openProjectDialog } = initProjectDetails(projects);
+  // 3. Afficher les mêmes projets dans les cartes et dans l'atelier.
   renderProjectCards(projects, openProjectDialog);
   createHeroButtons(projects, openProjectDialog);
   initHeroParallax();
