@@ -125,6 +125,8 @@ export function initAboutBook() {
     if (restoreFocus) {
       (trigger.disabled ? (forward ? previousButton : nextButton) : trigger).focus({ preventScroll: true });
     }
+    // Les pages mobiles ont des hauteurs différentes : reprendre la lecture au début.
+    if (smallScreen) book.scrollIntoView({ block: "start", behavior: "instant" });
   }
 
   previousButton?.addEventListener("click", () => showSpread(currentSpread - 1, previousButton));

@@ -392,7 +392,12 @@
 
   .about-book__spread {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  /* Les pages cachées ne doivent pas imposer leur hauteur à la page affichée. */
+  .about-book__spread:not(.is-active) {
+    display: none;
   }
 }
 
@@ -415,9 +420,11 @@
 @media (max-width: 40rem) {
 
   .about-book__spine {
-    inset: 50% 0 auto;
-    width: auto;
-    height: 1px;
+    display: none;
+  }
+
+  .about-book__page--right {
+    border-top: 1px solid rgba(72, 47, 31, 0.35);
   }
 }
 
@@ -425,6 +432,18 @@
 
   .about-book__page {
     padding: var(--space-6);
+  }
+
+  .about-book__page > :last-child {
+    margin-bottom: 0;
+  }
+
+  .about-book__eyebrow {
+    margin-bottom: var(--space-4);
+  }
+
+  .about-book__signature {
+    margin-top: var(--space-6);
   }
 
   .about-book__tools {
