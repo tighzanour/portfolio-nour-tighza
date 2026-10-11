@@ -80,5 +80,5 @@ Les variables sont définies uniquement dans `css/variables.css`. Chaque feuille
 ## Auteur
 
 Nour Tighza<br>
-Techniques d’intégration multimédia — Collège Montmorency<br>
+Techniques d’intégration multimédia - Collège Montmorency<br>
 [tighzanour@gmail.com](mailto:tighzanour@gmail.com)

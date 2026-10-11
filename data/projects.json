@@ -14,10 +14,7 @@
       "Design produit, observations terrain et dossier technique",
       "Identité de marque, boutique en ligne et stratégie de lancement"
     ],
-    "tools": [
-      "ChatGPT",
-      "Miro"
-    ],
+    "tools": ["ChatGPT", "Miro"],
     "gallery": [
       "./assets/images/projects/qlt/01-recherche-marche.png",
       "./assets/images/projects/qlt/02-evolution-concept.png",
@@ -28,12 +25,12 @@
     ],
     "imageCaption": "Le concept actuel · Weekender matelassé QLT. Rendu IA ; la fabrication reste à valider sur un prototype physique.",
     "galleryCaptions": [
-      "01 · L’opportunité — hypothèses de marché et frustrations clients explorées avec l’IA. Une base de réflexion, plutôt qu’une validation de la demande.",
-      "02 · L’évolution — pistes de matières, de motifs et de matelassage explorées avec l’IA pour affiner le concept.",
-      "03 · Le terrain — comparaison de textures et observation des matières utilisées pour confronter le concept aux réalités du marché.",
-      "04 · La conception — extrait du techpack, présentation du produit, vues et repérage des composants.",
-      "05 · L’identité — construction de la marque, exploration de typographies et de logos.",
-      "06 · Tests visuels — explorations réalisées avec l’IA."
+      "01 · L’opportunité - hypothèses de marché et frustrations clients explorées avec l’IA. Une base de réflexion, plutôt qu’une validation de la demande.",
+      "02 · L’évolution - pistes de matières, de motifs et de matelassage explorées avec l’IA pour affiner le concept.",
+      "03 · Le terrain - comparaison de textures et observation des matières utilisées pour confronter le concept aux réalités du marché.",
+      "04 · La conception - extrait du techpack, présentation du produit, vues et repérage des composants.",
+      "05 · L’identité - construction de la marque, exploration de typographies et de logos.",
+      "06 · Tests visuels - explorations réalisées avec l’IA."
     ],
     "status": "Projet personnel · En développement",
     "caseStudy": [
@@ -80,13 +77,7 @@
       "Configuration du catalogue WooCommerce et mise en valeur des produits",
       "Mise en ligne du site WordPress"
     ],
-    "tools": [
-      "WordPress",
-      "Elementor",
-      "Astra",
-      "WooCommerce",
-      "Contact Form 7"
-    ],
+    "tools": ["WordPress", "Elementor", "Astra", "WooCommerce", "Contact Form 7"],
     "gallery": [
       "./assets/images/projects/juicy-wordpress/01-presentation-produits.png",
       "./assets/images/projects/juicy-wordpress/02-boutique.png",
@@ -97,12 +88,12 @@
     ],
     "imageCaption": "L’accueil · Un hero intuitif et parlant, une typographie affirmée et un appel à découvrir les produits.",
     "galleryCaptions": [
-      "01 · Les produits — quatre saveurs mises en scène avec leurs couleurs, leur prix et un accès au panier.",
-      "02 · La boutique — catalogue WooCommerce présenté sous forme de carrousel de produits.",
-      "03 · L’histoire — présentation de la marque fictive et de son univers autour de la fraîcheur et des fruits.",
-      "04 · Le ton — une section À propos qui associe une composition typographique forte à un visuel coloré.",
-      "05 · Le contact — formulaire WordPress fonctionnel aux couleurs de la marque : nom, courriel, objet et message.",
-      "06 · La construction — vue de l’éditeur Elementor et de l’organisation des sections de l’accueil."
+      "01 · Les produits - quatre saveurs mises en scène avec leurs couleurs, leur prix et un accès au panier.",
+      "02 · La boutique - catalogue WooCommerce présenté sous forme de carrousel de produits.",
+      "03 · L’histoire - présentation de la marque fictive et de son univers autour de la fraîcheur et des fruits.",
+      "04 · Le ton - une section À propos qui associe une composition typographique forte à un visuel coloré.",
+      "05 · Le contact - formulaire WordPress fonctionnel aux couleurs de la marque : nom, courriel, objet et message.",
+      "06 · La construction - vue de l’éditeur Elementor et de l’organisation des sections de l’accueil."
     ],
     "status": "Projet scolaire · Web 4 · Réalisation individuelle",
     "caseStudy": [
@@ -119,7 +110,7 @@
         "text": "J’ai construit les mises en page avec Elementor sur WordPress, intégré le catalogue WooCommerce et organisé les pages d’accueil, de boutique, de blogue, d’À propos et de contact. Le formulaire reprend les codes visuels du site. Le projet est accessible en ligne pour découvrir l’interface et son contenu au-delà des captures."
       }
     ],
-    "title": "Juicy — WordPress",
+    "title": "Juicy - WordPress",
     "category": "Design et développement web",
     "heroLabel": "Ordi portable",
     "heroImage": "./assets/images/hero/objects/laptop-msi.webp",
@@ -140,10 +131,7 @@
       "Configuration du catalogue et des paramètres Shopify",
       "Suivi des visites, des ventes et des commandes"
     ],
-    "tools": [
-      "Shopify",
-      "ChatGPT"
-    ],
+    "tools": ["Shopify", "ChatGPT"],
     "gallery": [
       "./assets/images/projects/shopify/01-mugiwara-catalogue.png",
       "./assets/images/projects/shopify/02-visites-par-emplacement.png",
@@ -153,11 +141,11 @@
     ],
     "imageCaption": "L’accueil · Mugiwara Shop, une boutique thématique autour de One Piece : navigation, mise en avant produit et appel à l’achat. Capture de 2022 ; la typographie d’origine n’est pas restituée.",
     "galleryCaptions": [
-      "01 · Le catalogue — présentation des produits, des prix et des promotions dans une grille de boutique.",
-      "02 · L’audience — répartition des visites par emplacement, consultée dans les statistiques Shopify.",
-      "03 · L’activité — exemple de statistiques : 30 commandes et 1,13 k$ de ventes sur un mois.",
-      "04 · Les ventes — tableau de bord en USD sur la période du 1er janvier au 5 juillet 2025.",
-      "05 · Les commandes — aperçu des commandes et de leurs statuts (informations clients masquées)."
+      "01 · Le catalogue - présentation des produits, des prix et des promotions dans une grille de boutique.",
+      "02 · L’audience - répartition des visites par emplacement, consultée dans les statistiques Shopify.",
+      "03 · L’activité - exemple de statistiques : 30 commandes et 1,13 k$ de ventes sur un mois.",
+      "04 · Les ventes - tableau de bord en USD sur la période du 1er janvier au 5 juillet 2025.",
+      "05 · Les commandes - aperçu des commandes et de leurs statuts (informations clients masquées)."
     ],
     "status": "Projets clients · Communautés de niche",
     "caseStudy": [
@@ -174,7 +162,7 @@
         "text": "J’ai également suivi les statistiques des boutiques : origine des visites, évolution des ventes et commandes enregistrées. Ces observations orientent les ajustements de la boutique pour améliorer l’expérience d’achat et sa performance."
       }
     ],
-    "title": "Shopify — Boutiques de niche",
+    "title": "Shopify - Boutiques de niche",
     "category": "Commerce en ligne",
     "heroLabel": "Dossier",
     "heroImage": "./assets/images/hero/objects/shopify-folder-perspective.webp",
@@ -197,10 +185,7 @@
       "Animation, cadrage des caméras et éclairage dans Maya",
       "Assemblage des séquences et montage final dans CapCut"
     ],
-    "tools": [
-      "Maya",
-      "CapCut"
-    ],
+    "tools": ["Maya", "CapCut"],
     "imageCaption": "Extrait du rendu animé : un personnage low poly dans un décor rouge.",
     "gallery": [
       "./assets/images/projects/animation-3d/01-scenarimage.jpg",
@@ -215,7 +200,7 @@
     "videos": [
       {
         "src": "./assets/videos/projects/animation-3d/00-montage-final.mp4",
-        "title": "Avant la fin — Film final",
+        "title": "Avant la fin - Film final",
         "caption": "42 secondes · Montage réalisé dans CapCut. Lecture avec son au clic.",
         "poster": "./assets/images/projects/animation-3d/02-environnement.jpg"
       },
@@ -227,13 +212,13 @@
       },
       {
         "src": "./assets/videos/projects/animation-3d/02-extrait-chevalier.mp4",
-        "title": "Extrait — Le personnage low poly",
+        "title": "Extrait - Le personnage low poly",
         "caption": "Aperçu animé.",
         "poster": "./assets/images/projects/animation-3d/00-chevalier.jpg"
       },
       {
         "src": "./assets/videos/projects/animation-3d/03-extrait-personnage.mp4",
-        "title": "Extrait — Le personnage",
+        "title": "Extrait - Le personnage",
         "caption": "Aperçu animé.",
         "poster": "./assets/images/projects/animation-3d/03-personnage.jpg"
       }
@@ -252,7 +237,7 @@
         "text": "Dans CapCut, j’assemble les séquences animées pour construire le rythme du film et passer d’une ambiance à l’autre. Le montage final, d’environ 42 secondes, réunit les scènes et les transitions préparées au fil du projet."
       }
     ],
-    "title": "Avant la fin — Animation 3D",
+    "title": "Avant la fin - Animation 3D",
     "category": "Animation et mouvement",
     "heroLabel": "Ordi desktop",
     "heroImage": "./assets/images/hero/objects/desktop-workstation.webp",
@@ -274,23 +259,16 @@
       "Construction des parcours et intégration d’assets gratuits",
       "Développement des déplacements, des sauts et de la boucle échec / nouvel essai dans Godot"
     ],
-    "tools": [
-      "Godot",
-      "ChatGPT (aide au code)"
-    ],
+    "tools": ["Godot", "ChatGPT (aide au code)"],
     "imageCaption": "Un premier aperçu du jeu : personnage, plateformes et environnement en pixel art. Visuels issus d’assets gratuits.",
-    "gallery": [
-      "./assets/images/projects/platformer-2d/02-parcours-souterrain.jpg"
-    ],
-    "galleryCaptions": [
-      "Un autre parcours : des plateformes espacées et une progression verticale à maîtriser."
-    ],
+    "gallery": ["./assets/images/projects/platformer-2d/02-parcours-souterrain.jpg"],
+    "galleryCaptions": ["Un autre parcours : des plateformes espacées et une progression verticale à maîtriser."],
     "videoHeading": "Gameplay du jeu",
     "clipsHeading": "Extraits de gameplay",
     "videos": [
       {
         "src": "./assets/videos/projects/platformer-2d/00-gameplay.mp4",
-        "title": "Forward — Gameplay",
+        "title": "Forward - Gameplay",
         "caption": "Une minute de jeu pour découvrir les déplacements et les parcours. Lecture avec son au clic.",
         "poster": "./assets/images/projects/platformer-2d/01-parcours-foret.jpg",
         "aspectRatio": "4 / 3"
@@ -334,7 +312,7 @@
         "text": "Réalisé dans le cours d’Interactivité ludique en Techniques d’intégration multimédia, le jeu est développé dans Godot avec des assets gratuits trouvés sur itch.io. Mon travail consiste en la conception du jeu, la construction des niveaux, l’intégration des éléments visuels et les mécaniques de déplacement, de danger et de reprise après un échec. Les assets sont des ressources externes ; ma contribution concerne leur intégration et le fonctionnement du jeu."
       }
     ],
-    "title": "Forward — Platformer 2D",
+    "title": "Forward - Platformer 2D",
     "category": "Jeu et interactivité",
     "heroLabel": "Peluche panda roux",
     "heroImage": "./assets/images/hero/objects/red-panda-plush.webp",
@@ -357,15 +335,9 @@
       "Suivi des abonnés, de la portée et des vues pour comprendre les réactions de chaque communauté",
       "Tests et adaptation de la stratégie sur Instagram, YouTube et d’autres plateformes"
     ],
-    "tools": [
-      "Instagram",
-      "YouTube"
-    ],
+    "tools": ["Instagram", "YouTube"],
     "imageCaption": "Captures anonymisées : ancien compte One Piece à 100K abonnés et 10M de comptes atteints sur 30 jours ; compte chats à 257K abonnés ; publications Marvel Rivals à 4,9M, 146K et 662K vues. Instantanés distincts, non cumulés.",
-    "gallery": [
-      "./assets/images/projects/social-media/01-evolution-abonnes.png",
-      "./assets/images/projects/social-media/02-palier-one-piece.png"
-    ],
+    "gallery": ["./assets/images/projects/social-media/01-evolution-abonnes.png", "./assets/images/projects/social-media/02-palier-one-piece.png"],
     "galleryCaptions": [
       "Ancien compte Instagram : 105 216 abonnés, +25 221 abonnés nets et +31,5 % du 7 août au 5 septembre 2022.",
       "Célébration du palier des 100 000 abonnés de l’ancien compte sur la niche One Piece."
@@ -388,7 +360,7 @@
         "text": "J’ai aussi expérimenté la republication sur YouTube et obtenu des résultats satisfaisants ; cette expérience m’amène aujourd’hui à explorer d’autres méthodes sur cette plateforme. Au fil des comptes, j’apprends à nuancer les idées reçues sur les vues et les likes, à lire les attentes d’une audience et à adapter ma stratégie lorsque les usages ou la concurrence évoluent. Cette méthode repose sur des observations et des tests propres à chaque niche, plutôt que sur une méthode de croissance universelle."
       }
     ],
-    "title": "Réseaux sociaux — Communautés de niche",
+    "title": "Réseaux sociaux - Communautés de niche",
     "category": "Stratégie et analyse d’audience",
     "heroLabel": "iPhone",
     "heroImage": "./assets/images/hero/objects/iphone-15-social.webp",

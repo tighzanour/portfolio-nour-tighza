@@ -1,4 +1,4 @@
-# Planification du portfolio — Nour Tighza
+# Planification du portfolio - Nour Tighza
 
 ## 1. Objectif du projet
 
